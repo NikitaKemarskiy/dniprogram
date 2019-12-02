@@ -224,7 +224,7 @@ body.modal-open {
     background: #f8f8f8;
 }
 .header-buttons {
-    margin: 60px auto 100px auto;
+    margin: 40px auto 90px auto;
 }
 .primary-button {
     min-width: 150px;
@@ -240,6 +240,7 @@ body.modal-open {
     text-transform: uppercase;
     line-height: 36px;
     margin: 0 10px;
+    margin-bottom: 10px;
     border: 2px solid white;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -267,6 +268,7 @@ body.modal-open {
     font-family: PTSans;
     font-size: 14px;
     margin: 0 10px;
+    margin-bottom: 10px;
     font-weight: 700;
     text-transform: uppercase;
     border: 2px solid white;
@@ -619,7 +621,7 @@ header .intro-text .intro-heading {
     font-family: PTSans;
     font-size: 20px;
     font-weight: 400;
-    line-height: 10px;
+    line-height: 30px;
     display: block;
 }
 header .intro-text {
@@ -2133,4 +2135,19 @@ div.navbar-header button span.icon-bar {
 img.header-logo {
     width: 220px;
     height: auto !important;
+}
+
+.intro-heading {
+    font-size: 22px !important;
+}
+
+.navbar-collapse {
+    display: inline-block;
+}
+
+.header-list-wrapper li a {
+    width: auto !important;
+    padding: 0 !important;
+    margin-top: 15px;
+    margin-right: 10px;
 }
