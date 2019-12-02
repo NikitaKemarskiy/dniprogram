@@ -5,7 +5,6 @@
   "use strict";
 
   // CHECK IF ELEMENT IS IN VIEW
-
   $.belowthefold = function(element, settings) {
     var fold = $(window).height() + $(window).scrollTop();
     return fold <= $(element).offset().top - settings.threshold;
