@@ -1,4 +1,4 @@
-/* =======================================================================
+ =======================================================================
 KeySoft - Software Landing Page 
 ======================================================================= */
 /*
@@ -1163,6 +1163,9 @@ header .container {
     padding-bottom: 0px;
     margin-bottom: 52px;
 }
+.tt-content {
+    text-align: center;
+}
 .tt-content h3 {
     font-size: 30px;
     font-weight: 300;
@@ -1188,6 +1191,7 @@ header .container {
 }
 .tt-content .tt-container {
     margin-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
 }
 .tt-images {
@@ -1197,11 +1201,10 @@ header .container {
 }
 .tt-image {
     display: inline-block;
-    margin: 0;
+    margin: 0 auto;
     /*   border: 2px solid #D1D1D1;*/
-    
+    text-align: center;
     border-radius: 90px;
-    margin: 0 15px;
 }
 .tt-image img {
     display: inline-block;
@@ -1253,6 +1256,8 @@ header .container {
     text-align: center;
     overflow: hidden;
     position: relative;
+    min-width: 130px;
+    max-width: 390px;
 }
 .team-member img {
     margin: 0 auto;
@@ -1262,7 +1267,7 @@ header .container {
     transition: transform 0.3s;
 }
 .team-content {
-    padding: 50px;
+    padding: 20px 0px;
     background: #1080f2;
     color: #fff;
     position: relative;
@@ -1284,7 +1289,6 @@ header .container {
 .team-content .team-subtitle {
     font-size: 14px;
     font-style: italic;
-    margin-bottom: 30px;
     display: block;
     line-height: 1.2;
 }
@@ -2097,6 +2101,217 @@ text-transform: uppercase;
     background: #ff9800;
 }
 
+/* CAROUSEL */
+/* Feel free to change duration  */ 
+.animated  {
+  -webkit-animation-duration : 1000 ms  ;
+  animation-duration : 1000 ms  ;
+  -webkit-animation-fill-mode : both  ;
+  animation-fill-mode : both  ;
+}  
+/* .owl-animated-out - only for current item */ 
+/* This is very important class. Use z-index if you want move Out item above In item */ 
+.owl-animated-out {
+  z-index : 1 
+   }
+/* .owl-animated-in - only for upcoming item
+/* This is very important class. Use z-index if you want move In item above Out item */ 
+.owl-animated-in {
+  z-index : 0 
+   }
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
+.fadeOut  {
+  -webkit-animation-name : fadeOut  ;
+  animation-name : fadeOut  ;
+}  
+@-webkit-keyframes  fadeOut  {
+  0% {
+    opacity : 1;
+  }  
+  100% {
+    opacity : 0;
+  }  
+}
+@keyframes  fadeOut  {
+  0% {
+    opacity : 1;
+  }  
+  100% {
+    opacity : 0;
+  }  
+}
+
+.owl-prev {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    display: block !important;
+    border:0px solid black;
+    outline: none;
+}
+
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    right: 0px;
+    display: block !important;
+    border:0px solid black;
+    outline: none;
+}
+
+.owl-prev i, .owl-next i {
+    transform : scale(3,3);
+    color: #ccc;
+}
+
+.owl-prev i:hover, .owl-next i:hover {
+    color: #1080f2;
+}
+
+.owl-stage-outer { 
+    overflow: visible;
+}
+
+.owl-item {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.owl-item.active {
+    opacity: 1;
+}
+
+#team .owl-prev i, #team .owl-next i {
+    transform : scale(6,5);
+    color: #fff;
+}
+
+#team .owl-prev {
+    left: 25px;
+}
+
+#team .owl-next {
+    right: 25px;
+}
+
+#team .owl-prev i:hover, #team .owl-next i:hover {
+    color: #fff;
+}
+
+/* TESTIMONIALS */
+.clients-feedback-area .client-name > h5 {
+  color: #000;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.clients-feedback-area .star-icon > i {
+  font-size: 18px;
+  color: #1080f2;
+}
+
+.clients-feedback-area .client-description > p {
+  max-width: 1010px;
+  margin: auto;
+  margin-bottom: 15px;
+  font-size: 22px;
+  line-height: 28px
+}
+
+.clients-feedback-area .client > i {
+  font-size: 48px;
+  color: #1080f2;
+  margin-bottom: 30px;
+}
+
+.clients-feedback-area .client-name > p {
+  color: #b5aec4;
+  line-height: 28px;
+}
+
+.clients-feedback-area .slick-dots {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.clients-feedback-area .slick-dots li button {
+  width: 12px;
+  height: 12px;
+  text-indent: -999999999999999999999999px;
+  border: 3px solid #a49fba;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 5.5px;
+  outline: none;
+}
+
+.clients-feedback-area .slick-dots li.slick-active button {
+  background-color: #fb397d;
+  border-color: #fb397d;
+}
+
+.clients-feedback-area .slick-slide.client-thumbnail {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 129px;
+}
+
+.clients-feedback-area .slick-slide img {
+  display: block;
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.clients-feedback-area .slick-slide.slick-current img {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.clients-feedback-area .slick-arrow {
+  position: absolute;
+  width: 30px;
+  background-color: #fff;
+  height: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #b5aec4;
+  display: block;
+  line-height: 550%;
+  left: 0;
+  z-index: 90;
+  cursor: pointer;
+}
+
+.clients-feedback-area .slick-arrow.fa-angle-right {
+  left: auto;
+  right: 0;
+  top: 0;
+}
+
 /* MY PERSONAL STYLES */
 .col-centered {
     display: inline-block;
@@ -2146,10 +2361,6 @@ img.header-logo {
     font-size: 22px !important;
 }
 
-.navbar-collapse {
-    display: inline-block;
-}
-
 .header-list-wrapper li a {
     width: auto !important;
     padding: 0 !important;
@@ -2162,7 +2373,7 @@ img.header-logo {
 }
 
 .container .header {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 #why .content {
@@ -2198,7 +2409,9 @@ img.header-logo {
 }
 
 #services h4 {
+    font-weight: 700;
     margin-bottom: 8px;
+    line-height: 28px;
 }
 
 .cool_facts_area {
@@ -2252,18 +2465,11 @@ img.header-logo {
     margin-bottom: 50px;
 }
 
-.cool_facts_area .col-12:last-of-type .single-cool-fact {
-    margin-bottom: 0;
+/* CUSTOM BOOTSTRAP 4 STYLES */
+.d-flex {
+    display: flex !important;
 }
 
-.cool_facts_area .col-12:last-of-type .single-cool-fact {
-    margin-bottom: 0;
-}
-
-.cool_facts_area .counter-area {
-    display: inline-block;
-}
-
-.cool_facts_area .cool-facts-content {
-    display: inline-block;
+.justify-content-center {
+    justify-content: center !important;
 }
