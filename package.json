@@ -1,0 +1,29 @@
+{
+  "name": "dniprogram",
+  "version": "1.0.0",
+  "description": "Dniprogram official website",
+  "main": "src/index.js",
+  "scripts": {
+    "prettier": "prettier --config config/prettier.json --write 'src/**/*.js'",
+    "test": "eslint src",
+    "dev": "nodemon",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikitaKemarskiy/dniprogram.git"
+  },
+  "author": "Kemarskiy Nikita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikitaKemarskiy/dniprogram/issues"
+  },
+  "homepage": "https://github.com/NikitaKemarskiy/dniprogram#readme",
+  "dependencies": {
+    "@koa/router": "^8.0.5",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-sendfile": "^2.0.1",
+    "koa-static": "^5.0.0"
+  }
+}
