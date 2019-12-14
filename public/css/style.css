@@ -1160,8 +1160,8 @@ header .container {
 /*6.6 TESTIMONIALS*/
 
 #testimonials {
-    padding-bottom: 0px;
     margin-bottom: 52px;
+    background-color: #f8f8f8;
 }
 .tt-content {
     text-align: center;
@@ -1318,7 +1318,7 @@ header .container {
     top: auto;
     bottom: -10px;
 }
-.team-member:hover .triangle {
+/*.team-member:hover .triangle {
     border-bottom: 700px solid;
     border-color: #1080f2;
     opacity: 0.85;
@@ -1349,7 +1349,7 @@ header .container {
     -moz-transform: translateY(50px);
     -ms-transform: translateY(50px);
     transform: translateY(50px);
-}
+}*/
 .team-socials {
     position: absolute;
     top: 215px;
@@ -1384,10 +1384,10 @@ header .container {
     height: 25px;
     text-transform: uppercase;
 }
-.team-member:hover .team-socials {
+/*.team-member:hover .team-socials {
     opacity: 1;
     visibility: visible;
-}
+}*/
 /*6.8 CLIENTS*/
 
 #clients .owl-controls .owl-buttons {
@@ -2150,6 +2150,10 @@ text-transform: uppercase;
   }  
 }*/
 
+.owl-dots {
+    display: none;
+}
+
 .owl-prev {
     width: 15px;
     height: 100px;
@@ -2208,6 +2212,20 @@ text-transform: uppercase;
 
 #team .owl-prev i:hover, #team .owl-next i:hover {
     color: #fff;
+}
+
+#team .name {
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: left;
+}
+
+#team .position {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
 }
 
 /* TESTIMONIALS */
@@ -2539,6 +2557,15 @@ img.header-logo {
 
 #why .content .heading p {
     padding-top: 10px;
+}
+
+#why .content ul {
+    padding-left: 20px;
+}
+
+#why .content ul li {
+    font-size: 16px;
+    line-height: 24px;
 }
 
 #services img {
