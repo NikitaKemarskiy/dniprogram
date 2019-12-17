@@ -5,6 +5,9 @@ docker-compose*
 .dockerignore
 .git
 .gitignore
+deploy_rsa
+deploy_rsa.pub
+scripts/*
 README.md
 LICENSE
 .vscode

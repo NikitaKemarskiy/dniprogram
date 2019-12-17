@@ -4,9 +4,10 @@
   "description": "Dniprogram official website",
   "main": "src/index.js",
   "scripts": {
+    "test": "echo \"XXX No tests specified!\"",
     "prettier": "prettier --config config/prettier.json --write 'src/**/*.js'",
     "dev": "nodemon",
-    "start": "echo \"XXX No tests specified!\""
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",

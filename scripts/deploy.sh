@@ -1,5 +1,2 @@
-echo ">>> Deploy now..."
-
-# ssh -p 2222 nikita@77.47.209.52 "docker stop color-pick; \
-# 								 docker rm color-pick; \
-# 								 docker run -p 80:80 --name color-pick -d kemarskiy/color-pick:1.0"
+ssh root@95.215.207.62 "export DNIPROGRAM_VERSION=1.0; \
+						/var/www/dniprogram/scripts/start.sh"
