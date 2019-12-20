@@ -1,5 +1,9 @@
 FROM node:12.11.0
 
+# Папка с сертификатами
+ARG SSL_DIR=/etc/ssl/
+RUN mkdir -p ${SSL_DIR}
+
 # Папка приложения
 ARG APP_DIR=/var/www/dniprogram
 RUN mkdir -p ${APP_DIR}

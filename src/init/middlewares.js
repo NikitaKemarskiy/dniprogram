@@ -14,14 +14,14 @@ async function init(app) {
 	// Middlewares
 	app.use(bodyParser()); // Body parser
 	app.use(koaStatic(STATIC_PATH));
-	/*app.use(async (ctx, next) => { // Redirect to Https from Http
+	app.use(async (ctx, next) => { // Redirect to HTTPS from HTTP
 		if (ctx.secure) {
 			await next();
 		} else {
 			const httpsPath = `https://${ctx.host}${ctx.url}`;
 			ctx.redirect(httpsPath);
 		}
-	});*/
+	});
 
 	// Routes
 	app.use(router.routes());

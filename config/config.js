@@ -13,7 +13,7 @@ if (!MAIL_USER || !MAIL_PASS || !SSL_PATH) {
 const config = {
 	prod: { // Production config
 		ssl: {
-			keyPath: SSL_PATH + 'key.pem',
+			keyPath: SSL_PATH + 'privkey.pem',
 			certPath: SSL_PATH + 'cert.pem',
 			chainPath: SSL_PATH + 'chain.pem'
 		},
@@ -24,7 +24,7 @@ const config = {
 	},
 	dev: { // Development config
 		ssl: {
-			keyPath: SSL_PATH + 'key.pem',
+			keyPath: SSL_PATH + 'privkey.pem',
 			certPath: SSL_PATH + 'cert.pem',
 			chainPath: SSL_PATH + 'chain.pem'
 		},
