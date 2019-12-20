@@ -12,8 +12,6 @@ const STATIC_PATH = path.join(__dirname, '..', '..', 'public');
 // Middlewares init function
 async function init(app) {
 	// Middlewares
-	app.use(bodyParser()); // Body parser
-	app.use(koaStatic(STATIC_PATH));
 	app.use(async (ctx, next) => { // Redirect to HTTPS from HTTP
 		if (ctx.secure) {
 			await next();
@@ -22,6 +20,8 @@ async function init(app) {
 			ctx.redirect(httpsPath);
 		}
 	});
+	app.use(bodyParser()); // Body parser
+	app.use(koaStatic(STATIC_PATH));
 
 	// Routes
 	app.use(router.routes());
