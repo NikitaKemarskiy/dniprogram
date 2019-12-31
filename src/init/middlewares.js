@@ -21,7 +21,9 @@ async function init(app) {
 		}
 	});
 	app.use(bodyParser()); // Body parser
-	app.use(koaStatic(STATIC_PATH));
+	app.use(koaStatic(STATIC_PATH, { // Static files
+		index: '#' // # as a index file name to disable default static file
+	}));
 
 	// Routes
 	app.use(router.routes());
