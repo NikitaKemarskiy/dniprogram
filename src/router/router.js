@@ -4,6 +4,11 @@ const languageParser = require('accept-language-parser');
 const sendFile = require('koa-sendfile');
 const KoaRouter = require('@koa/router');
 
+// Locals
+const EN = require('../texts/en');
+const RU = require('../texts/ru');
+const UK = require('../texts/uk');
+
 // Mailer
 const mail = require('../libs/mail');
 
@@ -18,9 +23,10 @@ const SUPPORTED_LANGS = new Set(['en', 'ru', 'uk']);
 
 // Home page
 router.get('/', async (ctx) => {
+	// Get Accept-Language header
 	const languages = languageParser.parse(ctx.request.headers['accept-language']);
-	let contentLanguage = null;
 	// Get Content-Language for response
+	let contentLanguage = null;
 	for (const language of languages) {
 		if (SUPPORTED_LANGS.has(language.code)) {
 			contentLanguage = language.code;
@@ -29,8 +35,13 @@ router.get('/', async (ctx) => {
 	}
 	// If Content-Language is undefined -> assign to "ru"
 	contentLanguage = contentLanguage || 'ru';
+	// Set header
 	ctx.set('Content-Language', contentLanguage);
-	await sendFile(ctx, path.join(STATIC_PATH, 'html', contentLanguage, 'index.html'));
+	// Render page
+	const local = contentLanguage === 'en' ? EN :
+				  contentLanguage === 'ru' ? RU :
+				  contentLanguage === 'uk' ? UK : RU;
+	await ctx.render('index', options: { local });
 });
 
 // Send mail

@@ -2,6 +2,7 @@
 const path = require('path');
 const bodyParser = require('koa-bodyparser');
 const koaStatic = require('koa-static');
+const koaEjs = require('koa-ejs');
 
 // Router
 const router = require(path.join(__dirname, '..', 'router', 'router'));
@@ -27,6 +28,13 @@ async function init(app) {
 
 	// Routes
 	app.use(router.routes());
+
+	// Template engine
+	koaEjs(app, {
+		root: path.join(__dirname, '..', '..', 'public', 'views'),
+		layout: false,
+		viewExt: 'ejs'
+	});
 
 	console.log('>>> Middlewares were initialized!');
 }
