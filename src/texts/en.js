@@ -47,77 +47,82 @@ const EN = {
 		content1: {
 			heading: 'Professional turnkey development',
 			text: 'We carry out the project from the beginning to the end'
-		}
+		},
 		content2: {
 			heading: 'We are able to work with large customers',
 			text: 'Individual approach to every customer. We study the features of the market and the "subtleties" of the client\'s area'
-		}
+		},
 		content3: {
 			heading: 'We always complete projects on time',
 			text: 'Plan your time accurately! The named deadlines always correspond to the real ones'
-		}
+		},
 		content4: {
 			heading: 'We work for the result',
 			text: 'Our purpose is to make effective and successful product, focusing on quality and customers wishes'
 		}
 	},
 	team: {
-		heading: 'Our team'
+		heading: 'Our team',
 		content1: {
-			name: 'Никита',
+			name: 'Nikita',
 			position: 'Chief Executive Officer'
 		},
 		content2: {
-			name: 'Никита',
+			name: 'Nikita',
 			position: 'Chief Executive Officer'
 		},
 		content3: {
-			name: 'Никита',
+			name: 'Nikita',
 			position: 'Chief Executive Officer'
 		},
 		content4: {
-			name: 'Никита',
+			name: 'Nikita',
 			position: 'Chief Executive Officer'
 		},
 		content5: {
-			name: 'Никита',
+			name: 'Nikita',
 			position: 'Chief Executive Officer'
 		}
 	},
 	testimonials: {
 		content1: {
-			text: '“Я пользовался услугами компании Telerobots 2 раза и непременно обращусь снова. Качественная работа, чувствуется креативный подход и очень приятно общаться с мх разработчиками”',
-			name: 'Ростислав Ковалев',
-			position: 'Предприниматель'
+			text: '“Our company needed a Windows program for working time accounting and shift schedules. We were negotiating with various potential performers for a long time, as a result, we decided to work with this team, since here the managers saw the project most accurately and offered the most interesting solutions. Result: a finished product that is actively used in our company”',
+			name: 'Dmitriy',
+			position: 'Entrepreneur'
 		},
 		content2: {
-			text: '“Я пользовался услугами компании Telerobots 2 раза и непременно обращусь снова. Качественная работа, чувствуется креативный подход и очень приятно общаться с мх разработчиками”',
-			name: 'Ростислав Ковалев',
-			position: 'Предприниматель'
+			text: '“There was an idea to develop a chatbot for warehouse accounting and the interaction of workshop workers with a warehouse. Technical task was great, we approved it and started work. If something is impossible to implement, developers tell about it directly and immediately and offer an alternative. We completed and tested the project on time, I\'m pleased with the work of the team”',
+			name: 'Maxim',
+			position: 'Manager'
 		},
 		content3: {
-			text: '“Я пользовался услугами компании Telerobots 2 раза и непременно обращусь снова. Качественная работа, чувствуется креативный подход и очень приятно общаться с мх разработчиками”',
-			name: 'Ростислав Ковалев',
-			position: 'Предприниматель'
+			text: '“I was looking for developers to implement my idea of an online clothing store. I came across this company. The managers are quite pleasant in communication people, offered their vision of the project. I recommend to describe the technical task in detail so as not to overpay later. I am completely satisfied with the cooperation”',
+			name: 'Ekaterina',
+			position: 'Designer'
+		},
+		content4: {
+			text: '“This is not the first time I have been working with Dniprogram. In the process, there were moments that needed to be adjusted, but the developers always quickly made corrections. I liked the flexibility of work: we were constantly keeping feedback with the team, which helped to keep the project in the right direction”',
+			name: 'Alexander',
+			position: 'Entrepreneur'
 		}
 	},
 	contact: {
-		heading: 'Напишите Нам!',
-		text: 'Мы ответим Вам в ближайшее время уже с представлением о будущем продукте! Консультации <b>бесплатны</b>'
-		phone1: 'Телефон (Александр):',
-		phone2: 'Телефон (Никита):',
+		heading: 'Contact us!',
+		text: 'We will answer you soon with an idea of the future product! Consultations are <b>free</b>',
+		phone1: 'Phone (Alexander):',
+		phone2: 'Phone (Nikita):',
 		form: {
 			input: {
-				name: 'Имя',
-				phone: 'Телефон',
-				message: 'Ваше сообщение',
-				send: 'Отправить заявку'
+				name: 'Name',
+				phone: 'Phone',
+				message: 'Your message',
+				send: 'Send'
 			}
 		}
 	},
 	footer: {
-		text: 'Разработка веб-сайтов, веб-приложений, серверных приложений, чат-ботов и многого другого!',
-		address: 'ул. Академика Янгеля 20, Киев'
+		text: 'Development of websites, web applications, desktop applications, chatbots and so on!',
+		address: 'Akademika Yanhelya St, 20, Kyiv'
 	}
 }
 

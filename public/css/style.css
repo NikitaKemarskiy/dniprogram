@@ -1163,6 +1163,9 @@ header .container {
     margin-bottom: 52px;
     background-color: #f8f8f8;
 }
+#testimonials .client-name h5 {
+    margin-bottom: 5px;
+}
 .tt-content {
     text-align: center;
 }

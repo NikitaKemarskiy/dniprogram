@@ -7,7 +7,7 @@
 		<meta name="description" content="KeySoft - Software Landing Page">
 		<meta name="author" content="KeyDesign" />
 		<!-- SITE TITLE -->
-		<title>Dniprogram - <%= local.header %></title>
+		<title><%= local.title %></title>
 		<!-- STYLESHEETS -->
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -47,19 +47,29 @@
 				<div class="collapse navbar-collapse" id="main-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a class="page-scroll" href="#why">О нас</a>
+							<a class="page-scroll" href="#why">
+								<%= local.navbar.text1 %>		
+							</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#services">Почему мы?</a>
+							<a class="page-scroll" href="#services">
+								<%= local.navbar.text2 %>
+							</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#team">Команда</a>
+							<a class="page-scroll" href="#team">
+								<%= local.navbar.text3 %>
+							</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#testimonials">Отзывы</a>
+							<a class="page-scroll" href="#testimonials">
+								<%= local.navbar.text4 %>
+							</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#contact">Контакты</a>
+							<a class="page-scroll" href="#contact">
+								<%= local.navbar.text5 %>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -70,11 +80,11 @@
 		<header id="header">
 			<div class="container">
 				<div class="intro-text">
-					<h1 class="intro-lead-in">Dniprogram</h1>
-					<span class="intro-heading">Разработка веб-сайтов, веб-приложений, серверных приложений, чат-ботов и многого другого!</span>
+					<h1 class="intro-lead-in"><%= local.header.intro %></h1>
+					<span class="intro-heading"><%= local.header.heading %></span>
 					<div class="header-buttons">
-						<a href="#" class="primary-button">Заказать</a>
-						<a href="#why" class="secondary-button page-scroll hidden-xs">Подробнее</a>
+						<a href="#" class="primary-button"><%= local.header.contact %></a>
+						<a href="#why" class="secondary-button page-scroll hidden-xs"><%= local.header.more %></a>
 					</div>
 
 					<div class="header-dashboard"> 
@@ -94,7 +104,7 @@
 			<div class="container">
 				<div class="row header">
 					<div class="col-lg-12 text-center">
-						<h2 class="section-heading">Что мы предлагаем?</h2>
+						<h2 class="section-heading"><%= local.about.heading %></h2>
 						<span class="separator"></span>
 					</div>
 				</div>
@@ -102,36 +112,36 @@
 					<div class="col-4 col-xs-12 col-md-6 col-lg-4">
 						<div class="heading">
 							<img src="img/logos/worldwide.png" alt="">
-							<h3>Веб-сайты</h3>
-							<p>Различные виды сайтов: для продаж, визитки, корпоративные, интернет-магазины</p>
+							<h3><%= local.about.content1.heading %></h3>
+							<p><%= local.about.content1.text %></p>
 						</div>
 					</div>
 					<div class="col-4 col-xs-12 col-md-6 col-lg-4">
 						<div class="heading">
 							<img src="img/logos/layout.png" alt="">
-							<h3>Веб-приложения</h3>
-							<p>Интерактивные приложения, разработанные для сети интернет и предназначенные для прямого взаимодействия с пользователями</p>
+							<h3><%= local.about.content2.heading %></h3>
+							<p><%= local.about.content2.text %></p>
 						</div>
 					</div>
 					<div class="col-4 col-xs-12 col-md-6 col-lg-4">
 						<div class="heading">
 							<img src="img/logos/flow.png" alt="">
-							<h3>Серверные приложения, API</h3>
-							<p>Программы ля выполнения определенных действий, обработки данных на сервере. API - для взаимодействия с ними с помощью интерфейса</p>
+							<h3><%= local.about.content3.heading %></h3>
+							<p><%= local.about.content3.text %></p>
 						</div>
 					</div>
 					<div class="col-5 col-xs-12 col-md-5 col-lg-5 col-centered">
 						<div class="heading">
 							<img src="img/logos/robot.png" alt="">
-							<h3>Чат-боты</h3>
-							<p>Программы ля автоматизации рутинных задач с помощью месседжеров. Разрабатываем для Telegram, Facebook, Viber</p>
+							<h3><%= local.about.content4.heading %></h3>
+							<p><%= local.about.content4.text %></p>
 						</div>
 					</div>
 					<div class="col-5 col-xs-12 col-md-5 col-lg-5 col-centered">
 						<div class="heading">
 							<img src="img/logos/personal-computer.png" alt="">
-							<h3>Desktop-приложения</h3>
-							<p>Программы для рабочего стола. Разрабатываем для Windows, Linux, Mac OS</p>
+							<h3><%= local.about.content5.heading %></h3>
+							<p><%= local.about.content5.text %></p>
 						</div>
 					</div>
 				</div>
@@ -150,7 +160,7 @@
 							</div>
 							<div class="cool-facts-content">
 								<i class="ion-arrow-down-a"></i>
-								<p>ПРОЕКТА <br> ЗАВЕРШЕНО</p>
+								<p><%- local.facts.text1 %></p>
 							</div>
 						</div>
 					</div>
@@ -162,7 +172,7 @@
 							</div>
 							<div class="cool-facts-content">
 								<i class="ion-happy-outline"></i>
-								<p>ДОВОЛЬНЫХ <br> КЛИЕНТОВ</p>
+								<p><%- local.facts.text2 %></p>
 							</div>
 						</div>
 					</div>
@@ -174,7 +184,7 @@
 							</div>
 							<div class="cool-facts-content">
 								<i class="ion-person"></i>
-								<p>ШТАТ <br>КОМПАНИИ</p>
+								<p><%- local.facts.text3 %></p>
 							</div>
 						</div>
 					</div>
@@ -186,7 +196,7 @@
 							</div>
 							<div class="cool-facts-content">
 								<i class="ion-ios-star-outline"></i>
-								<p>ЛЕТ НА <br>РЫНКЕ</p>
+								<p><%- local.facts.text4 %></p>
 							</div>
 						</div>
 					</div>
@@ -200,30 +210,30 @@
 			<div class="container">
 				<div class="row header">
 					<div class="col-lg-12 text-center">
-						<h2 class="section-heading">Почему мы?</h2>
+						<h2 class="section-heading"><%= local.why.heading %></h2>
 						<span class="separator"></span>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-3">
 						<img src="img/logos/key.png" alt="">
-						<h4 class="service-heading">Профессиональная разработка под ключ</h4>
-						<p class="">Ведем проект от начала и до завершения</p>
+						<h4 class="service-heading"><%= local.why.content1.heading %></h4>
+						<p class=""><%= local.why.content1.text %></p>
 					</div>
 					<div class="col-md-3">
 						<img src="img/logos/people.png" alt="">
-						<h4 class="service-heading">Умеем работать с крупными клиентами</h4>
-						<p class="">Индивидуальный подход к каждому заказчику. Изучаем особенности рынка и «тонкости» сферы деятельности клиента</p>
+						<h4 class="service-heading"><%= local.why.content2.heading %></h4>
+						<p class=""><%= local.why.content2.text %></p>
 					</div>
 					<div class="col-md-3">
 						<img src="img/logos/hourglass.png" alt="">
-						<h4 class="service-heading">Сдаем проекты в срок</h4>
-						<p class="">Точно планируйте свое время! Названные сроки всегда соответствуют реальным</p>
+						<h4 class="service-heading"><%= local.why.content3.heading %></h4>
+						<p class=""><%= local.why.content3.text %></p>
 					</div>
 					<div class="col-md-3 last">
 						<img src="img/logos/presentation.png" alt="">
-						<h4 class="service-heading">Работаем на результат</h4>
-						<p class="">Делаем продукт действенным и успешным. Ориентируемся на качество и клиента</p>
+						<h4 class="service-heading"><%= local.why.content4.heading %></h4>
+						<p class=""><%= local.why.content4.text %></p>
 					</div>
 				</div>
 			</div>
@@ -236,7 +246,7 @@
 				<div class="row">
 					<div class="row header">
 						<div class="col-lg-12 text-center">
-							<h2 class="section-heading">Наша команда</h2>
+							<h2 class="section-heading"><%= local.team.heading %></h2>
 							<span class="separator"></span>
 						</div>
 					</div>
@@ -248,28 +258,28 @@
 						<div class="owl-carousel owl-carousel-team">
 							<div class="team-member">
 								<img src="img/team/team1.jpg" alt="">
-								<div class="name">Никита</div>
-								<div class="position">Chief Executive Officer</div>
+								<div class="name"><%= local.team.content1.name %></div>
+								<div class="position"><%= local.team.content1.position %></div>
 							</div>
 							<div class="team-member">
 								<img src="img/team/team1.jpg" alt="">
-								<div class="name">Никита</div>
-								<div class="position">Chief Executive Officer</div>
+								<div class="name"><%= local.team.content2.name %></div>
+								<div class="position"><%= local.team.content2.position %></div>
 							</div>
 							<div class="team-member">
 								<img src="img/team/team1.jpg" alt="">
-								<div class="name">Никита</div>
-								<div class="position">Chief Executive Officer</div>
+								<div class="name"><%= local.team.content3.name %></div>
+								<div class="position"><%= local.team.content3.position %></div>
 							</div>
 							<div class="team-member">
 								<img src="img/team/team1.jpg" alt="">
-								<div class="name">Никита</div>
-								<div class="position">Chief Executive Officer</div>
+								<div class="name"><%= local.team.content4.name %></div>
+								<div class="position"><%= local.team.content4.position %></div>
 							</div>
 							<div class="team-member">
 								<img src="img/team/team1.jpg" alt="">
-								<div class="name">Никита</div>
-								<div class="position">Chief Executive Officer</div>
+								<div class="name"><%= local.team.content5.name %></div>
+								<div class="position"><%= local.team.content5.position %></div>
 							</div>
 						</div>
 					</div>
@@ -293,9 +303,7 @@
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
 								</div>
 								<div class="client-description text-center">
-									<p>“Я пользовался услугами компании Telerobots 2 раза и непременно обращусь снова.
-										Качественная работа, чувствуется креативный подход и очень приятно общаться с мх
-										разработчиками”</p>
+									<p><%= local.testimonials.content1.text %></p>
 								</div>
 								<div class="star-icon text-center">
 									<i class="ion-ios-star"></i>
@@ -305,11 +313,11 @@
 									<i class="ion-ios-star"></i>
 								</div>
 								<div class="client-name text-center">
-									<h5>Ковалёв Ростислав</h5>
-									<p>Предприниматель</p>
+									<h5><%= local.testimonials.content1.name %></h5>
+									<p><%= local.testimonials.content1.position %></p>
 								</div>
 								<div class="client-img">
-									<img src="img/clients/client-1.jpg" alt="">
+									<img src="img/clients/client1.jpg" alt="">
 								</div>
 							</div>
 							<!-- Client Feedback Text  -->
@@ -318,9 +326,7 @@
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
 								</div>
 								<div class="client-description text-center">
-									<p>“Я пользовался услугами компании Telerobots 2 раза и непременно обращусь снова.
-										Качественная работа, чувствуется креативный подход и очень приятно общаться с мх
-										разработчиками”</p>
+									<p><%= local.testimonials.content2.text %></p>
 								</div>
 								<div class="star-icon text-center">
 									<i class="ion-ios-star"></i>
@@ -330,11 +336,11 @@
 									<i class="ion-ios-star"></i>
 								</div>
 								<div class="client-name text-center">
-									<h5>Ковалёв Ростислав</h5>
-									<p>Предприниматель</p>
+									<h5><%= local.testimonials.content2.name %></h5>
+									<p><%= local.testimonials.content2.position %></p>
 								</div>
 								<div class="client-img">
-									<img src="img/clients/client-1.jpg" alt="">
+									<img src="img/clients/client2.jpg" alt="">
 								</div>
 							</div>
 							<!-- Client Feedback Text  -->
@@ -343,9 +349,7 @@
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
 								</div>
 								<div class="client-description text-center">
-									<p>“Я пользовался услугами компании Telerobots 2 раза и непременно обращусь снова.
-										Качественная работа, чувствуется креативный подход и очень приятно общаться с мх
-										разработчиками”</p>
+									<p><%= local.testimonials.content3.text %></p>
 								</div>
 								<div class="star-icon text-center">
 									<i class="ion-ios-star"></i>
@@ -355,11 +359,34 @@
 									<i class="ion-ios-star"></i>
 								</div>
 								<div class="client-name text-center">
-									<h5>Ковалёв Ростислав</h5>
-									<p>Предприниматель</p>
+									<h5><%= local.testimonials.content3.name %></h5>
+									<p><%= local.testimonials.content3.position %></p>
 								</div>
 								<div class="client-img">
-									<img src="img/clients/client-1.jpg" alt="">
+									<img src="img/clients/client3.jpg" alt="">
+								</div>
+							</div>
+							<!-- Client Feedback Text  -->
+							<div class="client-feedback-text text-center">
+								<div class="client">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+								</div>
+								<div class="client-description text-center">
+									<p><%= local.testimonials.content4.text %></p>
+								</div>
+								<div class="star-icon text-center">
+									<i class="ion-ios-star"></i>
+									<i class="ion-ios-star"></i>
+									<i class="ion-ios-star"></i>
+									<i class="ion-ios-star"></i>
+									<i class="ion-ios-star"></i>
+								</div>
+								<div class="client-name text-center">
+									<h5><%= local.testimonials.content4.name %></h5>
+									<p><%= local.testimonials.content4.position %></p>
+								</div>
+								<div class="client-img">
+									<img src="img/clients/client4.jpg" alt="">
 								</div>
 							</div>
 						</div>
@@ -375,19 +402,18 @@
 					<div class="col-md-6">
 						<!-- Heading Text  -->
 						<div class="section-heading">
-							<h2>Напишите Нам!</h2>
+							<h2><%= local.contact.heading %></h2>
 							<div class="line-shape"></div>
 						</div>
 						<div class="footer-text">
-							<p>Мы ответим Вам в ближайшее время уже с представлением о будущем продукте! Консультации
-								<b>бесплатны</b></p>
+							<p><%- local.contact.text %></p>
 						</div>
 						<div class="address-text">
 							<p><span><i class="fa fa-paper-plane" aria-hidden="true"></i>Telegram:</span><a href="https://t.me/kemarskiy"> @kemarskiy</a></p>
 						</div>
 						<div class="phone-text">
-							<p><span><i class="fa fa-phone" aria-hidden="true"></i>Телефон (Александр):</span><a href="tel:+380963705888"> +380-96-370-58-88</a></p>
-							<p><span><i class="fa fa-phone" aria-hidden="true"></i>Телефон (Никита):</span><a href="tel:+380977351159"> +380-97-735-11-59</a></p>
+							<p><span><i class="fa fa-phone" aria-hidden="true"></i><%= local.contact.phone1 %></span><a href="tel:+380963705888"> +380-96-370-58-88</a></p>
+							<p><span><i class="fa fa-phone" aria-hidden="true"></i><%= local.contact.phone2 %></span><a href="tel:+380977351159"> +380-97-735-11-59</a></p>
 						</div>
 						<div class="email-text">
 							<p><span><i class="fa fa-envelope"></i>Email:</span><a href="mailto:nikitakemarskiy@gmail.com"> nikitakemarskiy@gmail.com</a></p>
@@ -398,7 +424,7 @@
 						<form action="/mail" method="post" name="sentMessage" id="contactForm">
 							<div class="row">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Имя" id="name" name="name" required>
+									<input type="text" class="form-control" placeholder="<%= local.contact.form.input.name %>" id="name" name="name" required>
 									<p class="help-block text-danger"></p>
 								</div>
 								<div class="form-group pull-right">
@@ -406,17 +432,17 @@
 									<p class="help-block text-danger"></p>
 								</div>
 								<div class="form-group full-size">
-									<input type="tel" class="form-control" placeholder="Телефон" id="phone" name="phone">
+									<input type="tel" class="form-control" placeholder="<%= local.contact.form.input.phone %>" id="phone" name="phone">
 									<p class="help-block text-danger"></p>
 								</div>
 								<div class="form-group form-textarea">
-									<textarea class="form-control" placeholder="Ваше сообщение" id="message" name="message"></textarea>
+									<textarea class="form-control" placeholder="<%= local.contact.form.input.message %>" id="message" name="message"></textarea>
 									<p class="help-block text-danger"></p>
 								</div>
 								<div class="clearfix"></div>
 								<div class="text-center">
 									<div id="success"></div>
-									<button type="submit" class="btn btn-xl">Send Message</button>
+									<button type="submit" class="btn btn-xl"><%= local.contact.form.input.send %></button>
 								</div>
 							</div>
 						</form>
@@ -434,24 +460,34 @@
 					<div class="upper-footer">
 						<div class="pull-left">
 							<a class="logo page-scroll" href="#page-top"><img src="img/logos/dniprogram1.png" class="img-responsive" alt=""></a>
-							<p>Разработка веб-сайтов, веб-приложений, серверных приложений, чат-ботов и многого другого!</p>
+							<p><%= local.footer.text %></p>
 						</div>
 						<div class="pull-right">
 							<ul class="footer-nav">
 								<li class="">
-									<a class="page-scroll" href="#why">О нас</a>
+									<a class="page-scroll" href="#why">
+										<%= local.navbar.text1 %>
+									</a>
 								</li>
 								<li class="">
-									<a class="page-scroll" href="#services">Почему мы?</a>
+									<a class="page-scroll" href="#services">
+										<%= local.navbar.text2 %>
+									</a>
 								</li>
 								<li class="">
-									<a class="page-scroll" href="#team">Команда</a>
+									<a class="page-scroll" href="#team">
+										<%= local.navbar.text3 %>
+									</a>
 								</li>
 								<li class="">
-									<a class="page-scroll" href="#testimonials">Отзывы</a>
+									<a class="page-scroll" href="#testimonials">
+										<%= local.navbar.text4 %>
+									</a>
 								</li>
 								<li class="">
-									<a class="page-scroll" href="#contacts">Контакты</a>
+									<a class="page-scroll" href="#contacts">
+										<%= local.navbar.text5 %>
+									</a>
 								</li>
 							</ul>
 							<ul class="footer-secondary-nav">
@@ -462,7 +498,7 @@
 									<a class="page-scroll" href="mailto:nikitakemarskiy@gmail.com"><span class="fa fa-envelope"></span>nikitakemarskiy@gmail.com</a>
 								</li>
 								<li class="">
-									<a class="page-scroll" href="#"><span class="fa fa-map-marker"></span>ул. Академика Янгеля 20, Киев</a>
+									<a class="page-scroll" href="https://www.google.com/maps/@50.4496376,30.4504477,17z"><span class="fa fa-map-marker"></span><%= local.footer.address %></a>
 								</li>
 							</ul>
 						</div>

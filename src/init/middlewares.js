@@ -33,7 +33,8 @@ async function init(app) {
 	koaEjs(app, {
 		root: path.join(__dirname, '..', '..', 'public', 'views'),
 		layout: false,
-		viewExt: 'ejs'
+		viewExt: 'ejs',
+		cache: false
 	});
 
 	console.log('>>> Middlewares were initialized!');
