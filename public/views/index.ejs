@@ -16,6 +16,7 @@
 		<link href="css/ionicons.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/rmodal.css">
 		<!-- DEMO COLORS  -->
 		<link href="#" class="css-color" rel="stylesheet">
 
@@ -83,7 +84,7 @@
 					<h1 class="intro-lead-in"><%= local.header.intro %></h1>
 					<span class="intro-heading"><%= local.header.heading %></span>
 					<div class="header-buttons">
-						<a href="#" class="primary-button"><%= local.header.contact %></a>
+						<a href="#" class="primary-button" onclick="openForm()"><%= local.header.contact %></a>
 						<a href="#why" class="secondary-button page-scroll hidden-xs"><%= local.header.more %></a>
 					</div>
 
@@ -416,7 +417,7 @@
 							<p><span><i class="fa fa-phone" aria-hidden="true"></i><%= local.contact.phone2 %></span><a href="tel:+380977351159"> +380-97-735-11-59</a></p>
 						</div>
 						<div class="email-text">
-							<p><span><i class="fa fa-envelope"></i>Email:</span><a href="mailto:nikitakemarskiy@gmail.com"> nikitakemarskiy@gmail.com</a></p>
+							<p><span><i class="fa fa-envelope"></i>Email:</span><a href="mailto:dniprogramua@gmail.com"> dniprogramua@gmail.com</a></p>
 						</div>
 					</div>
 					<div class="col-md-6">
@@ -495,7 +496,7 @@
 									<a href="tel:+380977351159"><span class="fa fa-phone"></span>+380-97-735-11-59</a>
 								</li>
 								<li class="">
-									<a class="page-scroll" href="mailto:nikitakemarskiy@gmail.com"><span class="fa fa-envelope"></span>nikitakemarskiy@gmail.com</a>
+									<a class="page-scroll" href="mailto:dniprogramua@gmail.com"><span class="fa fa-envelope"></span>dniprogramua@gmail.com</a>
 								</li>
 								<li class="">
 									<a class="page-scroll" href="https://www.google.com/maps/@50.4496376,30.4504477,17z"><span class="fa fa-map-marker"></span><%= local.footer.address %></a>
@@ -505,7 +506,7 @@
 					</div>
 					<!-- END UPPER FOOTER -->
 					<!-- LOWER FOOTER -->
-					<div class="lower-footer">
+					<!-- <div class="lower-footer">
 						<div class="pull-left">
 							<span>© 2019 Dniprogram. All rights reserved </span>
 						</div>
@@ -514,12 +515,66 @@
 							<a href="#"><span class="fa fa-paper-plane"></span></a>
 							<a href="#"><span class="fa fa-skype"></span></a>
 						</div>
-					</div>
+					</div> -->
 					<!-- END LOWER FOOTER -->
 				</div>
 			</div>
 		</footer>
 		<!-- END FOOTER -->
+		<!-- POPUP CONTACT FORM -->
+		<div id="popup-wrapper" class="popup-wrapper" onclick="closeForm()">
+			<div class="popup-container" onclick="stopPropagation(event)">
+				<div class="popup-header">
+					<h5><%= local.popup.heading %></h5>
+					<button class="close" onclick="closeForm()">x</button>
+				</div>
+				<form id="popup-contact"  class="popup-contact" action="/mail" method="post">
+					<fieldset>
+						<label for="name"><%= local.popup.form.input.name %></label>
+						<input placeholder="<%= local.popup.form.input.name %>" name="name" type="text" tabindex="1" required autofocus>
+					</fieldset>
+					<fieldset>
+						<label for="email">Email</label>
+						<input placeholder="Email" name="email" type="email" tabindex="2">
+					</fieldset>
+					<fieldset>
+						<label for="phone"><%= local.popup.form.input.phone %></label>
+						<input placeholder="<%= local.popup.form.input.phone %>" name="phone" type="text" tabindex="2">
+					</fieldset>
+					<fieldset>
+						<button name="submit" type="submit" id="contact-submit" class="contact-submit" data-submit="...Sending"><%= local.popup.form.input.send %></button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<!-- END POPUP CONTACT FORM -->
+		<!-- POPUP CALLBACK FORM -->
+		<div id="callback-popup-wrapper" class="popup-wrapper" onclick="closeCallForm()">
+			<div class="popup-container" onclick="stopPropagation(event)">
+				<div class="popup-header">
+					<h5>Закажи обратный звонок!</h5>
+					<button class="close" onclick="closeCallForm()">x</button>
+				</div>
+				<form id="popup-request-call" class="popup-contact" action="/mail" method="post">
+					<div class="popup-free-operators">
+						<p class="free"><b>2<i class="fa fa-phone"></i></b> оператора на линии</p>
+						<p class="busy"><b>3<i class="fa fa-times"></i></b> оператора заняты</p>
+					</div>
+					<fieldset>
+						<input placeholder="<%= local.popup.form.input.phone %>" name="phone" type="text" tabindex="2" required>
+						<button name="submit" type="submit" class="contact-submit" data-submit="...Sending"><i class="fa fa-check"></i></button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<!-- END POPUP CALLBACK FORM -->
+		<!-- CALLBACK WIDGET -->
+		<div id="callback-wrapper" onclick="openCallForm()">
+			<div class="pulse" id="btn">
+				<div class="phone"><i class="fa fa-phone"></i></div>
+			</div>
+		</div>
+		<!-- END CALLBACK WIDGET -->
 		<!-- SCRIPTS -->
 		<!-- jQuery & Bootstrap -->
 		<script src="js/jquery.js"></script>
@@ -531,6 +586,8 @@
 		<script src="js/classie.js"></script>
 		<!-- piechart  -->
 		<script src="js/jquery.easytabs.min.js"></script>
+		<!-- jquery mask plugin -->
+		<script src="js/jquery.mask.js"></script>
 		<!-- tabs  -->
 		<script src="js/piechart.js"></script>
 		<!-- animated header -->
@@ -538,10 +595,13 @@
 		<!-- sliders -->
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/owl.animate.js"></script>
+		<!-- popup -->
+		<script src="js/rmodal.js"></script>
+		<script src="js/popup.js"></script>
+		<!-- callback widget -->
+		<script src="js/callwidget.js"></script>
 		<!-- contact form -->
 		<script src="js/jqBootstrapValidation.js"></script>
-		<!-- google map -->
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<!-- custom script -->
 		<script src="js/scripts.js"></script>
 		<!-- numscroller -->

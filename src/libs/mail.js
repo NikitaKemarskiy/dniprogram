@@ -4,6 +4,8 @@ const nodemailer = require('nodemailer');
 // Config
 const config = require('../../config/config');
 
+console.dir(config.mailing);
+
 // Nodemailer transporter
 const transporter = nodemailer.createTransport({
 	host: 'smtp.gmail.com',
@@ -26,7 +28,7 @@ function mail(from) {
 
 	const options = {
 		from: 'Сайт "Dniprogram"',
-		to: 'nikitakemarskiy@gmail.com',
+		to: config.mailing.user,
 		subject: 'Новое сообщение!',
 		html
 	};

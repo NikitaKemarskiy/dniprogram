@@ -123,6 +123,17 @@ const EN = {
 	footer: {
 		text: 'Development of websites, web applications, desktop applications, chatbots and so on!',
 		address: 'Akademika Yanhelya St, 20, Kyiv'
+	},
+	popup: {
+		heading: 'Contact us',
+		form: {
+			input: {
+				name: 'Name',
+				phone: 'Phone',
+				send: 'Send',
+				requestCall: 'Request call'
+			}
+		}
 	}
 }
 
