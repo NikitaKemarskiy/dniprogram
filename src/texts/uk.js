@@ -130,8 +130,17 @@ const UK = {
 			input: {
 				name: 'Ім\'я',
 				phone: 'Телефон',
-				send: 'Надіслати заявку',
-				requestCall: 'Запросити дзвінок'
+				send: 'Надіслати заявку'
+			}
+		},
+		operators: {
+			free: {
+				singular: 'оператор на линии',
+				plural: 'оператора на линии'
+			},
+			busy: {
+				singular: 'оператор занят',
+				plural: 'оператора заняты'
 			}
 		}
 	}

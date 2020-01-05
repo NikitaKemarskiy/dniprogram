@@ -130,8 +130,17 @@ const RU = {
 			input: {
 				name: 'Имя',
 				phone: 'Телефон',
-				send: 'Отправить заявку',
-				requestCall: 'Запросить звонок'
+				send: 'Отправить заявку'
+			}
+		},
+		operators: {
+			free: {
+				singular: 'оператор на линии',
+				plural: 'оператора на линии'
+			},
+			busy: {
+				singular: 'оператор занят',
+				plural: 'оператора заняты'
 			}
 		}
 	}

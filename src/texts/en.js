@@ -131,7 +131,16 @@ const EN = {
 				name: 'Name',
 				phone: 'Phone',
 				send: 'Send',
-				requestCall: 'Request call'
+			}
+		},
+		operators: {
+			free: {
+				singular: 'operator on the line',
+				plural: 'operators on the line'
+			},
+			busy: {
+				singular: 'operator is busy',
+				plural: 'operators are busy'
 			}
 		}
 	}

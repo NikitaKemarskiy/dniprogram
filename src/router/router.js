@@ -41,7 +41,11 @@ router.get('/', async (ctx) => {
 	const local = contentLanguage === 'en' ? EN :
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
-	await ctx.render('index', { local });
+	const operators = {
+		free: 1,
+		busy: 1
+	};
+	await ctx.render('index', { local, operators });
 });
 
 // Send mail
