@@ -20,7 +20,14 @@ const config = {
 		mailing: {
 			user: MAIL_USER,
 			pass: MAIL_PASS
-		}	
+		},
+		operators: {
+			time: {
+				from: 8,
+				till: 20
+			},
+			amount: 5
+		}
 	},
 	dev: { // Development config
 		ssl: {
@@ -31,6 +38,13 @@ const config = {
 		mailing: {
 			user: MAIL_USER,
 			pass: MAIL_PASS
+		},
+		operators: {
+			time: {
+				from: 8,
+				till: 20
+			},
+			amount: 5
 		}
 	}
 }

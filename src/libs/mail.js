@@ -4,8 +4,6 @@ const nodemailer = require('nodemailer');
 // Config
 const config = require('../../config/config');
 
-console.dir(config.mailing);
-
 // Nodemailer transporter
 const transporter = nodemailer.createTransport({
 	host: 'smtp.gmail.com',

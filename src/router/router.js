@@ -9,6 +9,9 @@ const EN = require('../texts/en');
 const RU = require('../texts/ru');
 const UK = require('../texts/uk');
 
+// Operators
+const { getOperators } = require('../libs/operators');
+
 // Mailer
 const mail = require('../libs/mail');
 
@@ -41,11 +44,21 @@ router.get('/', async (ctx) => {
 	const local = contentLanguage === 'en' ? EN :
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
-	const operators = {
-		free: 1,
-		busy: 1
-	};
+	const operators = getOperators();
+	console.dir(operators);
 	await ctx.render('index', { local, operators });
+});
+
+router.get('/en', async (ctx) => {
+
+});
+
+router.get('/ru', async (ctx) => {
+
+});
+
+router.get('/uk', async (ctx) => {
+
 });
 
 // Send mail

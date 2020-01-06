@@ -557,16 +557,26 @@
 				</div>
 				<form id="popup-request-call" class="popup-contact" action="/mail" method="post">
 					<div class="popup-free-operators">
-						<p class="free">
-							<b><%= operators.free %><i class="fa fa-phone"></i></b><% if (operators.free > 1) { %>
-							<%= local.popup.operators.free.plural %><% } else{ %>  
-							<%= local.popup.operators.free.singular %><% } %>
-						</p>
-						<p class="busy">
-							<b><%= operators.busy %><i class="fa fa-times"></i></b><% if (operators.busy > 1) { %>
-							<%= local.popup.operators.busy.plural %><% } else{ %>  
-							<%= local.popup.operators.busy.singular %><% } %>
-						</p>
+						<% if (operators.recallMessage) { %>
+							<p><%= operators.recallMessage %></p>
+						<% } else { %>
+							<p class="free">
+								<b><%= operators.free %><i class="fa fa-phone"></i></b>
+								<% if (operators.free > 1) { %>
+									<%= local.popup.operators.free.plural %>
+								<% } else { %>  
+									<%= local.popup.operators.free.singular %>
+								<% } %>
+							</p>
+							<p class="busy">
+								<b><%= operators.busy %><i class="fa fa-times"></i></b>
+								<% if (operators.busy > 1) { %>
+									<%= local.popup.operators.busy.plural %>
+								<% } else { %>  
+									<%= local.popup.operators.busy.singular %>
+								<% } %>
+							</p>
+						<% } %>
 					</div>
 					<fieldset>
 						<input placeholder="<%= local.popup.form.input.phone %>" name="phone" type="text" tabindex="2" required>
