@@ -1,8 +1,9 @@
 // Modules
 const path = require('path');
 const bodyParser = require('koa-bodyparser');
-const koaStatic = require('koa-static');
-const koaEjs = require('koa-ejs');
+const static = require('koa-static');
+const compress = require('koa-compress')
+const ejs = require('koa-ejs');
 
 // Router
 const router = require(path.join(__dirname, '..', 'router', 'router'));
@@ -12,8 +13,8 @@ const STATIC_PATH = path.join(__dirname, '..', '..', 'public');
 
 // Middlewares init function
 async function init(app) {
-	// Middlewares
-	app.use(async (ctx, next) => { // Redirect to HTTPS from HTTP
+	// Redirect to HTTPS from HTTP
+	app.use(async (ctx, next) => {
 		if (ctx.secure) {
 			await next();
 		} else {
@@ -21,8 +22,18 @@ async function init(app) {
 			ctx.redirect(httpsPath);
 		}
 	});
-	app.use(bodyParser()); // Body parser
-	app.use(koaStatic(STATIC_PATH, { // Static files
+
+	// Body parser
+	app.use(bodyParser());
+
+	// Compression
+	app.use(compress({
+		threshold: 2048,
+		flush: require('zlib').Z_SYNC_FLUSH
+	}));
+
+	// Static files
+	app.use(static(STATIC_PATH, {
 		index: '#' // # as a index file name to disable default static file
 	}));
 
@@ -30,7 +41,7 @@ async function init(app) {
 	app.use(router.routes());
 
 	// Template engine
-	koaEjs(app, {
+	ejs(app, {
 		root: path.join(__dirname, '..', '..', 'public', 'views'),
 		layout: false,
 		viewExt: 'ejs',

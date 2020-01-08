@@ -45,7 +45,6 @@ router.get('/', async (ctx) => {
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
 	const operators = getOperators();
-	console.dir(operators);
 	await ctx.render('index', { local, operators });
 });
 
