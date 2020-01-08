@@ -1,4 +1,5 @@
 const RU = {
+	lang: 'ru',
 	title: 'Dniprogram - Разработка программного обеспечения',
 	navbar: {
 		text1: 'О нас',

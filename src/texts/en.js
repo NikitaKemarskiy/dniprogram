@@ -1,4 +1,5 @@
 const EN = {
+	lang: 'en',
 	title: 'Dniprogram - Software Development Company',
 	navbar: {
 		text1: 'About us',

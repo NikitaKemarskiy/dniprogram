@@ -1,4 +1,5 @@
 const UK = {
+	lang: 'uk',
 	title: 'Dniprogram - Розробка програмного забезпечення',
 	navbar: {
 		text1: 'Про нас',
