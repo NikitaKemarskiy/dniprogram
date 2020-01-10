@@ -110,14 +110,6 @@ textarea:focus, input:focus {
     font-display: swap;
     src: url(../fonts/WorkSans-Light.ttf);
 }
-@font-face {
-    font-family: 'Nucleo Outline';
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    src: url('../fonts/nucleo-outline.eot');
-    src: url('../fonts/nucleo-outline.eot') format('embedded-opentype'), url('../fonts/nucleo-outline.ttf') format('truetype');
-}
 /* 2.2 HEADINGS */
 
 h1,
