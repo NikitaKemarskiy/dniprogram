@@ -49,15 +49,33 @@ router.get('/', async (ctx) => {
 });
 
 router.get('/en', async (ctx) => {
-
+	// Set header
+	const contentLanguage = 'en';
+	ctx.set('Content-Language', contentLanguage);
+	// Render page
+	const local = EN;
+	const operators = getOperators();
+	await ctx.render('index', { local, operators });
 });
 
 router.get('/ru', async (ctx) => {
-
+	// Set header
+	const contentLanguage = 'ru';
+	ctx.set('Content-Language', contentLanguage);
+	// Render page
+	const local = RU;
+	const operators = getOperators();
+	await ctx.render('index', { local, operators });
 });
 
 router.get('/uk', async (ctx) => {
-
+	// Set header
+	const contentLanguage = 'uk';
+	ctx.set('Content-Language', contentLanguage);
+	// Render page
+	const local = UK;
+	const operators = getOperators();
+	await ctx.render('index', { local, operators });
 });
 
 // Send mail
