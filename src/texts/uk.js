@@ -65,24 +65,40 @@ const UK = {
 	team: {
 		heading: 'Наша команда',
 		content1: {
-			name: 'Нікіта',
-			position: 'Chief Executive Officer'
+			name: 'Олександр',
+			position: 'Директор'
 		},
 		content2: {
-			name: 'Нікіта',
-			position: 'Chief Executive Officer'
+			name: 'Лілія',
+			position: 'Проектний менеджер (Інтернет-магазини)'
 		},
 		content3: {
-			name: 'Нікіта',
-			position: 'Chief Executive Officer'
+			name: 'Ілля',
+			position: 'Проектний менеджер (Веб-сайти)'
 		},
 		content4: {
-			name: 'Нікіта',
-			position: 'Chief Executive Officer'
+			name: 'Вікторія та Олена',
+			position: 'Веб-дизайнери'
 		},
 		content5: {
-			name: 'Нікіта',
-			position: 'Chief Executive Officer'
+			name: 'Кирило',
+			position: 'Спеціаліст з кібербезпеки'
+		},
+		content6: {
+			name: 'Павло',
+			position: 'Backend-розробник'
+		},
+		content7: {
+			name: 'Микита',
+			position: 'Backend-розробник'
+		},
+		content8: {
+			name: 'Вілен',
+			position: 'Frontend-розробник'
+		},
+		content9: {
+			name: 'Поліна',
+			position: 'Менеджер з продажу'
 		}
 	},
 	testimonials: {

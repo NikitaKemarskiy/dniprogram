@@ -65,24 +65,40 @@ const EN = {
 	team: {
 		heading: 'Our team',
 		content1: {
-			name: 'Nikita',
+			name: 'Alexander',
 			position: 'Chief Executive Officer'
 		},
 		content2: {
-			name: 'Nikita',
-			position: 'Chief Executive Officer'
+			name: 'Lilya',
+			position: 'Project Manager (Websites)'
 		},
 		content3: {
-			name: 'Nikita',
-			position: 'Chief Executive Officer'
+			name: 'Ilya',
+			position: 'Project Manager (Online stores)'
 		},
 		content4: {
-			name: 'Nikita',
-			position: 'Chief Executive Officer'
+			name: 'Victoria and Elena',
+			position: 'Web Designers'
 		},
 		content5: {
+			name: 'Kirill',
+			position: 'Cybersecurity Specialist'
+		},
+		content6: {
+			name: 'Pavel',
+			position: 'Backend Developer'
+		},
+		content7: {
 			name: 'Nikita',
-			position: 'Chief Executive Officer'
+			position: 'Backend Developer'
+		},
+		content8: {
+			name: 'Vilen',
+			position: 'Frontend Developer'
+		},
+		content9: {
+			name: 'Polina',
+			position: 'Sales Manager'
 		}
 	},
 	testimonials: {

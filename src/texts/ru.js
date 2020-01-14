@@ -65,24 +65,40 @@ const RU = {
 	team: {
 		heading: 'Наша команда',
 		content1: {
-			name: 'Никита',
-			position: 'Chief Executive Officer'
+			name: 'Александр',
+			position: 'Директор'
 		},
 		content2: {
-			name: 'Никита',
-			position: 'Chief Executive Officer'
+			name: 'Лилия',
+			position: 'Проектный менеджер (Интернет-магазины)'
 		},
 		content3: {
-			name: 'Никита',
-			position: 'Chief Executive Officer'
+			name: 'Илья',
+			position: 'Проектный менеджер (Веб-сайты)'
 		},
 		content4: {
-			name: 'Никита',
-			position: 'Chief Executive Officer'
+			name: 'Виктория и Елена',
+			position: 'Веб-дизайнеры'
 		},
 		content5: {
+			name: 'Кирилл',
+			position: 'Специалист по кибербезопасности'
+		},
+		content6: {
+			name: 'Павел',
+			position: 'Backend-разработчик'
+		},
+		content7: {
 			name: 'Никита',
-			position: 'Chief Executive Officer'
+			position: 'Backend-разработчик'
+		},
+		content8: {
+			name: 'Вилен',
+			position: 'Frontend-разработчик'
+		},
+		content9: {
+			name: 'Полина',
+			position: 'Менеджер по продажам'
 		}
 	},
 	testimonials: {
