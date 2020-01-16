@@ -38,13 +38,14 @@ router.get('/', async (ctx) => {
 	}
 	// If Content-Language is undefined -> assign to "ru"
 	contentLanguage = contentLanguage || 'ru';
+	
 	// Set header
 	ctx.set('Content-Language', contentLanguage);
 	// Render page
 	const local = contentLanguage === 'en' ? EN :
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
-	const operators = getOperators();
+	const operators = getOperators(contentLanguage);
 	await ctx.render('index', { local, operators });
 });
 
@@ -54,7 +55,7 @@ router.get('/en', async (ctx) => {
 	ctx.set('Content-Language', contentLanguage);
 	// Render page
 	const local = EN;
-	const operators = getOperators();
+	const operators = getOperators(contentLanguage);
 	await ctx.render('index', { local, operators });
 });
 
@@ -64,7 +65,7 @@ router.get('/ru', async (ctx) => {
 	ctx.set('Content-Language', contentLanguage);
 	// Render page
 	const local = RU;
-	const operators = getOperators();
+	const operators = getOperators(contentLanguage);
 	await ctx.render('index', { local, operators });
 });
 
@@ -74,7 +75,7 @@ router.get('/uk', async (ctx) => {
 	ctx.set('Content-Language', contentLanguage);
 	// Render page
 	const local = UK;
-	const operators = getOperators();
+	const operators = getOperators(contentLanguage);
 	await ctx.render('index', { local, operators });
 });
 

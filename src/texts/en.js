@@ -18,7 +18,7 @@ const EN = {
 		heading: 'What do we offer?',
 		content1: {
 			heading: 'Websites',
-			text: 'Various types of websites: for sales, business cards, corporate, online stores'
+			text: 'Various types of websites: for sales, landing, business cards, corporate, online stores'
 		},
 		content2: {
 			heading: 'Web applications',
