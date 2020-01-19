@@ -14,7 +14,7 @@ const EN = {
 		contact: 'Contact us',
 		more: 'Read more'
 	},
-	about: {
+	home: {
 		heading: 'What do we offer?',
 		content1: {
 			heading: 'Websites',
@@ -36,6 +36,37 @@ const EN = {
 			heading: 'Desktop applications',
 			text: 'Desktop software for Windows, Linux, MacOS'
 		}
+	},
+	website: {
+		heading: 'What websites do we offer?',
+		content1: {
+			heading: 'Landing',
+			text: 'Standalone web page, created specifically for a marketing or advertising campaign. Landing pages are designed with a single focus or goal'
+		},
+		content2: {
+			heading: 'Business card',
+			text: 'Website that contains basic information about the organization, individual, company, goods or services, price lists, contact details'
+		},
+		content3: {
+			heading: 'Corporate',
+			text: 'Company website, its official representation on the Internet. The corporate website contains the information about the company itself, about the scope of its activities, the products and services offered'
+		},
+		content4: {
+			heading: 'Online store',
+			text: 'Website selling products over the Internet. They allow users online, in their browser to create a purchase order, choose a method of payment and delivery of the order, pay for the order'
+		}
+	},
+	businessCard: {
+
+	},
+	corporate: {
+
+	},
+	landing: {
+
+	},
+	onlineStore: {
+
 	},
 	facts: {
 		text1: 'PROJECTS <br> COMPLETED',

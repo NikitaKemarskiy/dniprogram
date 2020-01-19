@@ -42,7 +42,7 @@ async function init(app) {
 
 	// Template engine
 	ejs(app, {
-		root: path.join(__dirname, '..', '..', 'public', 'views'),
+		root: path.join(STATIC_PATH, 'views'),
 		layout: false,
 		viewExt: 'ejs',
 		cache: false

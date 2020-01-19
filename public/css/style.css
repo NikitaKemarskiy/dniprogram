@@ -115,10 +115,10 @@ textarea:focus, input:focus {
 h1,
 h2,
 h3 {
-    font-family: /*"WorkSans",*/ Helvetica, Arial, sans-serif;
+    font-family: "WorkSans", Helvetica, Arial, sans-serif;
 }
 body {
-    font-family: /*"PTSans",*/ Helvetica, Arial, sans-serif;
+    font-family: "PTSans", Helvetica, Arial, sans-serif;
 }
 section h2.section-heading {
     margin-top: 0;
@@ -1962,6 +1962,14 @@ img.header-logo {
     text-align: center;
 }
 
+#why .content a {
+    line-height: 32px;
+}
+
+#why .content a:hover {
+    text-decoration: underline;
+}
+
 #why .content div {
     text-align: left;
     margin-bottom: 25px;
@@ -1992,6 +2000,32 @@ img.header-logo {
 #why .content ul li {
     font-size: 16px;
     line-height: 24px;
+}
+
+#leave-application img {
+    width: 100%;
+}
+
+#leave-application h3 {
+    font-size: 44px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+#leave-application p {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 1rem;
+}
+
+#leave-application ul li {
+    color: #666;
+    font-size: 22px;
+}
+
+#leave-application b {
+    color: #1080f2;
 }
 
 #services img {

@@ -406,14 +406,20 @@
     .footer-secondary-nav li {
         margin-bottom: 20px;
     }
-    @media (min-width: 780px) and (max-width: 960px) {
-        .team-member {
-            margin: 0;
-            width: 100%;
-        }
-        .team-wrapper {
-            margin: 0;
-            width: 33.33333%;
-            float: left;
-        }
+}
+@media (min-width: 780px) and (max-width: 960px) {
+    .team-member {
+        margin: 0;
+        width: 100%;
     }
+    .team-wrapper {
+        margin: 0;
+        width: 33.33333%;
+        float: left;
+    }
+}
+@media (max-width: 1199px) {
+    #leave-application img {
+        margin-bottom: 50px;
+    }   
+}
