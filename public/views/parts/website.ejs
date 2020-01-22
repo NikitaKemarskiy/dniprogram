@@ -14,7 +14,9 @@
 					<h3><%= local.website.content1.heading %></h3>
 					<p>
 						<%= local.website.content1.text %><br/>
-						<a href="/landing">Подробнее <i class="fa fa-arrow-right"></i></a>		
+						<a href="/landing<% if (typeof contentLanguage != 'undefined') { %>/<%= contentLanguage %><% } %>">
+							Подробнее <i class="fa fa-arrow-right"></i>
+						</a>
 					</p>
 				</div>
 			</div>
@@ -24,27 +26,35 @@
 					<h3><%= local.website.content2.heading %></h3>
 					<p>
 						<%= local.website.content2.text %><br/>
-						<a href="/businessCard">Подробнее <i class="fa fa-arrow-right"></i></a>		
+						<a href="/businessCard<% if (typeof contentLanguage != 'undefined') { %>/<%= contentLanguage %><% } %>">
+							Подробнее <i class="fa fa-arrow-right"></i>
+						</a>		
 					</p>
 				</div>
 			</div>
+		</div>
+		<div class="row content">
 			<div class="col-6 col-xs-12 col-md-6 col-lg-6">
 				<div class="heading">
 					<img src="/img/logos/corporate.png" alt="">
 					<h3><%= local.website.content3.heading %></h3>
 					<p>
 						<%= local.website.content3.text %><br/>
-						<a href="/corporate">Подробнее <i class="fa fa-arrow-right"></i></a>		
+						<a href="/corporate<% if (typeof contentLanguage != 'undefined') { %>/<%= contentLanguage %><% } %>">
+							Подробнее <i class="fa fa-arrow-right"></i>
+						</a>		
 					</p>
 				</div>
 			</div>
-			<div class="col-6 col-xs-12 col-md-6 col-lg-6 col-centered">
+			<div class="col-6 col-xs-12 col-md-6 col-lg-6">
 				<div class="heading">
 					<img src="/img/logos/onlineStore.png" alt="">
 					<h3><%= local.website.content4.heading %></h3>
 					<p>
 						<%= local.website.content4.text %><br/>
-						<a href="/onlineStore">Подробнее <i class="fa fa-arrow-right"></i></a>		
+						<a href="/onlineStore<% if (typeof contentLanguage != 'undefined') { %>/<%= contentLanguage %><% } %>">
+							Подробнее <i class="fa fa-arrow-right"></i>
+						</a>		
 					</p>
 				</div>
 			</div>
@@ -56,19 +66,19 @@
 <section id="leave-application">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-sm-12">
-				<img src="/img/main/laptop.png" alt="">
+			<div class="col-md-6 col-sm-12 margin-bottom-50">
+				<img src="/img/main/website.png" alt="">
 			</div>
-			<div class="col-lg-6 col-sm-12">
-				<h3>Что входит в стоимость?</h3>
-				<p>Заказав у нас веб-сайт <b>вы получаете:</b></p>			
+			<div class="col-md-6 col-sm-12">
+				<h3><%= local.website.leaveApplication.heading %><br/></h3>
+				<p><%- local.website.leaveApplication.subheading %></p>			
 				<ul>
-					<li>Адаптивное отображение на любых устройствах</li>
-					<li>Уникальный дизайн</li>
-					<li>Уникальные тексты</li>
-					<li>Панель администратора</li>
-					<li>Оптимизация для быстрой загрузки сайта</li>
-					<li>SEO оптимизация</li>
+					<li><%= local.website.leaveApplication.content1 %></li>
+					<li><%= local.website.leaveApplication.content2 %></li>
+					<li><%= local.website.leaveApplication.content3 %></li>
+					<li><%= local.website.leaveApplication.content4 %></li>
+					<li><%= local.website.leaveApplication.content5 %></li>
+					<li><%= local.website.leaveApplication.content6 %></li>
 				</ul>
 			</div>
 		</div>

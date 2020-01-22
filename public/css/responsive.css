@@ -123,6 +123,21 @@
         letter-spacing: -1px;
         line-height: 28px;
     }
+    #leave-application h3 {
+        font-size: 28px;
+    }
+
+    #leave-application p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 1rem;
+    }
+
+    #leave-application ul li {
+        color: #666;
+        font-size: 18px;
+        line-height: 32px;
+    }
     section {
         padding: 70px 0 50px 0;
     }
@@ -418,8 +433,12 @@
         float: left;
     }
 }
-@media (max-width: 1199px) {
-    #leave-application img {
-        margin-bottom: 50px;
-    }   
+@media (min-width: 992px) {
+    #leave-application .row {
+        display: flex;
+        align-items: center;
+    }
+    #leave-application .margin-bottom-50 {
+        margin-bottom: 0;
+    }
 }

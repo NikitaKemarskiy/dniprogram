@@ -2006,8 +2006,12 @@ img.header-logo {
     width: 100%;
 }
 
+#leave-application .margin-bottom-50 {
+    margin-bottom: 50px;
+}
+
 #leave-application h3 {
-    font-size: 44px;
+    font-size: 36px;
     margin: 0;
     margin-bottom: 10px;
     color: #000;
@@ -2022,10 +2026,25 @@ img.header-logo {
 #leave-application ul li {
     color: #666;
     font-size: 22px;
+    line-height: 40px;
 }
 
 #leave-application b {
     color: #1080f2;
+}
+
+#leave-application .primary-button {
+    width: 40%;
+    min-width: 175px;
+    height: 40px;
+    color: #fff;
+    background-color: #1080f2;
+    border: 2px solid #1080f2;
+}
+
+#leave-application .primary-button:hover {
+    color: #1080f2;
+    background-color: #fff;
 }
 
 #services img {
@@ -2097,4 +2116,8 @@ img.header-logo {
 
 .justify-content-center {
     justify-content: center !important;
+}
+
+.align-items-center {
+    align-items: center !important;
 }

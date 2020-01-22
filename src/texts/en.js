@@ -54,19 +54,144 @@ const EN = {
 		content4: {
 			heading: 'Online store',
 			text: 'Website selling products over the Internet. They allow users online, in their browser to create a purchase order, choose a method of payment and delivery of the order, pay for the order'
+		},
+		leaveApplication: {
+			heading: 'What is included in the price?',
+			subheading: 'By ordering the website with us you <b>will receive:</b>',
+			content1: 'Correct display on devices with any screen',
+			content2: 'Unique design',
+			content3: 'Unique texts',
+			content4: 'Admin panel',
+			content5: 'Optimization for fast site loading',
+			content6: 'SEO optimization'
 		}
 	},
 	businessCard: {
-
+		heading: 'What are you getting?',
+		content1: {
+			heading: 'Adaptive layout',
+			text: 'Your website will display correctly on screens of all sizes'
+		},
+		content2: {
+			heading: 'Unique design',
+			text: 'Our best designers will create an original design with a distinctive idea'
+		},
+		content3: {
+			heading: 'Unique texts',
+			text: 'We will create selling texts personally for your business'
+		},
+		content4: {
+			heading: 'Loading optimization',
+			text: 'Customers are not waiting! Fast page loading is critical for promoting your business'
+		},
+		content5: {
+			heading: 'SEO optimization',
+			text: 'We optimize your website for effective search engine results'
+		},
+		leaveApplication: {
+			heading: 'Order <b>business card website</b>!',
+			subheading: 'A business card website will let you:',
+			content1: 'Introduce you or your company on the Internet',
+			content2: 'Provide information about your products and services',
+			content3: 'Increase brand awareness and relevance',
+			content4: 'Provide contact and other information to visitors'
+		}
 	},
 	corporate: {
-
+		heading: 'What are you getting?',
+		content1: {
+			heading: 'Adaptive layout',
+			text: 'Your website will display correctly on screens of all sizes'
+		},
+		content2: {
+			heading: 'Unique design',
+			text: 'Our best designers will create an original design with a distinctive idea'
+		},
+		content3: {
+			heading: 'Unique texts',
+			text: 'We will personally write selling texts personally for your business'
+		},
+		content4: {
+			heading: 'Loading optimization',
+			text: 'Customers are not waiting! Fast page loading is critical for promoting your business'
+		},
+		content5: {
+			heading: 'SEO optimization',
+			text: 'We optimize your website for effective search engine results'
+		},
+		leaveApplication: {
+			heading: 'Order <b>corporate website</b>!',
+			subheading: 'A corporate website will let you:',
+			content1: 'Present your company on the Internet',
+			content2: 'Attract new customers',
+			content3: 'Strengthen existing partnerships',
+			content4: 'Develop a business by revealing the advantages of a company',
+			content5: 'Provide a detailed description of the company\'s activities, services or products'
+		}
 	},
 	landing: {
-
+		heading: 'What are you getting?',
+		content1: {
+			heading: 'Adaptive layout',
+			text: 'Your website will display correctly on screens of all sizes'
+		},
+		content2: {
+			heading: 'Unique design',
+			text: 'Our best designers will create an original design with a distinctive idea'
+		},
+		content3: {
+			heading: 'Unique texts',
+			text: 'We will personally write selling texts personally for your business'
+		},
+		content4: {
+			heading: 'Loading optimization',
+			text: 'Customers are not waiting! Fast page loading is critical for promoting your business'
+		},
+		content5: {
+			heading: 'SEO optimization',
+			text: 'We optimize your website for effective search engine results'
+		},
+		leaveApplication: {
+			heading: 'Order <b>landing</b> with us!',
+			subheading: 'A landing will let your business:',
+			content1: 'Turn visitors into customers',
+			content2: 'Increase sales',
+			content3: 'Spend less on advertising',
+			content4: 'Convince visitors to buy from you',
+			content5: 'Engage target audience'
+		}
 	},
 	onlineStore: {
-
+		heading: 'What are you getting?',
+		content1: {
+			heading: 'Adaptive layout',
+			text: 'Your website will display correctly on screens of all sizes'
+		},
+		content2: {
+			heading: 'Unique design',
+			text: 'Our best designers will create an original design with a distinctive idea'
+		},
+		content3: {
+			heading: 'Unique texts',
+			text: 'We will personally write selling texts personally for your business'
+		},
+		content4: {
+			heading: 'Loading optimization',
+			text: 'Customers are not waiting! Fast page loading is critical for promoting your business'
+		},
+		content5: {
+			heading: 'SEO optimization',
+			text: 'We optimize your website for effective search engine results'
+		},
+		leaveApplication: {
+			heading: 'Order <b>online store</b>!',
+			subheading: 'An online store will let you:',
+			content1: 'Sell goods without renting industrial premises',
+			content2: 'Do business without regional restrictions',
+			content3: 'Organize availability 24/7',
+			content4: 'Focus on potentially interested customers',
+			content5: 'Create effective targeted online promotion'
+		}
 	},
 	facts: {
 		text1: 'PROJECTS <br> COMPLETED',

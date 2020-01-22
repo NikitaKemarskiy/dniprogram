@@ -61,7 +61,7 @@ async function pathAndLangSpecifiedHandler(ctx) {
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
 	const operators = getOperators(contentLanguage);
-	await ctx.render('index', { local, operators, part });
+	await ctx.render('index', { local, operators, part, contentLanguage });
 }
 
 async function mailHandler(ctx) {
