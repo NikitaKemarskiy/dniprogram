@@ -1,6 +1,7 @@
 const EN = {
 	lang: 'en',
-	title: 'Dniprogram - Software Development Company',
+	title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
+	description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',
 	navbar: {
 		text1: 'About us',
 		text2: 'Why choose us?',
@@ -16,13 +17,15 @@ const EN = {
 	},
 	home: {
 		heading: 'What do we offer?',
+		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
+		description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',
 		content1: {
 			heading: 'Websites',
 			text: 'Various types of websites: for sales, landing, business cards, corporate, online stores'
 		},
 		content2: {
 			heading: 'Web applications',
-			text: 'Interactive applications designed for the Internet'
+			text: 'Internet applications designed for interaction with the users. Web application runs in web browser'
 		},
 		content3: {
 			heading: 'Server applications, API',
@@ -39,6 +42,8 @@ const EN = {
 	},
 	website: {
 		heading: 'What websites do we offer?',
+		title: 'Dniprogram - Website Development | For sales, landing page, business cards, corporate, online stores',
+		description: 'Different types of sites: for sales, landing page, business cards, corporate, online stores. Request a call back right now. Order from professionals.',
 		content1: {
 			heading: 'Landing',
 			text: 'Standalone web page, created specifically for a marketing or advertising campaign. Landing pages are designed with a single focus or goal'
@@ -68,6 +73,8 @@ const EN = {
 	},
 	businessCard: {
 		heading: 'What are you getting?',
+		title: 'Dniprogram - Development of business card sites | Custom-made, responsive display, unique design',
+		description: 'Order a business card website. We\'ll create a website individually for you. Unique design, original idea. We will call you back within 15 minutes.',
 		content1: {
 			heading: 'Adaptive layout',
 			text: 'Your website will display correctly on screens of all sizes'
@@ -99,6 +106,8 @@ const EN = {
 	},
 	corporate: {
 		heading: 'What are you getting?',
+		title: 'Dniprogram - Development of corporate sites | Custom-made, for your business, unique design',
+		description: 'Order a corporate website personally for your business. We create effective and working sites. Unique design, original idea. We will call back within 15 minutes.',
 		content1: {
 			heading: 'Adaptive layout',
 			text: 'Your website will display correctly on screens of all sizes'
@@ -131,6 +140,8 @@ const EN = {
 	},
 	landing: {
 		heading: 'What are you getting?',
+		title: 'Dniprogram - Landing Development | For your business, selling texts, unique design',
+		description: 'We create selling landings. We develop proven and effective landing pages for any business. Order and take your business to the next level.',
 		content1: {
 			heading: 'Adaptive layout',
 			text: 'Your website will display correctly on screens of all sizes'
@@ -163,6 +174,8 @@ const EN = {
 	},
 	onlineStore: {
 		heading: 'What are you getting?',
+		title: 'Dniprogram - Development of online stores | For your business, turnkey, unique design',
+		description: 'Professional development of online stores for any business. Start an online business. Unique design and selling texts. We will call you back within 15 minutes.',
 		content1: {
 			heading: 'Adaptive layout',
 			text: 'Your website will display correctly on screens of all sizes'
