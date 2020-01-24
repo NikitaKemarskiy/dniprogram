@@ -38,10 +38,11 @@
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header page-scroll">
-					<a class="logo page-scroll" href="/home">
+					<a class="logo page-scroll" href="/<%= contentLanguage %>/home">
 						<img src="/img/logos/dniprogram1.png"
 							 class="img-responsive header-logo"
-							 alt="">
+							 alt="Dniprogram logo"
+							 title="Dniprogram logo">
 					</a>
 					<span class="button-wrapper">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
@@ -193,22 +194,22 @@
 				</div>
 				<div class="row">
 					<div class="col-md-3">
-						<img src="/img/logos/key.png" alt="">
+						<img src="/img/logos/key.png" alt="Turnkey" title="Turnkey">
 						<h4 class="service-heading"><%= local.why.content1.heading %></h4>
 						<p class=""><%= local.why.content1.text %></p>
 					</div>
 					<div class="col-md-3">
-						<img src="/img/logos/people.png" alt="">
+						<img src="/img/logos/people.png" alt="Client" title="Client">
 						<h4 class="service-heading"><%= local.why.content2.heading %></h4>
 						<p class=""><%= local.why.content2.text %></p>
 					</div>
 					<div class="col-md-3">
-						<img src="/img/logos/hourglass.png" alt="">
+						<img src="/img/logos/hourglass.png" alt="In time" title="In time">
 						<h4 class="service-heading"><%= local.why.content3.heading %></h4>
 						<p class=""><%= local.why.content3.text %></p>
 					</div>
 					<div class="col-md-3 last">
-						<img src="/img/logos/presentation.png" alt="">
+						<img src="/img/logos/presentation.png" alt="Result presentation" title="Result presentation">
 						<h4 class="service-heading"><%= local.why.content4.heading %></h4>
 						<p class=""><%= local.why.content4.text %></p>
 					</div>
@@ -314,7 +315,7 @@
 									<p><%= local.testimonials.content1.position %></p>
 								</div>
 								<div class="client-img">
-									<img src="/img/clients/client1.jpg" alt="">
+									<img src="/img/clients/client1.jpg" alt="Client 1" title="Client 1">
 								</div>
 							</div>
 							<!-- Client Feedback Text  -->
@@ -337,7 +338,7 @@
 									<p><%= local.testimonials.content2.position %></p>
 								</div>
 								<div class="client-img">
-									<img src="/img/clients/client2.jpg" alt="">
+									<img src="/img/clients/client2.jpg" alt="Client 2" title="Client 2">
 								</div>
 							</div>
 							<!-- Client Feedback Text  -->
@@ -360,7 +361,7 @@
 									<p><%= local.testimonials.content3.position %></p>
 								</div>
 								<div class="client-img">
-									<img src="/img/clients/client3.jpg" alt="">
+									<img src="/img/clients/client3.jpg" alt="Client 3" title="Client 3">
 								</div>
 							</div>
 							<!-- Client Feedback Text  -->
@@ -383,7 +384,7 @@
 									<p><%= local.testimonials.content4.position %></p>
 								</div>
 								<div class="client-img">
-									<img src="/img/clients/client4.jpg" alt="">
+									<img src="/img/clients/client4.jpg" alt="Client 4" title="Client 4">
 								</div>
 							</div>
 						</div>
@@ -456,7 +457,12 @@
 					<!-- UPPER FOOTER -->
 					<div class="upper-footer">
 						<div class="pull-left">
-							<a class="logo page-scroll" href="#page-top"><img src="/img/logos/dniprogram1.png" class="img-responsive" alt=""></a>
+							<a class="logo page-scroll" href="/<%= contentLanguage %>/home">
+								<img src="/img/logos/dniprogram1.png"
+									 class="img-responsive"
+									 alt="Dniprogram logo"
+									 title="Dniprogram logo">
+							</a>
 							<p><%= local.footer.text %></p>
 						</div>
 						<div class="pull-right">

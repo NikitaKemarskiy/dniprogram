@@ -7,18 +7,18 @@ const router = new KoaRouter();
 
 // Handlers
 const {
-	pathSpecifiedHandler,
-	pathAndLangSpecifiedHandler,
+	langSpecifiedHandler,
+	langAndPathSpecifiedHandler,
 	mailHandler
 } = require('../handlers/handlers');
 
 /** HOME PAGE **/
 // No page specified
-router.get('/', pathSpecifiedHandler);
+router.get('/', langSpecifiedHandler);
 // Special page specified
-router.get('/:part', pathSpecifiedHandler);
+router.get('/:lang', langSpecifiedHandler);
 // Special language and page specified
-router.get('/:part/:lang', pathAndLangSpecifiedHandler);
+router.get('/:lang/:part', langAndPathSpecifiedHandler);
 
 // Send mail
 router.post('/mail', mailHandler);

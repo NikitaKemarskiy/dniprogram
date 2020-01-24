@@ -15,25 +15,26 @@ const UK = require('../texts/uk');
 
 // Constants
 const SUPPORTED_LANGS = new Set(['en', 'ru', 'uk']);
+const DEFAULT_PART = 'home';
 
 // Handlers
-async function pathSpecifiedHandler(ctx) {
-	// Get website content part
-	// For example: home | onlineStore | landing etc.
-	const part = ctx.params.part || 'home';
-	// Get Accept-Language header
-	const languages = languageParser.parse(ctx.request.headers['accept-language']);
-	// Get Content-Language for response
-	let contentLanguage = null;
-	for (const language of languages) {
-		if (SUPPORTED_LANGS.has(language.code)) {
-			contentLanguage = language.code;
-			break;
+async function langSpecifiedHandler(ctx) {
+	let contentLanguage = ctx.params.lang;
+	if (!contentLanguage) {
+		// Get Accept-Language header
+		const languages = languageParser.parse(ctx.request.headers['accept-language']);
+		// Get Content-Language for response
+		for (const language of languages) {
+			if (SUPPORTED_LANGS.has(language.code)) {
+				contentLanguage = language.code;
+				break;
+			}
 		}
+		// If Content-Language is undefined -> assign to "ru"
+		contentLanguage = contentLanguage || 'ru';
+	} else if (!SUPPORTED_LANGS.has(contentLanguage)) {
+		ctx.throw(404, 'Not found. Invalid language was set');
 	}
-	// If Content-Language is undefined -> assign to "ru"
-	contentLanguage = contentLanguage || 'ru';
-	
 	// Set header
 	ctx.set('Content-Language', contentLanguage);
 	// Render page
@@ -41,17 +42,18 @@ async function pathSpecifiedHandler(ctx) {
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
 	const operators = getOperators(contentLanguage);
-	await ctx.render('index', { local, operators, part });
+	const part = DEFAULT_PART;
+	await ctx.render('index', { local, operators, part, contentLanguage });
 }
 
-async function pathAndLangSpecifiedHandler(ctx) {
+async function langAndPathSpecifiedHandler(ctx) {
 	// Get website content part
 	// For example: home | onlineStore | landing etc.
 	const part = ctx.params.part;
 	// Get language
 	const contentLanguage = ctx.params.lang;
 	// Check whether language is valid
-	if (contentLanguage !== 'en' && contentLanguage !== 'ru' && contentLanguage !== 'uk') {
+	if (!SUPPORTED_LANGS.has(contentLanguage)) {
 		ctx.throw(404, 'Not found. Invalid language was set');
 	}
 	// Set header
@@ -70,7 +72,7 @@ async function mailHandler(ctx) {
 }
 
 module.exports = {
-	pathSpecifiedHandler,
-	pathAndLangSpecifiedHandler,
+	langSpecifiedHandler,
+	langAndPathSpecifiedHandler,
 	mailHandler
 };
