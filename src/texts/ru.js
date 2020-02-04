@@ -303,6 +303,28 @@ const RU = {
 		content3: {
 			heading: 'Премиум',
 		},
+		businessCard: {
+			content1: 'Адаптивное отображение',
+			content2: 'Продающие тексты',
+			content3: 'Запуск в production',
+			content4: 'Оптимизация загрузки сайта',
+			content5: 'Анимация элементов',
+			content6: 'Уникальный дизайн',
+			content7: 'SEO оптимизация',
+			content8: 'Подключение к CRM',
+			content9: 'Настройка Google Ads, Яндекс Директ'
+		},
+		corporate: {
+			content1: 'Адаптивное отображение',
+			content2: 'Продающие тексты',
+			content3: 'Запуск в production',
+			content4: 'Оптимизация загрузки сайта',
+			content5: 'Анимация элементов',
+			content6: 'Уникальный дизайн',
+			content7: 'SEO оптимизация',
+			content8: 'Подключение к CRM',
+			content9: 'Настройка Google Ads, Яндекс Директ'
+		},
 		landing: {
 			content1: 'Адаптивное отображение',
 			content2: 'Продающие тексты',
@@ -311,7 +333,21 @@ const RU = {
 			content5: 'Анимация элементов',
 			content6: 'Уникальный дизайн',
 			content7: 'SEO оптимизация',
-			content8: 'Настройка Google Ads, Яндекс Директ',
+			content8: 'Подключение к CRM',
+			content9: 'Настройка Google Ads, Яндекс Директ'
+		},
+		onlineStore: {
+			content1: 'Адаптивное отображение',
+			content2: 'Админ-панель',
+			content3: 'Продающие тексты',
+			content4: 'Модуль оплаты LiqPay',
+			content4: 'Запуск в production',
+			content5: 'Оптимизация загрузки сайта',
+			content6: 'Модуль онлайн консультанта',
+			content7: 'Уникальный дизайн',
+			content8: 'SEO оптимизация',
+			content9: 'Подключение к CRM',
+			content10: 'Настройка Google Ads, Яндекс Директ'
 		}
 	},
 	contact: {
