@@ -246,8 +246,7 @@
         font-size: 15px;
     }
     #pricing .col-md-4 {
-        width: 90%;
-        margin: 0 auto 30px;
+        margin-bottom: 30px;
     }
     .pricing .pricing-option {
         font-size: 14px;

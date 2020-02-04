@@ -13,10 +13,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="description" content="<%= local[part].description %>">
+		<meta name="description" content="<%= local[part.info].description %>">
 		<meta name="author" content="Dniprogram" />
 		<!-- SITE TITLE -->
-		<title><%= local[part].title %></title>
+		<title><%= local[part.info].title %></title>
 		<!-- STYLESHEETS -->
 		<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
 		<link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
@@ -108,7 +108,7 @@
 		</header>
 		<!-- END HEADER -->
 		<!-- INFO PART -->
-		<%- include(`parts/${part}`) %>
+		<%- include(`parts/info/${part.info}`) %>
 		<!-- END INFO PART -->
 		<!-- ***** Cool Facts Area Start ***** -->
 		<section class="cool_facts_area clearfix">
@@ -287,7 +287,7 @@
 		</section>
 		<!-- END TEAM -->
 		<!-- CASES -->
-		<!--  -->
+		<!-- ... -->
 		<!-- END CASES -->
 		<!-- TESTIMONIALS -->
 		<section id="testimonials" class="clients-feedback-area">
@@ -393,6 +393,11 @@
 			</div>
 		</section>
 		<!-- END TESTIMONIALS -->
+		<!-- PRICING -->
+		<% if (part.pricing) { %>
+			<%- include(`parts/pricing/${part.pricing}`) %>
+		<% } %>
+		<!-- END PRICING -->
 		<!-- CONTACT -->
 		<section class="footer-contact-area section_padding_100 clearfix" id="contact">
 			<div class="container">

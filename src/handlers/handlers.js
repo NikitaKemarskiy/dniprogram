@@ -15,7 +15,16 @@ const UK = require('../texts/uk');
 
 // Constants
 const SUPPORTED_LANGS = new Set(['en', 'ru', 'uk']);
-const DEFAULT_PART = 'home';
+const PRICING_PARTS = new Set([
+	'businessCard',
+	'chatbot',
+	'corporate',
+	'landing',
+	'onlineStore'
+]);
+const DEFAULT_PART = {
+	info: 'home'
+};
 
 // Handlers
 async function langSpecifiedHandler(ctx) {
@@ -49,7 +58,14 @@ async function langSpecifiedHandler(ctx) {
 async function langAndPathSpecifiedHandler(ctx) {
 	// Get website content part
 	// For example: home | onlineStore | landing etc.
-	const part = ctx.params.part;
+	const info = ctx.params.part;
+	const pricing = PRICING_PARTS.has(ctx.params.part)
+					? ctx.params.part
+					: null;
+	const part = {
+		info,
+		pricing
+	};
 	// Get language
 	const contentLanguage = ctx.params.lang;
 	// Check whether language is valid
