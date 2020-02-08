@@ -91,7 +91,7 @@
 					<h1 class="intro-lead-in"><%= local.header.intro %></h1>
 					<span class="intro-heading"><%= local.header.heading %></span>
 					<div class="header-buttons">
-						<a href="#" class="primary-button" onclick="openForm()"><%= local.header.contact %></a>
+						<a class="primary-button" onclick="openForm()"><%= local.header.contact %></a>
 						<a href="#why" class="secondary-button page-scroll hidden-xs"><%= local.header.more %></a>
 					</div>
 
@@ -424,7 +424,7 @@
 					</div>
 					<div class="col-md-6">
 						<!-- CONTACT FORM -->
-						<form action="/mail" method="post" name="sentMessage" id="contactForm">
+						<form action="/<%= contentLanguage %>/mail" method="post" name="sentMessage" id="contactForm">
 							<div class="row">
 								<div class="form-group">
 									<input type="text" class="form-control" placeholder="<%= local.contact.form.input.name %>" id="name" name="name" required>
@@ -442,6 +442,7 @@
 									<textarea class="form-control" placeholder="<%= local.contact.form.input.message %>" id="message" name="message"></textarea>
 									<p class="help-block text-danger"></p>
 								</div>
+								<input name="service" type="text" value="<%= local[part.info].service %>" class="display-none">
 								<div class="clearfix"></div>
 								<div class="text-center">
 									<div id="success"></div>
@@ -535,7 +536,7 @@
 					<h5><%= local.popup.heading %></h5>
 					<button class="close" onclick="closeForm()">x</button>
 				</div>
-				<form id="popup-contact"  class="popup-contact" action="/mail" method="post">
+				<form id="popup-contact"  class="popup-contact" action="/<%= contentLanguage %>/mail" method="post">
 					<fieldset>
 						<label for="name"><%= local.popup.form.input.name %></label>
 						<input placeholder="<%= local.popup.form.input.name %>" name="name" type="text" tabindex="1" required autofocus>
@@ -548,6 +549,7 @@
 						<label for="phone"><%= local.popup.form.input.phone %></label>
 						<input placeholder="<%= local.popup.form.input.phone %>" name="phone" type="text" tabindex="2">
 					</fieldset>
+					<input name="service" type="text" value="<%= local[part.info].service %>" class="display-none">
 					<fieldset>
 						<button name="submit" type="submit" id="contact-submit" class="contact-submit" data-submit="...Sending"><%= local.popup.form.input.send %></button>
 					</fieldset>
@@ -562,7 +564,7 @@
 					<h5>Закажи обратный звонок!</h5>
 					<button class="close" onclick="closeCallForm()">x</button>
 				</div>
-				<form id="popup-request-call" class="popup-contact" action="/mail" method="post">
+				<form id="popup-request-call" class="popup-contact" action="/<%= contentLanguage %>/mail" method="post">
 					<div class="popup-free-operators">
 						<% if (operators.recallMessage) { %>
 							<p><%= operators.recallMessage %></p>
@@ -587,6 +589,7 @@
 					</div>
 					<fieldset>
 						<input placeholder="<%= local.popup.form.input.phone %>" name="phone" type="text" tabindex="2" required>
+						<input name="service" type="text" value="<%= local[part.info].service %>" class="display-none">
 						<button name="submit" type="submit" class="contact-submit" data-submit="...Sending"><i class="fa fa-check"></i></button>
 					</fieldset>
 				</form>

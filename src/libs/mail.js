@@ -16,9 +16,19 @@ const transporter = nodemailer.createTransport({
 });
 
 function mail(from) {
-	const { name, email, phone, message } = from;
+	// Get params
+	const {
+		name,
+		email,
+		phone,
+		message,
+		service,
+		option
+	} = from;
 
 	const html = (`<h3>Новое сообщение на разработку</h3><br>`) +
+				 (service ? `<p>Услуга: <b>${service}</b><br>` : '') + 
+				 (option ? `<p>Тариф: <b>${option}</b><br>` : '') + 
 				 (name ? `<p>Имя: <b>${name}</b><br>` : '') + 
 				 (email ? `<p>Почта: <b>${email}</b><br>` : '') + 
 				 (phone ? `<p>Номер: <b>${phone}</b><br>` : '') +

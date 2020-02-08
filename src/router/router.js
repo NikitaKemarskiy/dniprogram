@@ -21,7 +21,7 @@ router.get('/:lang', langSpecifiedHandler);
 router.get('/:lang/:part', langAndPathSpecifiedHandler);
 
 // Send mail
-router.post('/mail', mailHandler);
+router.post('/:lang/mail', mailHandler);
 
 // Exports
 module.exports = router;

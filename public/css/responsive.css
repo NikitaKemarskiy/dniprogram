@@ -101,9 +101,10 @@
         margin-top: 8px;
     }
     header .intro-text .intro-lead-in {
-        font-size: 48px;
-        letter-spacing: -1px;
-        line-height: 35px;
+        /*font-size: 48px;
+        letter-spacing: -1px;*/
+        font-size: 56px;
+        line-height: 46px;
     }
     header .intro-text {
         padding: 175px 20px 0 20px;
@@ -112,31 +113,16 @@
         margin: 40px auto 40px auto;
     }
     header .intro-text .intro-heading {
-        font-size: 15px;
-        line-height: 30px;
+        /*font-size: 15px;
+        line-height: 30px;*/
         margin-top: 20px;
     }
     section h2.section-heading {
         margin-top: 0;
-        margin-bottom: 15px;
-        font-size: 28px;
+        /*margin-bottom: 15px;*/
+        /*font-size: 28px;
         letter-spacing: -1px;
-        line-height: 28px;
-    }
-    #leave-application h3 {
-        font-size: 28px;
-    }
-
-    #leave-application p {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 1rem;
-    }
-
-    #leave-application ul li {
-        color: #666;
-        font-size: 18px;
-        line-height: 32px;
+        line-height: 28px;*/
     }
     section {
         padding: 70px 0 50px 0;
@@ -149,9 +135,9 @@
     }
     p {
         color: #666;
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: 20px;
+        /*font-size: 14px;*/
+        /*line-height: 18px;*/
+        /*margin-bottom: 20px;*/
     }
     #services .nc-icon-outline {
         margin-bottom: 16px;
@@ -159,7 +145,7 @@
         margin-top: 0;
     }
     .service-heading {
-        font-size: 18px;
+        /*font-size: 18px;*/
         margin-bottom: 18px;
     }
     #services .col-md-3.last,
@@ -221,9 +207,9 @@
         text-align: center;
         color: #666;
         font-family: PTSans;
-        font-size: 13px;
+        /*font-size: 13px;*/
         font-weight: 400;
-        line-height: 25px;
+        /*line-height: 25px;*/
     }
     .video-modal .modal-content {
         width: 100%;
@@ -243,13 +229,13 @@
         margin-bottom: 50px;
     }
     .chart-content h4 {
-        font-size: 15px;
+        /*font-size: 15px;*/
     }
     #pricing .col-md-4 {
         margin-bottom: 30px;
     }
     .pricing .pricing-option {
-        font-size: 14px;
+        /*font-size: 14px;*/
     }
     .pricing .pricing-row {
         padding-top: 15px;
@@ -261,13 +247,13 @@
         padding: 35px 0 15px 0;
     }
     .pricing .pricing-price {
-        font-size: 40px;
+        /*font-size: 40px;*/
     }
     .pricing .pricing-time {
-        font-size: 20px;
+        /*font-size: 20px;*/
     }
     .pricing .currency {
-        font-size: 23px;
+        /*font-size: 23px;*/
         position: relative;
         top: -10px;
     }
@@ -277,7 +263,7 @@
     }
     .tt-content h3 {
         line-height: 25px;
-        font-size: 18px;
+        /*font-size: 18px;*/
     }
     .tt-quote {
         display: none;
@@ -287,7 +273,7 @@
         height: 50px;
     }
     #testimonials {
-        padding-bottom: 18px;
+        /*padding-bottom: 18px;*/
     }
     .chart {
         display: none;
@@ -312,7 +298,7 @@
     }
     .team-content p {
         margin-bottom: 0;
-        font-size: 15px;
+        /*font-size: 15px;*/
         line-height: 21px;
     }
     .owl-theme .owl-controls .owl-buttons div.owl-prev {

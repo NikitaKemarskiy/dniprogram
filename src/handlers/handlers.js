@@ -83,8 +83,12 @@ async function langAndPathSpecifiedHandler(ctx) {
 }
 
 async function mailHandler(ctx) {
+	// Get language
+	const contentLanguage = ctx.params.lang;
+	// Mailing
 	mail(ctx.request.body);
-	ctx.redirect('/home'); // Redirect to home page
+	// Redirect
+	ctx.redirect(`/${contentLanguage}/home`); // Redirect to home page
 }
 
 module.exports = {
