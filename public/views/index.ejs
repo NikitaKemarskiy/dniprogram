@@ -561,7 +561,7 @@
 		<div id="callback-popup-wrapper" class="popup-wrapper" onclick="closeCallForm()">
 			<div class="popup-container" onclick="stopPropagation(event)">
 				<div class="popup-header">
-					<h5>Закажи обратный звонок!</h5>
+					<h5><%= local.popup.operators.heading %></h5>
 					<button class="close" onclick="closeCallForm()">x</button>
 				</div>
 				<form id="popup-request-call" class="popup-contact" action="/<%= contentLanguage %>/mail" method="post">

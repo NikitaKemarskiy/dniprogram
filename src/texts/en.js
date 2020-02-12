@@ -18,6 +18,7 @@ const EN = {
 	home: {
 		heading: 'What do we offer?',
 		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
+		service: 'Не указана',
 		description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',
 		content1: {
 			heading: 'Websites',
@@ -43,6 +44,7 @@ const EN = {
 	website: {
 		heading: 'What websites do we offer?',
 		title: 'Dniprogram - Website Development | For sales, landing page, business cards, corporate, online stores',
+		service: 'Разработка веб-сайта',
 		description: 'Different types of sites: for sales, landing page, business cards, corporate, online stores. Request a call back right now. Order from professionals.',
 		content1: {
 			heading: 'Landing',
@@ -74,6 +76,7 @@ const EN = {
 	businessCard: {
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Development of business card sites | Custom-made, responsive display, unique design',
+		service: 'Разработка сайта-визитки',
 		description: 'Order a business card website. We\'ll create a website individually for you. Unique design, original idea. We will call you back within 15 minutes.',
 		content1: {
 			heading: 'Adaptive layout',
@@ -107,6 +110,7 @@ const EN = {
 	corporate: {
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Development of corporate sites | Custom-made, for your business, unique design',
+		service: 'Разработка корпоративного сайта',
 		description: 'Order a corporate website personally for your business. We create effective and working sites. Unique design, original idea. We will call back within 15 minutes.',
 		content1: {
 			heading: 'Adaptive layout',
@@ -141,6 +145,7 @@ const EN = {
 	landing: {
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Landing Development | For your business, selling texts, unique design',
+		service: 'Разработка лендинга',
 		description: 'We create selling landings. We develop proven and effective landing pages for any business. Order and take your business to the next level.',
 		content1: {
 			heading: 'Adaptive layout',
@@ -175,6 +180,7 @@ const EN = {
 	onlineStore: {
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Development of online stores | For your business, turnkey, unique design',
+		service: 'Разработка интернет-магазина',
 		description: 'Professional development of online stores for any business. Start an online business. Unique design and selling texts. We will call you back within 15 minutes.',
 		content1: {
 			heading: 'Adaptive layout',
@@ -204,6 +210,97 @@ const EN = {
 			content3: 'Organize availability 24/7',
 			content4: 'Focus on potentially interested customers',
 			content5: 'Create effective targeted online promotion'
+		}
+	},
+	chatbot: {
+		heading: 'What are you getting?',
+		title: 'Dniprogram - Chatbot development | Telegram, Viber, Facebook',
+		service: 'Разработка чат-бота',
+		description: 'Automates up to 80% of the routine tasks of employees. Free newsletters. Optimization for you. Chatbot is what you need to take your business to the next level.',
+		content1: {
+			heading: 'Business solution',
+			text: 'Automation of routine processes is a key sign of a successful business'
+		},
+		content2: {
+			heading: 'Optimization for your business',
+			text: 'We use an individual approach to the development of each project'
+		},
+		content3: {
+			heading: 'Automation of answers to questions',
+			text: 'Using the prepared answers to questions can save your time and money'
+		},
+		content4: {
+			heading: 'Effective promotion channel',
+			text: 'Chatbot will create an effective tool to increase customer engagement'
+		},
+		leaveApplication: {
+			heading: 'Order <b>chatbot</b> with us!',
+			subheading: 'A chatbot will let your business:',
+			content1: 'Automate up to 80% of routine tasks',
+			content2: 'Increase audience engagement',
+			content3: 'Make a newsletter for bot subscribers',
+			content4: 'Create a channel for promoting your business',
+			content5: 'Reduce business process costs'
+		}
+	},
+	server: {
+		heading: 'What are you getting?',
+		title: 'Dniprogram - Server applications development | API',
+		service: 'Разработка серверного приложения',
+		description: 'Software for performing certain actions, processing data on the server. API - for interacting with them using the interface.',
+		content1: {
+			heading: 'Communication between programs',
+			text: 'The API provides an efficient communication process between programs that use each other\'s functions and resources'
+		},
+		content2: {
+			heading: 'Optimization for your business',
+			text: 'We use an individual approach to the development of each project. We develop personally for your business'
+		},
+		content3: {
+			heading: 'Attracting Developers',
+			text: 'Give developers the ability to find and use your APIs'
+		},
+		content4: {
+			heading: 'Integration of your program',
+			text: 'Provide other applications with the ability to integrate with your program on the Internet'
+		},
+		leaveApplication: {
+			heading: 'Order <b>API</b> with us!',
+			subheading: 'An API will let your business:',
+			content1: 'Provide a process of communication between programs',
+			content2: 'Attract developers to use your service',
+			content3: 'Create the ability to integrate with your program',
+			content4: 'Perform various client-server tasks'
+		}
+	},
+	desktop: {
+		heading: 'What are you getting?',
+		title: 'Dniprogram - Desktop applications development | For Windows, MacOS, Linux',
+		service: 'Разработка desktop-приложения',
+		description: 'Desktop software for Windows, Linux, MacOS. Optimization for your business. Request a call back.',
+		content1: {
+			heading: 'Business solution',
+			text: 'Automation of routine processes is a key sign of a successful business'
+		},
+		content2: {
+			heading: 'Optimization for your business',
+			text: 'We use an individual approach to the development of each project. We develop personally for your business'
+		},
+		content3: {
+			heading: 'An effective tool for business',
+			text: 'Desktop applications provide a wide range of options for implementation'
+		},
+		content4: {
+			heading: 'Communication with the developer',
+			text: 'Direct communication with the developer is the key to mutual understanding and fruitful work'
+		},
+		leaveApplication: {
+			heading: 'Order <b>desktop application</b>!',
+			subheading: 'Desktop application will let you:',
+			content1: 'Automate business processes',
+			content2: 'Facilitate routine tasks',
+			content3: 'Reduce your finance and time costs',
+			content4: 'Take your company one step further'
 		}
 	},
 	facts: {
@@ -292,6 +389,75 @@ const EN = {
 			position: 'Entrepreneur'
 		}
 	},
+	pricing: {
+		heading: 'Prices',
+		content1: {
+			heading: 'Basic',
+		},
+		content2: {
+			heading: 'Advanced',
+		},
+		content3: {
+			heading: 'Premium',
+		},
+		businessCard: {
+			content1: 'Adaptive layout',
+			content2: 'Effective texts',
+			content3: 'Deployment on server',
+			content4: 'Website loading optimization',
+			content5: 'Animation of elements',
+			content6: 'Unique design',
+			content7: 'SEO optimization',
+			content8: 'Connection to CRM',
+			content9: 'Setting up Google Ads, Yandex Direct'
+		},
+		corporate: {
+			content1: 'Adaptive layout',
+			content2: 'Effective texts',
+			content3: 'Deployment on server',
+			content4: 'Website loading optimization',
+			content5: 'Animation of elements',
+			content6: 'Unique design',
+			content7: 'SEO optimization',
+			content8: 'Connection to CRM',
+			content9: 'Setting up Google Ads, Yandex Direct'
+		},
+		landing: {
+			content1: 'Adaptive layout',
+			content2: 'Effective texts',
+			content3: 'Deployment on server',
+			content4: 'Website loading optimization',
+			content5: 'Animation of elements',
+			content6: 'Unique design',
+			content7: 'SEO optimization',
+			content8: 'Connection to CRM',
+			content9: 'Setting up Google Ads, Yandex Direct'
+		},
+		onlineStore: {
+			content1: 'Adaptive layout',
+			content2: 'Admin panel',
+			content3: 'Effective texts',
+			content4: 'Payment module',
+			content5: 'Deployment on server',
+			content6: 'Website loading optimization',
+			content7: 'Online advisor module',
+			content8: 'Unique design',
+			content9: 'SEO optimization',
+			content10: 'Connection to CRM',
+			content11: 'Setting up Google Ads, Yandex Direct'
+		},
+		chatbot: {
+			content1: 'Small number of tasks',
+			content2: 'Linear functionality',
+			content3: 'Payment module',
+			content4: 'Increased number of tasks',
+			content5: 'Advanced functionality',
+			content6: 'Payment module',
+			content7: 'Any number of tasks',
+			content8: 'Any functionality',
+			content9: 'By agreement'
+		}
+	},
 	contact: {
 		heading: 'Contact us!',
 		text: 'We will answer you soon with an idea of the future product! Consultations are <b>free</b>',
@@ -320,6 +486,7 @@ const EN = {
 			}
 		},
 		operators: {
+			heading: 'Request a call back!',
 			free: {
 				singular: 'operator on the line',
 				plural: 'operators on the line'
