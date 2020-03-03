@@ -227,6 +227,15 @@ body.modal-open {
 .header-buttons {
     margin: 40px auto 90px auto;
 }
+.margin-top-70 {
+    margin-top: 70px;
+}
+.margin-bottom-70 {
+    margin-bottom: 70px;
+}
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
 .primary-button {
     min-width: 150px;
     padding: 0 20px;
@@ -2004,6 +2013,97 @@ fieldset {
 
 .popup-free-operators .busy b {
     color: red;
+}
+
+/* CASES */
+#cases .cases-content {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+#cases .case {
+    transition: all .2s ease-in-out;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#cases .case:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+#cases .case img {
+    width: 100%;
+}
+
+#cases .case .desc {
+    color: white;
+    position: absolute;
+    bottom: 24px;
+    left: 50px;
+}
+
+#cases .case .desc.alternate {
+    color: black;
+}
+
+#cases .case .desc h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+#cases .case .desc h5 {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* SPECIFIC CASE */
+#case h4 {
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+
+#case ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#case ul li:before {
+    content: "";
+    width: 16px;
+    height: 1px;
+    background-color: #201f1e;
+    position: absolute;
+    left: 0;
+    top: 14px;
+}
+
+#case ul li {
+    padding-left: 36px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#case p, #case ul li {
+    font-size: 22px;
+    line-height: 32px;
+    color: #696969;
+}
+
+#case .desc div {
+    margin-bottom: 40px;
+}
+
+#case .desc div.no-margin {
+    margin-bottom: 0;
+}
+
+#case .heading {
+    text-align: center;
+    font-size: 30px;
 }
 
 /* MY PERSONAL STYLES */

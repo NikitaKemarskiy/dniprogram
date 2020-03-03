@@ -22,6 +22,7 @@ const PRICING_PARTS = new Set([
 	'landing',
 	'onlineStore'
 ]);
+const CASES_PARTS = new Set(['chatbot']);
 const DEFAULT_PART = {
 	info: 'home'
 };
@@ -62,9 +63,13 @@ async function langAndPathSpecifiedHandler(ctx) {
 	const pricing = PRICING_PARTS.has(ctx.params.part)
 					? ctx.params.part
 					: null;
+	const cases = CASES_PARTS.has(ctx.params.part)
+					? ctx.params.part
+					: null;
 	const part = {
 		info,
-		pricing
+		pricing,
+		cases
 	};
 	// Get language
 	const contentLanguage = ctx.params.lang;
@@ -82,6 +87,34 @@ async function langAndPathSpecifiedHandler(ctx) {
 	await ctx.render('index', { local, operators, part, contentLanguage });
 }
 
+async function casesHandler(ctx) {
+	// Get website content part
+	// For example: home | onlineStore | landing etc.
+	const service = ctx.params.part;
+	// Get case name
+	const caseName = ctx.params.case
+	// Get language
+	const contentLanguage = ctx.params.lang;
+	// Check whether language is valid
+	if (!SUPPORTED_LANGS.has(contentLanguage)) {
+		ctx.throw(404, 'Not found. Invalid language was set');
+	}
+	// Set header
+	ctx.set('Content-Language', contentLanguage);
+	// Render page
+	const local = contentLanguage === 'en' ? EN :
+				  contentLanguage === 'ru' ? RU :
+				  contentLanguage === 'uk' ? UK : RU;
+	const operators = getOperators(contentLanguage);
+	await ctx.render(`cases`, {
+		local,
+		operators,
+		service,
+		caseName,
+		contentLanguage
+	});
+}
+
 async function mailHandler(ctx) {
 	// Get language
 	const contentLanguage = ctx.params.lang;
@@ -94,5 +127,6 @@ async function mailHandler(ctx) {
 module.exports = {
 	langSpecifiedHandler,
 	langAndPathSpecifiedHandler,
+	casesHandler,
 	mailHandler
 };

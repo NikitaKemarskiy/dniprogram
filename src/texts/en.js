@@ -328,6 +328,195 @@ const EN = {
 			text: 'Our purpose is to make effective and successful product, focusing on quality and customers wishes'
 		}
 	},
+	cases: {
+		heading: 'Portfolio',
+		case: {
+			desc: {
+				heading: 'Project description',
+				case: 'Case',
+				customer: 'Customer',
+				functional: 'Requirements',
+				result: 'Result',
+				working: 'Chatbot link',
+				desc: 'Description',
+				levels: 'Access levels'
+			},
+			screens: {
+				heading: 'Screenshots'
+			}
+		},
+		chatbot: {
+			cases: [
+				{
+					name: 'dnipro',
+					heading: 'Dispatching service of the city of Dnipro',
+					desc: 'Chatbot for dispatching service',
+				},
+				{
+					name: 'inventory',
+					heading: 'Rocket Manufacture',
+					desc: 'Chatbot for inventory',
+				},
+				{
+					name: 'budprokat',
+					heading: 'Budprokat',
+					desc: 'Chatbot for construction equipment rental',
+					isAlternate: true
+				},
+				{
+					name: 'skyeng',
+					heading: 'SkyEng',
+					desc: 'Chatbot for English school teachers',
+				},
+				{
+					name: 'esabot',
+					heading: 'EsaBot',
+					desc: 'Chatbot for maintaining an open registry of counterparties',
+				},
+				{
+					name: 'anglogram',
+					heading: 'Anglogram',
+					desc: 'Chatbot for English course',
+					isAlternate: true
+				}
+			],
+			dnipro: {
+				case: {
+					desc: {
+						case: 'Chatbot for the dispatching service of the <b>city of Dnipro</b>',
+						customer: 'Dnipro City State Administration',
+						functional: [
+							'Ability to create a request to the dispatch service',
+							'Track the status of your applications',
+							'View city outages',
+							'Receive emergency shutdowns notifications',
+							'Setting up your personal account and notifications'
+						],
+						result: 't.me/ekcumBot'
+					},
+					screens: [
+						'My applications',
+						'New application',
+						'Contact dispatcher',
+						'Emergency shutdowns',
+						'Settings'
+					]
+				}
+			},
+			inventory: {
+				case: {
+					desc: {
+						case: 'Chatbot for inventory and warehouse accounting in the workshop',
+						customer: '"Rocket Manufacture" LLC, Moscow - furniture manufactory producing interior and exterior items of premium class',
+						levels: [
+							'Worker',
+							'Stockman',
+							'Supplier',
+							'Chief',
+							'Admin'
+						],
+						result: 't.me/inventoryUseBot',
+						desc: 'The bot makes warehouse operations much more efficient. Each user has an accessible range of actions depending on his role. For example, an employee can receive positions for a certain period of time, return them, and also request cancellation of instruments from the administrator in case of breakage. When the deadline for receipt approaches the end, the employee will receive notifications that he needs to return the items to the warehouse. The supplier can coordinate the purchase with the administrator, as well as deliver the purchased items to the warehouse. The shop manager can create a request to the storekeeper for the purchase, for the issuance of positions to the employee, and also has access to administer the contents of the warehouse (view items by cell, view missing items, etc.). The storekeeper confirms all the actions associated with the issuance / receipt of positions, and also has access to warehouse management tools (moving positions in the warehouse, adding photos to positions, etc.). The administrator can perform any of the actions listed above, as well as add new users, new positions to the database, view overdue receipts, debtors, etc.'
+					},
+					screens: [
+						'Worker: getting the instrument',
+						'Worker: returning the instruments',
+						'Stockman: view cells content',
+						'Stockman: return confirmation',
+						'Stockman: view absent positions',
+						'Supplier: changing position photo',
+						'Chief: adding position'
+					]
+				}
+			},
+			esabot: {
+				case: {
+					desc: {
+						case: 'Chatbot for maintaining an open registry of suppliers',
+						customer: 'Company "RentAll", engaged in comprehensive technical support of events: <a href="https://www.rentall.in.ua">website</a>',
+						functional: [
+							'Ability to add supplier data to the registry',
+							'Ability to add equipment data to the registry',
+							'Ability to search for data by name and phone number',
+							'The ability to search for equipment',
+							'Mailing to chatbot subscribers',
+							'Keep statistics, the ability of admin to view it',
+						],
+						result: 't.me/esabot_bot'
+					},
+					screens: [
+						'Search for supplier',
+						'Adding data',
+						'Search for equipment'
+					]
+				}
+			},
+			skyeng: {
+				case: {
+					desc: {
+						case: 'Chatbot for English school teachers',
+						customer: '"Skyeng" - international online english language school: <a href="https://skyeng.com.ua">website</a>',
+						functional: [
+							'Ability for teacher to track students absenteeism',
+							'Students reminders about tuition payment',
+							'Keeping students\' attendance journals by teachers',
+							'Mailing to teachers'
+						],
+						result: 't.me/skyengAlertsBot'
+					},
+					screens: [
+						'Start screen',
+						'Students journals',
+						'Students journals'
+					]
+				}
+			},
+			budprokat: {
+				case: {
+					desc: {
+						case: 'Chatbot for construction equipment rental',
+						customer: '"Budprokat" LLC, the company is engaged in the rental of construction equipment: <a href="https://budprokat.kiev.ua/">website</a>',
+						functional: [
+							'Ability to view the catalog of tools and equipment',
+							'Filling the basket with equipment',
+							'Ability to apply for a rental',
+							'Sending an application to the channel of the corresponding office, depending on the city district',
+							'Ability to contact the manager',
+							'Mailing to chatbot subscribers',
+							'Keep statistics, the ability of admin to view it'
+						],
+						result: 't.me/budprokatBot'
+					},
+					screens: [
+						'View catalog',
+						'Call center',
+						'View cart',
+						'Office selection',
+						'Making order'
+					]
+				}
+			},
+			anglogram: {
+				case: {
+					desc: {
+						case: 'Chatbot for enrolling in English courses',
+						customer: 'English language school "Anglogram"',
+						functional: [
+							'Ability to enroll in courses',
+							'Increasing audience engagement',
+							'Mailing to chatbot subscribers',
+							'Keep statistics, the ability of admin to view it'
+						],
+						result: 't.me/AnglogramBot'
+					},
+					screens: [
+						'Enroll in course',
+						'Input your group'
+					]
+				}
+			},
+		}
+	},
 	team: {
 		heading: 'Our team',
 		content1: {
