@@ -406,6 +406,10 @@
     .footer-secondary-nav li {
         margin-bottom: 20px;
     }
+    #case p, #case ul li {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 @media (min-width: 780px) and (max-width: 960px) {
     .team-member {
