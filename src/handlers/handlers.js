@@ -22,7 +22,10 @@ const PRICING_PARTS = new Set([
 	'landing',
 	'onlineStore'
 ]);
-const CASES_PARTS = new Set(['chatbot']);
+const CASES_PARTS = new Set([
+	'chatbot',
+	//'onlineStore'
+]);
 const DEFAULT_PART = {
 	info: 'home'
 };
