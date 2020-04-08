@@ -2318,6 +2318,10 @@ img.header-logo {
     line-height: 28px;
 }
 
+#partners img {
+    margin: 20px 0;
+}
+
 .cool_facts_area {
     position: relative;
     z-index: auto;

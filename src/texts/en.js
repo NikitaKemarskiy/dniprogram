@@ -556,6 +556,9 @@ const EN = {
 			position: 'Sales Manager'
 		}
 	},
+	partners: {
+		heading: 'Our clients'
+	},
 	testimonials: {
 		content1: {
 			text: '“Our company needed a Windows program for working time accounting and shift schedules. We were negotiating with various potential performers for a long time, as a result, we decided to work with this team, since here the managers saw the project most accurately and offered the most interesting solutions. Result: a finished product that is actively used in our company”',
