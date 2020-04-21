@@ -16,6 +16,7 @@ const EN = {
 		more: 'Read more'
 	},
 	home: {
+		introHeading: 'Digital agency that will take your business to the next level',
 		heading: 'What do we offer?',
 		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
 		service: 'Не указана',
@@ -42,6 +43,7 @@ const EN = {
 		}
 	},
 	website: {
+		introHeading: 'Professional website development on order',
 		heading: 'What websites do we offer?',
 		title: 'Dniprogram - Website Development | For sales, landing page, business cards, corporate, online stores',
 		service: 'Разработка веб-сайта',
@@ -74,6 +76,7 @@ const EN = {
 		}
 	},
 	businessCard: {
+		introHeading: 'Individual development of business card sites on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Development of business card sites | Custom-made, responsive display, unique design',
 		service: 'Разработка сайта-визитки',
@@ -108,6 +111,7 @@ const EN = {
 		}
 	},
 	corporate: {
+		introHeading: 'Professional development of corporate websites on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Development of corporate sites | Custom-made, for your business, unique design',
 		service: 'Разработка корпоративного сайта',
@@ -143,6 +147,7 @@ const EN = {
 		}
 	},
 	landing: {
+		introHeading: 'Professional development of landing pages on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Landing Development | For your business, selling texts, unique design',
 		service: 'Разработка лендинга',
@@ -178,6 +183,7 @@ const EN = {
 		}
 	},
 	onlineStore: {
+		introHeading: 'Professional development of online stores on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Development of online stores | For your business, turnkey, unique design',
 		service: 'Разработка интернет-магазина',
@@ -213,6 +219,7 @@ const EN = {
 		}
 	},
 	chatbot: {
+		introHeading: 'Professional development of Telegram, Viber, Facebook chatbots on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Chatbot development | Telegram, Viber, Facebook',
 		service: 'Разработка чат-бота',
@@ -244,6 +251,7 @@ const EN = {
 		}
 	},
 	server: {
+		introHeading: 'Professional development of server applications, API on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Server applications development | API',
 		service: 'Разработка серверного приложения',
@@ -274,6 +282,7 @@ const EN = {
 		}
 	},
 	desktop: {
+		introHeading: 'Professional development of desktop applications on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Desktop applications development | For Windows, MacOS, Linux',
 		service: 'Разработка desktop-приложения',
