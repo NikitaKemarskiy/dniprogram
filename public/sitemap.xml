@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://dniprogram.com/</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<!-- RU -->
+<url>
+  <loc>https://dniprogram.com/ru/home</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/website</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/chatbot</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/server</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/desktop</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/landing</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/businessCard</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/corporate</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/onlineStore</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/chatbot/cases/sanahunt-lounge</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/chatbot/cases/dnipro</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/chatbot/cases/sapori-veri</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/chatbot/cases/cityzen</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/chatbot/cases/inventory</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/chatbot/cases/restabot</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/chatbot/cases/budprokat</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/chatbot/cases/skyeng</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/chatbot/cases/esabot</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/ru/chatbot/cases/anglogram</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<!-- EN -->
+<url>
+  <loc>https://dniprogram.com/en/home</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/website</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/chatbot</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/server</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/desktop</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/landing</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/businessCard</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/corporate</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/onlineStore</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/chatbot/cases/sanahunt-lounge</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/chatbot/cases/dnipro</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/chatbot/cases/sapori-veri</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/chatbot/cases/cityzen</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/chatbot/cases/inventory</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/chatbot/cases/restabot</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/chatbot/cases/budprokat</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/chatbot/cases/skyeng</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/chatbot/cases/esabot</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/en/chatbot/cases/anglogram</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<!-- UK -->
+<url>
+  <loc>https://dniprogram.com/uk/home</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/website</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/chatbot</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/server</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/desktop</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/landing</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/businessCard</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/corporate</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/onlineStore</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/chatbot/cases/sanahunt-lounge</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/chatbot/cases/dnipro</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/chatbot/cases/sapori-veri</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/chatbot/cases/cityzen</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/chatbot/cases/inventory</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/chatbot/cases/restabot</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/chatbot/cases/budprokat</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/chatbot/cases/skyeng</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/chatbot/cases/esabot</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dniprogram.com/uk/chatbot/cases/anglogram</loc>
+  <lastmod>2020-04-21T11:03:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+</urlset>
