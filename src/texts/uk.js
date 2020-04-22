@@ -652,6 +652,51 @@ const UK = {
 					]
 				}
 			},
+		},
+		onlineStore: {
+			cases: [
+				{
+					name: 'issa',
+					heading: 'Issa Plus',
+					desc: 'Жіночий бутік',
+					isAlternate: true,
+					link: '/redirect?href=https://issaplus.com/'
+				},
+				{
+					name: 'citycom',
+					heading: 'CityCom',
+					desc: 'Магазин електроніки',
+					link: '/redirect?href=https://city.com.ua/'
+				},
+				{
+					name: 'muzikant',
+					heading: 'Muzikant',
+					desc: 'Магазин музичних інструментів',
+					isAlternate: true,
+					link: '/redirect?href=https://muzikant.ua/'
+				},
+				{
+					name: 'gepur',
+					heading: 'Gepur',
+					desc: 'Магазин дизайнерського жіночого одягу',
+					isAlternate: true,
+					link: '/redirect?href=https://gepur.com/'
+				},
+				{
+					name: 'eparts',
+					heading: 'Eparts',
+					desc: 'Магазин автозапчастин',
+					isAlternate: true,
+					link: '/redirect?href=https://eparts.kiev.ua/'
+				},
+				{
+					name: 'pixus',
+					heading: 'Pixus',
+					desc: 'Магазин форм для декоративного каменю',
+					isAlternate: true,
+					link: '/redirect?href=http://pixus.in.ua/'
+				}
+			]
 		}
 	},
 	team: {

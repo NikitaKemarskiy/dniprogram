@@ -231,7 +231,7 @@
 					<div class="row cases-content">
 						<% for (let i = 0; i < local.cases[part.info].cases.length; i++) { %>
 							<div class="col-12 col-sm-6 case">
-								<a href="/<%= contentLanguage %>/<%= part.info %>/cases/<%= local.cases[part.info].cases[i].name %>">
+								<a href="<%= local.cases[part.info].cases[i].link || `/${contentLanguage}/${part.info}/cases/${local.cases[part.info].cases[i].name}` %>">
 									<img src="/img/cases/<%= part.info %>/<%= local.cases[part.info].cases[i].name %>.jpg" alt="">
 								</a>
 								<div class="desc <% if (local.cases[part.info].cases[i].isAlternate) { %> alternate <% } %>">

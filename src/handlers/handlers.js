@@ -24,7 +24,7 @@ const PRICING_PARTS = new Set([
 ]);
 const CASES_PARTS = new Set([
 	'chatbot',
-	//'onlineStore'
+	'onlineStore'
 ]);
 const DEFAULT_PART = {
 	info: 'home'
@@ -118,6 +118,14 @@ async function casesHandler(ctx) {
 	});
 }
 
+async function redirectHandler(ctx) {
+	const { href } = ctx.query;
+	if (!href || !href.startsWith('http')) {
+		ctx.throw(404, 'Not found. Invalid link was set for redirect');
+	}
+	ctx.redirect(href);
+}
+
 async function mailHandler(ctx) {
 	// Get language
 	const contentLanguage = ctx.params.lang;
@@ -131,5 +139,6 @@ module.exports = {
 	langSpecifiedHandler,
 	langAndPathSpecifiedHandler,
 	casesHandler,
+	redirectHandler,
 	mailHandler
 };

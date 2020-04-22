@@ -405,7 +405,6 @@ const RU = {
 					heading: 'EsaBot',
 					desc: 'Чат-бот для ведения открытого реестра контрагентов',
 				},
-				
 				{
 					name: 'anglogram',
 					heading: 'Anglogram',
@@ -654,67 +653,51 @@ const RU = {
 				}
 			},
 		},
-		/*onlineStore: {
+		onlineStore: {
 			cases: [
 				{
-					name: 'citycom',
-					heading: 'Диспетчерская г. Днепр',
-					desc: 'Чат-бот для диспетчерской службы',
-				},
-				{
-					name: 'eparts',
-					heading: 'Rocket Manufacture',
-					desc: 'Чат-бот для инвентаризации и ведения складского учета',
-				},
-				{
-					name: 'gepur',
-					heading: 'Будпрокат',
-					desc: 'Чат-бот для аренды строительного оборудования',
-					isAlternate: true
-				},
-				{
 					name: 'issa',
-					heading: 'EsaBot',
-					desc: 'Чат-бот для ведения открытого реестра контрагентов',
-					isAlternate: true
+					heading: 'Issa Plus',
+					desc: 'Женский бутик',
+					isAlternate: true,
+					link: '/redirect?href=https://issaplus.com/'
+				},
+				{
+					name: 'citycom',
+					heading: 'CityCom',
+					desc: 'Магазин электроники',
+					link: '/redirect?href=https://city.com.ua/'
 				},
 				{
 					name: 'muzikant',
-					heading: 'SkyEng',
-					desc: 'Чат-бот для преподавателей школы английского',
-					isAlternate: true
+					heading: 'Muzikant',
+					desc: 'Магазин музыкальных инструментов',
+					isAlternate: true,
+					link: '/redirect?href=https://muzikant.ua/'
+				},
+				{
+					name: 'gepur',
+					heading: 'Gepur',
+					desc: 'Магазин дизайнерской женской одежды',
+					isAlternate: true,
+					link: '/redirect?href=https://gepur.com/'
+				},
+				{
+					name: 'eparts',
+					heading: 'Eparts',
+					desc: 'Магазин автозапчастей',
+					isAlternate: true,
+					link: '/redirect?href=https://eparts.kiev.ua/'
 				},
 				{
 					name: 'pixus',
-					heading: 'Anglogram',
-					desc: 'Чат-бот для записи на курсы английского языка',
-					isAlternate: true
+					heading: 'Pixus',
+					desc: 'Магазин форм для декоративного камня',
+					isAlternate: true,
+					link: '/redirect?href=http://pixus.in.ua/'
 				}
-			],
-			dnipro: {
-				case: {
-					desc: {
-						case: 'Чат-бот для диспетчерской службы <b>города Днепр</b>',
-						customer: 'Днепровская городская государственная администрация',
-						functional: [
-							'Возможность создать заявку в диспетчерскую службу',
-							'Отслеживание статусов своих заявок',
-							'Просмотр аварийных отключений по городу',
-							'Получение уведомлений об аварийных отключениях',
-							'Настройка личного кабинета и уведомлений'
-						],
-						result: 't.me/ekcumBot'
-					},
-					screens: [
-						'Мои заявки',
-						'Оставить заявку',
-						'Связаться с диспетчером',
-						'Аварийные отключения',
-						'Настройки'
-					]
-				}
-			}
-		}*/
+			]
+		}
 	},
 	team: {
 		heading: 'Наша команда',

@@ -524,6 +524,51 @@ const EN = {
 					]
 				}
 			},
+		},
+		onlineStore: {
+			cases: [
+				{
+					name: 'issa',
+					heading: 'Issa Plus',
+					desc: 'Women\'s Online Boutique',
+					isAlternate: true,
+					link: '/redirect?href=https://issaplus.com/'
+				},
+				{
+					name: 'citycom',
+					heading: 'CityCom',
+					desc: 'Online Electronics Store',
+					link: '/redirect?href=https://city.com.ua/'
+				},
+				{
+					name: 'muzikant',
+					heading: 'Muzikant',
+					desc: 'Online Musical Instrument Store',
+					isAlternate: true,
+					link: '/redirect?href=https://muzikant.ua/'
+				},
+				{
+					name: 'gepur',
+					heading: 'Gepur',
+					desc: 'Designer Women\'s Online Clothing Store',
+					isAlternate: true,
+					link: '/redirect?href=https://gepur.com/'
+				},
+				{
+					name: 'eparts',
+					heading: 'Eparts',
+					desc: 'Online Auto Parts Store',
+					isAlternate: true,
+					link: '/redirect?href=https://eparts.kiev.ua/'
+				},
+				{
+					name: 'pixus',
+					heading: 'Pixus',
+					desc: 'Online Store of Forms for Decorative Stone',
+					isAlternate: true,
+					link: '/redirect?href=http://pixus.in.ua/'
+				}
+			]
 		}
 	},
 	team: {
