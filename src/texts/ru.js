@@ -346,7 +346,6 @@ const RU = {
 				customer: 'Заказчик',
 				functional: 'Функционал',
 				result: 'Результат',
-				working: 'Ссылка на рабочий чат-бот',
 				desc: 'Описание',
 				levels: 'Уровни доступа'
 			},
@@ -362,15 +361,21 @@ const RU = {
 					desc: 'Чат-бот для ресторана люкс-класса',
 				},
 				{
+					name: 'cybercentre',
+					heading: 'Донецкий институт МВД Украины',
+					desc: 'Чат-бот для проекта "Cybercentre"',
+					isAlternate: true
+				},
+				{
+					name: 'tklaser',
+					heading: 'TK-laser',
+					desc: 'Чат-бот для сети салонов лазерной эпиляции',
+					isAlternate: true
+				},
+				{
 					name: 'dnipro',
 					heading: 'Диспетчерская г. Днепр',
 					desc: 'Чат-бот для диспетчерской службы',
-				},
-				{
-					name: 'sapori-veri',
-					heading: 'Sapori Veri',
-					desc: 'Чат-бот для итальянского ресторана',
-					isAlternate: true
 				},
 				{
 					name: 'cityzen',
@@ -379,15 +384,21 @@ const RU = {
 					isAlternate: true
 				},
 				{
+					name: 'sapori-veri',
+					heading: 'Sapori Veri',
+					desc: 'Чат-бот для итальянского ресторана',
+					isAlternate: true
+				},
+				{
+					name: 'quizbot',
+					heading: 'QuizBot',
+					desc: 'Чат-бот для викторин и опросов',
+					isAlternate: true
+				},
+				{
 					name: 'inventory',
 					heading: 'Rocket Manufacture',
 					desc: 'Чат-бот для инвентаризации и ведения складского учета',
-				},
-				{
-					name: 'restabot',
-					heading: 'Restabot',
-					desc: 'Чат-бот для ресторана (презентационный)',
-					isAlternate: true
 				},
 				{
 					name: 'budprokat',
@@ -401,16 +412,22 @@ const RU = {
 					desc: 'Чат-бот для преподавателей школы английского',
 				},
 				{
+					name: 'restabot',
+					heading: 'Restabot',
+					desc: 'Чат-бот для ресторана (презентационный)',
+					isAlternate: true
+				},
+				{
 					name: 'esabot',
 					heading: 'EsaBot',
 					desc: 'Чат-бот для ведения открытого реестра контрагентов',
 				},
-				{
+				/*{
 					name: 'anglogram',
 					heading: 'Anglogram',
 					desc: 'Чат-бот для записи на курсы английского языка',
 					isAlternate: true
-				}
+				}*/
 			],
 			'sanahunt-lounge': {
 				case: {
@@ -424,21 +441,100 @@ const RU = {
 							'Отправка заказов в канал с персоналом ресторана',
 							'Ограниченный доступ к чат-боту по ссылке'
 						],
-						result: 't.me/sanahuntlounge_bot',
-						isLimited: true,
-						limitedText: 'Доступ к чат-боту ограничен. Если хотите проверить работу бота - звоните / пишите нам, мы выдадим ссылку для перехода на чат-бот'
+						result: 'Ссылка на рабочий чат-бот: <a href="https://t.me/sanahuntlounge_bot">t.me/sanahuntlounge_bot</a>. Доступ к чат-боту ограничен. Если хотите проверить работу бота - звоните / пишите нам, мы выдадим ссылку для перехода на чат-бот'
 					},
 					screens: [
-						'Начало работы',
-						'Выбор меню',
-						'Категории блюд',
-						'Просмотр блюд',
-						'Добавление в корзину',
-						'Просмотр корзины',
-						'Оформление заказа',
-						'Оформление заказа',
+						{ fileName: 'screen1.png', title: 'Начало работы' },
+						{ fileName: 'screen2.png', title: 'Выбор меню' },
+						{ fileName: 'screen3.png', title: 'Категории блюд' },
+						{ fileName: 'screen4.png', title: 'Просмотр блюд' },
+						{ fileName: 'screen5.png', title: 'Добавление в корзину' },
+						{ fileName: 'screen6.png', title: 'Просмотр корзины' },
+						{ fileName: 'screen7.png', title: 'Оформление заказа' },
+						{ fileName: 'screen8.png', title: 'Оформление заказа' },
 					],
 					isWindows: true
+				}
+			},
+			cybercentre: {
+				case: {
+					desc: {
+						case: 'Чат-бот для образовательного <b>проекта "Cybercentre"</b> Донецкого института МВД Украины',
+						customer: 'Донецкий юридический институт МВД Украины при поддержке ЕС, ГО "Фонд "Професійний розвиток Харкова"" и UPSHIFT Украина',
+						functional: [
+							'Удобный просмотр информации по разделам',
+							'Гибкая настройка контента в боте со стороны администраторов',
+							'Возможность запросить помощь у специалистов Cybercentre'
+						],
+						result: 'Ссылка на рабочий чат-бот: <a href="https://t.me/Cybercentre_bot">t.me/Cybercentre_bot</a>'
+					},
+					screens: [
+						{ fileName: 'screen1.png', title: 'Главное меню' },
+						{ fileName: 'screen2.png', title: 'Просмотр раздела' },
+						{ fileName: 'screen3.png', title: 'Изменение раздела' },
+						{ fileName: 'screen4.png', title: 'О проекте' },
+						{ fileName: 'screen5.png', title: 'Обратная связь' },
+					]
+				}
+			},
+			tklaser: {
+				case: {
+					desc: {
+						case: 'Чат-боты для сети салонов лазерной эпиляции',
+						customer: 'Сеть салонов лазерной эпиляции по Украине TK-laser',
+						functional: [
+							'Чат-боты Telegram + Viber + Facebook Messenger',
+							'Интеграция с телефонией Binotel (сценарии общения с клиентом)',
+							'Возможность заказать обратный звонок',
+							'Возможность оставить отзыв',
+							'Информационный блок с часто задаваемыми вопросами',
+							'Админ-панель для управления контентом, заявками на обратный звонок и настраиваемой рассылкой',
+						],
+						result: 'Ссылка на рабочие чат-боты: <a href="https://t.me/TK_Laser_Bot">Telegram</a>; <a href="viber://pa?chatURI=tklaser_bot">Viber</a>; <a href="https://www.facebook.com/diod.lazer.kiev/">Facebook Messenger</a>'
+					},
+					screens: [
+						{ fileName: 'screen1.png', title: 'Обратный звонок' },
+						{ fileName: 'screen2.png', title: 'FAQ (Facebook)' },
+						{ fileName: 'screen3.png', title: 'FAQ (Facebook)' },
+						{ fileName: 'screen4.png', title: 'Главное меню' },
+						{ fileName: 'screen5.png', title: 'FAQ (Telegram)' },
+					],
+					screensFullScreen: [
+						{ fileName: 'screen6.png', title: 'Начало работы' },
+						{ fileName: 'screen7.png', title: 'FAQ (Viber)' },
+						{ fileName: 'screen8.png', title: 'Обратный звонок' },
+						{ fileName: 'screen9.png', title: 'Управление контентом' },
+						{ fileName: 'screen10.png', title: 'Управление контентом' },
+						{ fileName: 'screen11.png', title: 'Заявки на обратный звонок' },
+						{ fileName: 'screen12.png', title: 'Рассылка' }
+					]
+				}
+			},
+			quizbot: {
+				case: {
+					desc: {
+						case: 'Чат-бот для проведения викторин и опросов в канале',
+						customer: 'Физ. лицо',
+						functional: [
+							'Пост викторин и опросов в канал. Взаимодействие с вопросами сопровождается оповещениями',
+							'Создание викторин в админ-панели. Викторина состоит из вопросов, имеет свой приз, время на ответ, возможно настроить интервал между вопросами',
+							'Редактирование текстов в админ-панели',
+							'Создание опросов в админ-панели. Опрос состоит из одного вопроса, также имеет время на ответ',
+							'Выгрузка отчетов Excel: рейтинг пользователей по опросам за неделю / месяц, результаты викторины'
+						],
+						result: 'Ссылка на канал, в котором работает чат-бот: <a href="https://t.me/joinchat/AAAAAEZJc8LNHJhlUsdClA">t.me/joinchat</a>'
+					},
+					screens: [
+						{ fileName: 'screen1.png', title: 'Опрос' },
+						{ fileName: 'screen2.png', title: 'Викторина' },
+					],
+					screensFullScreen: [
+						{ fileName: 'screen3.png', title: 'Управление текстами' },
+						{ fileName: 'screen4.png', title: 'Создание опроса' },
+						{ fileName: 'screen5.png', title: 'Просмотр опросов' },
+						{ fileName: 'screen6.png', title: 'Просмотр викторин' },
+						{ fileName: 'screen7.png', title: 'Создание викторины' }
+					]
 				}
 			},
 			dnipro: {
@@ -453,14 +549,14 @@ const RU = {
 							'Получение уведомлений об аварийных отключениях',
 							'Настройка личного кабинета и уведомлений'
 						],
-						result: 't.me/ekcumBot'
+						result: 'Ссылка на рабочий чат-бот: <a href="https://t.me/ekcumBot">t.me/ekcumBot</a>'
 					},
 					screens: [
-						'Мои заявки',
-						'Оставить заявку',
-						'Связаться с диспетчером',
-						'Аварийные отключения',
-						'Настройки'
+						{ fileName: 'screen1.png', title: 'Мои заявки' },
+						{ fileName: 'screen2.png', title: 'Оставить заявку' },
+						{ fileName: 'screen3.png', title: 'Связаться с диспетчером' },
+						{ fileName: 'screen4.png', title: 'Аварийные отключения' },
+						{ fileName: 'screen5.png', title: 'Настройки' }
 					]
 				}
 			},
@@ -476,14 +572,14 @@ const RU = {
 							'Возможность воспользоваться накопленными бонусами',
 							'Бронирование столика'
 						],
-						result: 't.me/saporiveri_bot'
+						result: 'Ссылка на рабочий чат-бот: <a href="https://t.me/saporiveri_bot">t.me/saporiveri_bot</a>'
 					},
 					screens: [
-						'Просмотр меню',
-						'Просмотр блюд',
-						'Конкретное блюдо',
-						'Бронь столика',
-						'Карта лояльности'
+						{ fileName: 'screen1.png', title: 'Просмотр меню' },
+						{ fileName: 'screen2.png', title: 'Просмотр блюд' },
+						{ fileName: 'screen3.png', title: 'Конкретное блюдо' },
+						{ fileName: 'screen4.png', title: 'Бронь столика' },
+						{ fileName: 'screen5.png', title: 'Карта лояльности' }
 					],
 					isWindows: true
 				}
@@ -500,15 +596,15 @@ const RU = {
 							'Ввод данных о доставке',
 							'Оплата в чат-боте и оформление подписки'
 						],
-						result: 't.me/coffeeloverua_bot',
+						result: 'Ссылка на рабочий чат-бот: <a href="https://t.me/coffeeloverua_bot">t.me/coffeeloverua_bot</a>',
 					},
 					screens: [
-						'Начало работы',
-						'Выбор опций',
-						'Выбор сорта',
-						'Выбор пакета',
-						'Данные доставки',
-						'Оплата подписки'
+						{ fileName: 'screen1.png', title: 'Начало работы' },
+						{ fileName: 'screen2.png', title: 'Выбор опций' },
+						{ fileName: 'screen3.png', title: 'Выбор сорта' },
+						{ fileName: 'screen4.png', title: 'Выбор пакета' },
+						{ fileName: 'screen5.png', title: 'Данные доставки' },
+						{ fileName: 'screen6.png', title: 'Оплата подписки' }
 					],
 					isWindows: true
 				}
@@ -525,17 +621,17 @@ const RU = {
 							'Начальник цеха',
 							'Администратор'
 						],
-						result: 't.me/inventoryUseBot',
+						result: 'Ссылка на рабочий чат-бот: <a href="https://t.me/inventoryUseBot">t.me/inventoryUseBot</a>',
 						desc: 'Бот делает работу склада гораздо более эффективной. Каждый пользователь имеет доступный спектр действий в зависимости от своей роли. Например, работник может получать позиции на определенный срок, возвращать их, а также запрашивать списывание инструментов у администратора в случае их поломки. При приближении срока получения к концу работник будет получать уведомления о том, что нужно вернуть позиции в склад. Снабженец может согласовать закупку с администратором, а также выполнить поставку закупленных позиций в склад. Начальник цеха может создать запрос кладовщику на закупку, на выдачу позиций работнику, а также имеет доступ к администрированию содержимого склада (просмотр позиций по ячейкам, просмотр отсутствующих позиций и т.д.). Кладовщик подтверждает все действия, связанные с выдачей / получением позиций, а также имеет доступ к инструментам управления склада (перемещение позиций по складу, добавление фото к позициям и т.д.). Администратор может выполнять любые действия, перечисленные выше, а также добавлять новых пользователей, новые позиции в базу, просматривать просроченные получения, должников и т.п.'
 					},
 					screens: [
-						'Работник: получение инструмента',
-						'Работник: возврат инструмента',
-						'Кладовщик: просмотр ячеек',
-						'Кладовщик: подтверждение возврата',
-						'Кладовщик: отсутствующие позиции',
-						'Снабженец: изменение фото',
-						'Начальник цеха: добавление позиции'
+						{ fileName: 'screen1.png', title: 'Работник: получение инструмента' },
+						{ fileName: 'screen2.png', title: 'Работник: возврат инструмента' },
+						{ fileName: 'screen3.png', title: 'Кладовщик: просмотр ячеек' },
+						{ fileName: 'screen4.png', title: 'Кладовщик: подтверждение возврата' },
+						{ fileName: 'screen5.png', title: 'Кладовщик: отсутствующие позиции' },
+						{ fileName: 'screen6.png', title: 'Снабженец: изменение фото' },
+						{ fileName: 'screen7.png', title: 'Начальник цеха: добавление позиции' }
 					]
 				}
 			},
@@ -552,16 +648,16 @@ const RU = {
 							'Отправка заказов в канал с персоналом ресторана',
 							'Бронирование столика'
 						],
-						result: 't.me/restaTeleBot'
+						result: 'Ссылка на рабочий чат-бот: <a href="https://t.me/restaTeleBot">t.me/restaTeleBot</a>'
 					},
 					screens: [
-						'Просмотр меню',
-						'Просмотр блюд',
-						'Конкретное блюдо',
-						'Просмотр блюд',
-						'Просмотр корзины',
-						'Оформление заказа',
-						'Бронь столика'
+						{ fileName: 'screen1.png', title: 'Просмотр меню' },
+						{ fileName: 'screen2.png', title: 'Просмотр блюд' },
+						{ fileName: 'screen3.png', title: 'Конкретное блюдо' },
+						{ fileName: 'screen4.png', title: 'Просмотр блюд' },
+						{ fileName: 'screen5.png', title: 'Просмотр корзины' },
+						{ fileName: 'screen6.png', title: 'Оформление заказа' },
+						{ fileName: 'screen7.png', title: 'Бронь столика' }
 					],
 					isWindows: true
 				}
@@ -579,12 +675,12 @@ const RU = {
 							'Рассылка по базе подписчиков бота',
 							'Ведение и просмотр статистики админом',
 						],
-						result: 't.me/esabot_bot'
+						result: 'Ссылка на рабочий чат-бот: <a href="https://t.me/esabot_bot">t.me/esabot_bot</a>'
 					},
 					screens: [
-						'Поиск данных',
-						'Добавление информации',
-						'Поиск оборудования'
+						{ fileName: 'screen1.png', title: 'Поиск данных' },
+						{ fileName: 'screen2.png', title: 'Добавление информации' },
+						{ fileName: 'screen3.png', title: 'Поиск оборудования' }
 					]
 				}
 			},
@@ -599,12 +695,12 @@ const RU = {
 							'Ведение журналов посещений преподавателями',
 							'Рассылка по базе преподавателей'
 						],
-						result: 't.me/skyengAlertsBot'
+						result: 'Ссылка на рабочий чат-бот: <a href="https://t.me/skyengAlertsBot">t.me/skyengAlertsBot</a>'
 					},
 					screens: [
-						'Начало работы',
-						'Просмотр журналов',
-						'Просмотр журналов'
+						{ fileName: 'screen1.png', title: 'Начало работы' },
+						{ fileName: 'screen2.png', title: 'Просмотр журналов' },
+						{ fileName: 'screen3.png', title: 'Просмотр журналов' }
 					]
 				}
 			},
@@ -622,14 +718,14 @@ const RU = {
 							'Рассылка по базе подписчиков',
 							'Ведение и просмотр статистики админом'
 						],
-						result: 't.me/budprokatBot'
+						result: 'Ссылка на рабочий чат-бот: <a href="https://t.me/budprokatBot">t.me/budprokatBot</a>'
 					},
 					screens: [
-						'Просмотр каталога',
-						'Связь в call-центром',
-						'Просмотр корзины',
-						'Выбор офиса',
-						'Оформление заказа'
+						{ fileName: 'screen1.png', title: 'Просмотр каталога' },
+						{ fileName: 'screen2.png', title: 'Связь в call-центром' },
+						{ fileName: 'screen3.png', title: 'Просмотр корзины' },
+						{ fileName: 'screen4.png', title: 'Выбор офиса' },
+						{ fileName: 'screen5.png', title: 'Оформление заказа' }
 					]
 				}
 			},
@@ -644,11 +740,11 @@ const RU = {
 							'Рассылка по базе подписчиков',
 							'Ведение и просмотр статистики админом'
 						],
-						result: 't.me/AnglogramBot'
+						result: 'Ссылка на рабочий чат-бот: <a href="https://t.me/AnglogramBot">t.me/AnglogramBot</a>'
 					},
 					screens: [
-						'Запись на курс',
-						'Введение группы'
+						{ fileName: 'screen1.png', title: 'Запись на курс' },
+						{ fileName: 'screen2.png', title: 'Введение группы' }
 					]
 				}
 			},

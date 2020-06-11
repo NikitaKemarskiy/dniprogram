@@ -346,7 +346,6 @@ const UK = {
 				customer: 'Замовник',
 				functional: 'Функціонал',
 				result: 'Результат',
-				working: 'Посилання на робочий чат-бот',
 				desc: 'Опис',
 				levels: 'Рівні доступу'
 			},
@@ -362,15 +361,21 @@ const UK = {
 					desc: 'Чат-бот для ресторану класу "люкс"',
 				},
 				{
+					name: 'cybercentre',
+					heading: 'Донецький інститут МВС України',
+					desc: 'Чат-бот для проекту "Cybercentre"',
+					isAlternate: true
+				},
+				{
+					name: 'tklaser',
+					heading: 'TK-laser',
+					desc: 'Чат-бот для мережі салонів лазерної епіляції',
+					isAlternate: true
+				},
+				{
 					name: 'dnipro',
 					heading: 'Диспетчерська м. Дніпро',
 					desc: 'Чат-бот для диспетчерської служби',
-				},
-				{
-					name: 'sapori-veri',
-					heading: 'Sapori Veri',
-					desc: 'Чат-бот для італьянського ресторану',
-					isAlternate: true
 				},
 				{
 					name: 'cityzen',
@@ -379,15 +384,21 @@ const UK = {
 					isAlternate: true
 				},
 				{
+					name: 'sapori-veri',
+					heading: 'Sapori Veri',
+					desc: 'Чат-бот для італьянського ресторану',
+					isAlternate: true
+				},
+				{
+					name: 'quizbot',
+					heading: 'QuizBot',
+					desc: 'Чат-бот для вікторин та опитувань',
+					isAlternate: true
+				},
+				{
 					name: 'inventory',
 					heading: 'Rocket Manufacture',
 					desc: 'Чат-бот для інвентаризації та ведення складського обліку',
-				},
-				{
-					name: 'restabot',
-					heading: 'Restabot',
-					desc: 'Чат-бот для ресторану (презентаційний)',
-					isAlternate: true
 				},
 				{
 					name: 'budprokat',
@@ -396,21 +407,27 @@ const UK = {
 					isAlternate: true
 				},
 				{
-					name: 'esabot',
-					heading: 'EsaBot',
-					desc: 'Чат-бот для ведення відкритого реєстру контрагентів',
-				},
-				{
 					name: 'skyeng',
 					heading: 'SkyEng',
 					desc: 'Чат-бот для викладачів школи англійської мови',
 				},
 				{
+					name: 'restabot',
+					heading: 'Restabot',
+					desc: 'Чат-бот для ресторану (презентаційний)',
+					isAlternate: true
+				},
+				{
+					name: 'esabot',
+					heading: 'EsaBot',
+					desc: 'Чат-бот для ведення відкритого реєстру контрагентів',
+				},
+				/*{
 					name: 'anglogram',
 					heading: 'Anglogram',
 					desc: 'Чат-бот для запису на курси англійської мови',
 					isAlternate: true
-				}
+				}*/
 			],
 			'sanahunt-lounge': {
 				case: {
@@ -424,21 +441,102 @@ const UK = {
 							'Відправка замовлень в канал з персоналом ресторану',
 							'Обмежений доступ до чат-боту за посиланням'
 						],
-						result: 't.me/sanahuntlounge_bot',
+						result: 'Посилання на робочий чат-бот: <a href="https://t.me/sanahuntlounge_bot">t.me/sanahuntlounge_bot</a>',
 						isLimited: true,
 						limitedText: 'Доступ до чат-боту обмежений. Якщо хочете перевірити роботу бота - телефонуйте / пишіть нам, ми видамо посилання для переходу на чат-бот'
 					},
 					screens: [
-						'Початок роботи',
-						'Вибір меню',
-						'Категорії страв',
-						'Перегляд страв',
-						'Додавання до кошику',
-						'Перегляд кошику',
-						'Оформлення замовлення',
-						'Оформлення замовлення',
+						{ fileName: 'screen1.png', title: 'Початок роботи' },
+						{ fileName: 'screen2.png', title: 'Вибір меню' },
+						{ fileName: 'screen3.png', title: 'Категорії страв' },
+						{ fileName: 'screen4.png', title: 'Перегляд страв' },
+						{ fileName: 'screen5.png', title: 'Додавання до кошику' },
+						{ fileName: 'screen6.png', title: 'Перегляд кошику' },
+						{ fileName: 'screen7.png', title: 'Оформлення замовлення' },
+						{ fileName: 'screen8.png', title: 'Оформлення замовлення' }
 					],
 					isWindows: true
+				}
+			},
+			cybercentre: {
+				case: {
+					desc: {
+						case: 'Чат-бот для освітнього <b> проекту "Cybercentre" </b> Донецького інституту МВС України',
+						customer: 'Донецький юридичний інститут МВС України за підтримки ЄС, ГО "Фонд "Професійний розвиток Харкова"" і UPSHIFT Україна',
+						functional: [
+							'Зручний перегляд інформації по розділах',
+							'Гнучке налаштування контенту в боті з боку адміністраторів',
+							'Можливість попросити допомоги у фахівців Cybercentre'
+						],
+						result: 'Посилання на працюючий чат-бот: <a href="https://t.me/Cybercentre_bot"> t.me/Cybercentre_bot </a>'
+					},
+					screens: [
+						{ fileName: 'screen1.png', title: 'Головне меню' },
+						{ fileName: 'screen2.png', title: 'Перегляд розділу' },
+						{ fileName: 'screen3.png', title: 'Зміна розділу' },
+						{ fileName: 'screen4.png', title: 'Про проект' },
+						{ fileName: 'screen5.png', title: 'Зворотній зв\'язок' },
+					]
+				}
+			},
+			tklaser: {
+				case: {
+					desc: {
+						case: 'Чат-боти для мережі салонів лазерної епіляції',
+						customer: 'Мережа салонів лазерної епіляції по Україні TK-laser',
+						functional: [
+							'Чат-боти Telegram + Viber + Facebook Messenger',
+							'Інтеграція з телефонією Binotel (сценарії спілкування з клієнтом)',
+							'Можливість замовити зворотний дзвінок',
+							'Можливість залишити відгук',
+							'Інформаційний блок з частими запитаннями',
+							'Адмін-панель для управління контентом, заявками на зворотний дзвінок і розсилкою, що налаштовєуться',
+						],
+						result: 'Посилання на працюючі чат-боти: <a href="https://t.me/TK_Laser_Bot"> Telegram </a>; <a href="viber://pa?chatURI=tklaser_bot"> Viber </a>; <a href="https://www.facebook.com/diod.lazer.kiev/"> Facebook Messenger </a> '
+					},
+					screens: [
+						{ fileName: 'screen1.png', title: 'Зворотній дзвінок' },
+						{ fileName: 'screen2.png', title: 'FAQ (Facebook)' },
+						{ fileName: 'screen3.png', title: 'FAQ (Facebook)' },
+						{ fileName: 'screen4.png', title: 'Головне меню' },
+						{ fileName: 'screen5.png', title: 'FAQ (Telegram)' },
+					],
+					screensFullScreen: [
+						{ fileName: 'screen6.png', title: 'Початок роботи' },
+						{ fileName: 'screen7.png', title: 'FAQ (Viber)' },
+						{ fileName: 'screen8.png', title: 'Зворотній дзвінок' },
+						{ fileName: 'screen9.png', title: 'Управління контентом' },
+						{ fileName: 'screen10.png', title: 'Управління контентом' },
+						{ fileName: 'screen11.png', title: 'Заявки на зворотний дзвінок' },
+						{ fileName: 'screen12.png', title: 'Розсилка' }
+					]
+				}
+			},
+			quizbot: {
+				case: {
+					desc: {
+						case: 'Чат-бот для проведення вікторин і опитувань в каналі',
+						customer: 'Фіз. особа',
+						functional: [
+							'Постинг вікторин і опитувань в канал. Взаємодія з питаннями супроводжується оповіщенням',
+							'Створення вікторин в адмін-панелі. Вікторина складається з питань, має свій приз, час на відповідь, можливо налаштувати інтервал між питаннями',
+							'Редагування текстів в адмін-панелі',
+							'Створення опитувань в адмін-панелі. Опитування складається з одного питання, також має час на відповідь',
+							'Вивантаження звітів Excel: рейтинг користувачів за опитуваннями за тиждень / місяць, результати вікторини'
+						],
+						result: 'Посилання на канал, в якому працює чат-бот: <a href="https://t.me/joinchat/AAAAAEZJc8LNHJhlUsdClA"> t.me/joinchat </a>'
+					},
+					screens: [
+						{ fileName: 'screen1.png', title: 'Опитування' },
+						{ fileName: 'screen2.png', title: 'Вікторина' },
+					],
+					screensFullScreen: [
+						{ fileName: 'screen3.png', title: 'Управління текстами' },
+						{ fileName: 'screen4.png', title: 'Створення опитування' },
+						{ fileName: 'screen5.png', title: 'Перегляд опитувань' },
+						{ fileName: 'screen6.png', title: 'Перегляд вікторин' },
+						{ fileName: 'screen7.png', title: 'Створення вікторини' }
+					]
 				}
 			},
 			dnipro: {
@@ -453,14 +551,14 @@ const UK = {
 							'Отримання повідомлень про аварійні відключення',
 							'Налаштування особистого кабінету і повідомлень'
 						],
-						result: 't.me/ekcumBot'
+						result: 'Посилання на робочий чат-бот: <a href="https://t.me/ekcumBot">t.me/ekcumBot</a>'
 					},
 					screens: [
-						'Мої заявки',
-						'Подати заявку',
-						'Зв\'язатися з диспетчером',
-						'Аварійні відключення',
-						'Налаштування'
+						{ fileName: 'screen1.png', title: 'Мої заявки' },
+						{ fileName: 'screen2.png', title: 'Подати заявку' },
+						{ fileName: 'screen3.png', title: 'Зв\'язатися з диспетчером' },
+						{ fileName: 'screen4.png', title: 'Аварійні відключення' },
+						{ fileName: 'screen5.png', title: 'Налаштування' },
 					]
 				}
 			},
@@ -476,14 +574,14 @@ const UK = {
 							'Можливість скористатися накопиченими бонусами',
 							'Бронювання столика'
 						],
-						result: 't.me/saporiveri_bot'
+						result: 'Посилання на робочий чат-бот: <a href="https://t.me/saporiveri_bot">t.me/saporiveri_bot</a>'
 					},
 					screens: [
-						'Перегляд меню',
-						'Перегляд страв',
-						'Перегляд страви',
-						'Бронювання столика',
-						'Картка лояльності'
+						{ fileName: 'screen1.png', title: 'Перегляд меню' },
+						{ fileName: 'screen2.png', title: 'Перегляд страв' },
+						{ fileName: 'screen3.png', title: 'Перегляд страви' },
+						{ fileName: 'screen4.png', title: 'Бронювання столика' },
+						{ fileName: 'screen5.png', title: 'Картка лояльності' },
 					],
 					isWindows: true
 				}
@@ -500,15 +598,15 @@ const UK = {
 							'Введення даних про доставку',
 							'Оплата в чат-боті і оформлення підписки'
 						],
-						result: 't.me/coffeeloverua_bot',
+						result: 'Посилання на робочий чат-бот: <a href="https://t.me/coffeeloverua_bot">t.me/coffeeloverua_bot</a>',
 					},
 					screens: [
-						'Початок роботи',
-						'Вибір опцій',
-						'Вибір сорту',
-						'Вибір пакету',
-						'Дані про доставку',
-						'Оплата підписки'
+						{ fileName: 'screen1.png', title: 'Початок роботи' },
+						{ fileName: 'screen2.png', title: 'Вибір опцій' },
+						{ fileName: 'screen3.png', title: 'Вибір сорту' },
+						{ fileName: 'screen4.png', title: 'Вибір пакету' },
+						{ fileName: 'screen5.png', title: 'Дані про доставку' },
+						{ fileName: 'screen6.png', title: 'Оплата підписки' }
 					],
 					isWindows: true
 				}
@@ -525,17 +623,17 @@ const UK = {
 							'Начальник цеха',
 							'Адміністратор'
 						],
-						result: 't.me/inventoryUseBot',
+						result: 'Посилання на робочий чат-бот: <a href="https://t.me/inventoryUseBot">t.me/inventoryUseBot</a>',
 						desc: 'Бот робить роботу складу набагато ефективнішою. Кожен користувач має доступний спектр дій в залежності від своєї ролі. Наприклад, працівник може отримувати позиції на певний термін, повертати їх, а також запитувати списування інструментів у адміністратора в разі їх поломки. При наближенні терміну отримання до кінця працівник буде отримувати повідомлення про те, що потрібно повернути позиції в склад. Постачальник може узгодити закупівлю з адміністратором, а також виконати поставку закуплених позицій в склад. Начальник цеху може створити запит комірникові на закупівлю, на видачу позицій працівникові, а також має доступ до адміністрування вмісту складу (перегляд позицій по комірках, перегляд відсутніх позицій і т.д.). Комірник підтверджує всі дії, пов\'язані з видачею / отриманням позицій, а також має доступ до інструментів управління складу (переміщення позицій по складу, додавання фото до позицій і т.д.). Адміністратор може виконувати будь-які дії, перераховані вище, а також додавати нових користувачів, нові позиції в базу, переглядати прострочені отримання, боржників тощо'
 					},
 					screens: [
-						'Працівник: отримання інструменту',
-						'Працівник: повернення інструменту',
-						'Комірник: перегляд комірок',
-						'Комірник: підтвердження повернення',
-						'Комірник: відсутні позиції',
-						'Постачальник: зміна фото',
-						'Начальник цеху: додавання позиції'
+						{ fileName: 'screen1.png', title: 'Працівник: отримання інструменту' },
+						{ fileName: 'screen2.png', title: 'Працівник: повернення інструменту' },
+						{ fileName: 'screen3.png', title: 'Комірник: перегляд комірок' },
+						{ fileName: 'screen4.png', title: 'Комірник: підтвердження повернення' },
+						{ fileName: 'screen5.png', title: 'Комірник: відсутні позиції' },
+						{ fileName: 'screen6.png', title: 'Постачальник: зміна фото' },
+						{ fileName: 'screen7.png', title: 'Начальник цеху: додавання позиції' }
 					]
 				}
 			},
@@ -552,16 +650,16 @@ const UK = {
 							'Відправка замовлень в канал з персоналом ресторану',
 							'Бронювання столика'
 						],
-						result: 't.me/restaTeleBot'
+						result: 'Посилання на робочий чат-бот: <a href="https://t.me/restaTeleBot">t.me/restaTeleBot</a>'
 					},
 					screens: [
-						'Перегляд меню',
-						'Перегляд страв',
-						'Перегляд страви',
-						'Перегляд страв',
-						'Перегляд кошику',
-						'Оформлення замовлення',
-						'Бронювання столика'
+						{ fileName: 'screen1.png', title: 'Перегляд меню' },
+						{ fileName: 'screen2.png', title: 'Перегляд страв' },
+						{ fileName: 'screen3.png', title: 'Перегляд страви' },
+						{ fileName: 'screen4.png', title: 'Перегляд страв' },
+						{ fileName: 'screen5.png', title: 'Перегляд кошику' },
+						{ fileName: 'screen6.png', title: 'Оформлення замовлення' },
+						{ fileName: 'screen7.png', title: 'Бронювання столика' }
 					],
 					isWindows: true
 				}
@@ -579,12 +677,12 @@ const UK = {
 							'Розсилка по базі підписників бота',
 							'Ведення і перегляд статистики адміном',
 						],
-						result: 't.me/esabot_bot'
+						result: 'Посилання на робочий чат-бот: <a href="https://t.me/esabot_bot">t.me/esabot_bot</a>'
 					},
 					screens: [
-						'Пошук даних',
-						'Додавання інформації',
-						'Пошук обладнання'
+						{ fileName: 'screen1.png', title: 'Пошук даних' },
+						{ fileName: 'screen2.png', title: 'Додавання інформації' },
+						{ fileName: 'screen3.png', title: 'Пошук обладнання' },
 					]
 				}
 			},
@@ -599,12 +697,12 @@ const UK = {
 							'Ведення журналів відвідувань викладачами',
 							'Розсилка по базі викладачів'
 						],
-						result: 't.me/skyengAlertsBot'
+						result: 'Посилання на робочий чат-бот: <a href="https://t.me/skyengAlertsBot">t.me/skyengAlertsBot</a>'
 					},
 					screens: [
-						'Початок роботи',
-						'Перегляд журналів',
-						'Перегляд журналів'
+						{ fileName: 'screen1.png', title: 'Початок роботи' },
+						{ fileName: 'screen2.png', title: 'Перегляд журналів' },
+						{ fileName: 'screen3.png', title: 'Перегляд журналів' },
 					]
 				}
 			},
@@ -622,14 +720,14 @@ const UK = {
 							'Розсилка по базі підписників',
 							'Ведення і перегляд статистики адміном'
 						],
-						result: 't.me/budprokatBot'
+						result: 'Посилання на робочий чат-бот: <a href="https://t.me/budprokatBot">t.me/budprokatBot</a>'
 					},
 					screens: [
-						'Перегляд каталогу',
-						'Зв\'язок з call-центром',
-						'Переглянути кошик',
-						'Вибір офісу',
-						'Замовлення'
+						{ fileName: 'screen1.png', title: 'Перегляд каталогу' },
+						{ fileName: 'screen2.png', title: 'Зв\'язок з call-центром' },
+						{ fileName: 'screen3.png', title: 'Переглянути кошик' },
+						{ fileName: 'screen4.png', title: 'Вибір офісу' },
+						{ fileName: 'screen5.png', title: 'Замовлення' }
 					]
 				}
 			},
@@ -644,11 +742,11 @@ const UK = {
 							'Розсилка по базі підписників',
 							'Ведення і перегляд статистики адміном'
 						],
-						result: 't.me/AnglogramBot'
+						result: 'Посилання на робочий чат-бот: <a href="https://t.me/AnglogramBot">t.me/AnglogramBot</a>'
 					},
 					screens: [
-						'Запис на курс',
-						'Введення групи'
+						{ fileName: 'screen1.png', title: 'Запис на курс' },
+						{ fileName: 'screen2.png', title: 'Введення групи' },
 					]
 				}
 			},

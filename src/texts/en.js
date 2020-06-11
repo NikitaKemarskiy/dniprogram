@@ -346,7 +346,6 @@ const EN = {
 				customer: 'Customer',
 				functional: 'Requirements',
 				result: 'Result',
-				working: 'Chatbot link',
 				desc: 'Description',
 				levels: 'Access levels'
 			},
@@ -401,14 +400,14 @@ const EN = {
 							'Receive emergency shutdowns notifications',
 							'Setting up your personal account and notifications'
 						],
-						result: 't.me/ekcumBot'
+						result: 'Chatbot link: <a href="https://t.me/ekcumBot">t.me/ekcumBot</a>'
 					},
 					screens: [
-						'My applications',
-						'New application',
-						'Contact dispatcher',
-						'Emergency shutdowns',
-						'Settings'
+						{ fileName: 'screen1.png', title: 'My applications' },
+						{ fileName: 'screen2.png', title: 'New application' },
+						{ fileName: 'screen3.png', title: 'Contact dispatcher' },
+						{ fileName: 'screen4.png', title: 'Emergency shutdowns' },
+						{ fileName: 'screen5.png', title: 'Settings' }
 					]
 				}
 			},
@@ -424,17 +423,17 @@ const EN = {
 							'Chief',
 							'Admin'
 						],
-						result: 't.me/inventoryUseBot',
+						result: 'Chatbot link: <a href="https://t.me/inventoryUseBot">t.me/inventoryUseBot</a>',
 						desc: 'The bot makes warehouse operations much more efficient. Each user has an accessible range of actions depending on his role. For example, an employee can receive positions for a certain period of time, return them, and also request cancellation of instruments from the administrator in case of breakage. When the deadline for receipt approaches the end, the employee will receive notifications that he needs to return the items to the warehouse. The supplier can coordinate the purchase with the administrator, as well as deliver the purchased items to the warehouse. The shop manager can create a request to the storekeeper for the purchase, for the issuance of positions to the employee, and also has access to administer the contents of the warehouse (view items by cell, view missing items, etc.). The storekeeper confirms all the actions associated with the issuance / receipt of positions, and also has access to warehouse management tools (moving positions in the warehouse, adding photos to positions, etc.). The administrator can perform any of the actions listed above, as well as add new users, new positions to the database, view overdue receipts, debtors, etc.'
 					},
 					screens: [
-						'Worker: getting the instrument',
-						'Worker: returning the instruments',
-						'Stockman: view cells content',
-						'Stockman: return confirmation',
-						'Stockman: view absent positions',
-						'Supplier: changing position photo',
-						'Chief: adding position'
+						{ fileName: 'screen1.png', title: 'Worker: getting the instrument' },
+						{ fileName: 'screen2.png', title: 'Worker: returning the instruments' },
+						{ fileName: 'screen3.png', title: 'Stockman: view cells content' },
+						{ fileName: 'screen4.png', title: 'Stockman: return confirmation' },
+						{ fileName: 'screen5.png', title: 'Stockman: view absent positions' },
+						{ fileName: 'screen6.png', title: 'Supplier: changing position photo' },
+						{ fileName: 'screen7.png', title: 'Chief: adding position' }
 					]
 				}
 			},
@@ -451,12 +450,12 @@ const EN = {
 							'Mailing to chatbot subscribers',
 							'Keep statistics, the ability of admin to view it',
 						],
-						result: 't.me/esabot_bot'
+						result: 'Chatbot link: <a href="https://t.me/esabot_bot">t.me/esabot_bot</a>'
 					},
 					screens: [
-						'Search for supplier',
-						'Adding data',
-						'Search for equipment'
+						{ fileName: 'screen1.png', title: 'Search for supplier' },
+						{ fileName: 'screen2.png', title: 'Adding data' },
+						{ fileName: 'screen3.png', title: 'Search for equipment' },
 					]
 				}
 			},
@@ -471,12 +470,12 @@ const EN = {
 							'Keeping students\' attendance journals by teachers',
 							'Mailing to teachers'
 						],
-						result: 't.me/skyengAlertsBot'
+						result: 'Chatbot link: <a href="https://t.me/skyengAlertsBot">t.me/skyengAlertsBot</a>'
 					},
 					screens: [
-						'Start screen',
-						'Students journals',
-						'Students journals'
+						{ fileName: 'screen1.png', title: 'Start screen' },
+						{ fileName: 'screen2.png', title: 'Students journals' },
+						{ fileName: 'screen3.png', title: 'Students journals' }
 					]
 				}
 			},
@@ -494,14 +493,14 @@ const EN = {
 							'Mailing to chatbot subscribers',
 							'Keep statistics, the ability of admin to view it'
 						],
-						result: 't.me/budprokatBot'
+						result: 'Chatbot link: <a href="https://t.me/budprokatBot">t.me/budprokatBot</a>'
 					},
 					screens: [
-						'View catalog',
-						'Call center',
-						'View cart',
-						'Office selection',
-						'Making order'
+						{ fileName: 'screen1.png', title: 'View catalog' },
+						{ fileName: 'screen2.png', title: 'Call center' },
+						{ fileName: 'screen3.png', title: 'View cart' },
+						{ fileName: 'screen4.png', title: 'Office selection' },
+						{ fileName: 'screen5.png', title: 'Making order' }
 					]
 				}
 			},
@@ -516,11 +515,11 @@ const EN = {
 							'Mailing to chatbot subscribers',
 							'Keep statistics, the ability of admin to view it'
 						],
-						result: 't.me/AnglogramBot'
+						result: 'Chatbot link: <a href="https://t.me/AnglogramBot">t.me/AnglogramBot</a>'
 					},
 					screens: [
-						'Enroll in course',
-						'Input your group'
+						{ fileName: 'screen1.png', title: 'Enroll in course' },
+						{ fileName: 'screen2.png', title: 'Input your group' }
 					]
 				}
 			},

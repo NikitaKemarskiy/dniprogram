@@ -122,8 +122,9 @@
 					<div class="col-xs-12 col-sm-6">
 						<h4>💯 <%= local.cases.case.desc.result %></h4>
 						<p>
-							<%= local.cases.case.desc.working %>: <a href="https://<%= local.cases.chatbot[caseName].case.desc.result %>"><%= local.cases.chatbot[caseName].case.desc.result %></a>
-							<% if (local.cases.chatbot[caseName].case.desc.isLimited) { %> <br><%= local.cases.chatbot[caseName].case.desc.limitedText %> <% } %>
+							<%- local.cases.chatbot[caseName].case.desc.result %>
+							<!-- <%= local.cases.case.desc.working %>: <a href="https://<%= local.cases.chatbot[caseName].case.desc.result %>"><%= local.cases.chatbot[caseName].case.desc.result %></a>
+							<% if (local.cases.chatbot[caseName].case.desc.isLimited) { %> <br><%= local.cases.chatbot[caseName].case.desc.limitedText %> <% } %> -->
 						</p>
 					</div>
 					<% if (local.cases.chatbot[caseName].case.desc.desc) { %>
@@ -139,14 +140,26 @@
 						<span class="separator"></span>
 					</div>
 				</div>
-				<div class="row screens">
-					<% for (let i = 0; i < local.cases.chatbot[caseName].case.screens.length; i++) { %>
-						<div class="col-xs-12 col-sm-6 col-md-4">
-							<div class="heading"><%= local.cases.chatbot[caseName].case.screens[i] %></div>
-							<img src="/img/cases/chatbot/<%= caseName %>/screen<%= i + 1 %>.png" style="width: 100%; <% if (local.cases.chatbot[caseName].case.isWindows) { %> margin: 10px 0 20px 0; <% } %>" alt="">
-						</div>
-					<% } %>
-				</div>
+				<% if (local.cases.chatbot[caseName].case.screens) { %>
+					<div class="row screens">
+						<% for (let i = 0; i < local.cases.chatbot[caseName].case.screens.length; i++) { %>
+							<div class="col-xs-12 col-sm-6 col-md-4">
+								<div class="heading"><%= local.cases.chatbot[caseName].case.screens[i].title %></div>
+								<img src="/img/cases/chatbot/<%= caseName %>/<%= local.cases.chatbot[caseName].case.screens[i].fileName %>" style="width: 100%; <% if (local.cases.chatbot[caseName].case.isWindows) { %> margin: 10px 0 20px 0; <% } %>" alt="">
+							</div>
+						<% } %>
+					</div>
+				<% } %>
+				<% if (local.cases.chatbot[caseName].case.screensFullScreen) { %>
+					<div class="row screens">
+						<% for (let i = 0; i < local.cases.chatbot[caseName].case.screensFullScreen.length; i++) { %>
+							<div class="col-12">
+								<div class="heading"><%= local.cases.chatbot[caseName].case.screensFullScreen[i].title %></div>
+								<img src="/img/cases/chatbot/<%= caseName %>/<%= local.cases.chatbot[caseName].case.screensFullScreen[i].fileName %>" style="width: 100%; <% if (local.cases.chatbot[caseName].case.isWindows) { %> margin: 10px 0 20px 0; <% } %>" alt="">
+							</div>
+						<% } %>
+					</div>
+				<% } %>
 			</div>
 		</section>
 		<!-- END CASE -->
