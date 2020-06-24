@@ -1,5 +1,12 @@
 // Modules
+const fs = require('fs');
+const path = require('path');
 const nodemailer = require('nodemailer');
+const { promisify } = require('util');
+
+const appendFileAsync = promisify(fs.appendFile);
+
+const MAIL_LOG_FILE = path.join(__dirname, '..', '..', 'logs', 'mail.log');
 
 // Config
 const config = require('../../config/config');
@@ -16,8 +23,6 @@ const transporter = nodemailer.createTransport({
 });
 
 function mail(from) {
-	console.dir(config.mailing);
-
 	// Get params
 	const {
 		name,
@@ -35,6 +40,12 @@ function mail(from) {
 				 (email ? `<p>Почта: <b>${email}</b><br>` : '') + 
 				 (phone ? `<p>Номер: <b>${phone}</b><br>` : '') +
 				 (message ? `<p>Сообщение: ${message}` : '');
+
+	fs.appendFile(MAIL_LOG_FILE, html + '\n\n\n', { flag: 'a' }, (err) => {
+		if (err) {
+			console.error(err);
+		}
+	});
 
 	const options = {
 		from: 'Сайт "Dniprogram"',
