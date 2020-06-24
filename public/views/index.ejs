@@ -499,7 +499,13 @@
 					</div>
 					<div class="col-md-6">
 						<!-- CONTACT FORM -->
-						<form action="/<%= contentLanguage %>/mail" method="post" name="sentMessage" id="contactForm">
+						<form
+							action="/<%= contentLanguage %>/mail"
+							method="post"
+							name="sentMessage"
+							id="contactForm"
+							onsubmit="sendAnalyticsDevelopmentRequestEvent(event, '<%= part.info %>-service')"
+						>
 							<div class="row">
 								<div class="form-group">
 									<input type="text" class="form-control" placeholder="<%= local.contact.form.input.name %>" id="name" name="name" required>

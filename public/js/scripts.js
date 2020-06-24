@@ -329,3 +329,7 @@
 function stopPropagation(e) {
   e.stopPropagation();
 }
+
+function sendAnalyticsDevelopmentRequestEvent(event, service) {
+  ga('send', 'event', 'development', 'request', service);
+}
