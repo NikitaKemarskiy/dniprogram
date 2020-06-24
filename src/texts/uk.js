@@ -373,15 +373,15 @@ const UK = {
 					isAlternate: true
 				},
 				{
-					name: 'dnipro',
-					heading: 'Диспетчерська м. Дніпро',
-					desc: 'Чат-бот для диспетчерської служби',
-				},
-				{
 					name: 'cityzen',
 					heading: 'City-zen cafe&bar',
 					desc: 'Чат-бот для підписки на каву',
 					isAlternate: true
+				},
+				{
+					name: 'dnipro',
+					heading: 'Диспетчерська м. Дніпро',
+					desc: 'Чат-бот для диспетчерської служби',
 				},
 				{
 					name: 'sapori-veri',

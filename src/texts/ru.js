@@ -373,15 +373,15 @@ const RU = {
 					isAlternate: true
 				},
 				{
-					name: 'dnipro',
-					heading: 'Диспетчерская г. Днепр',
-					desc: 'Чат-бот для диспетчерской службы',
-				},
-				{
 					name: 'cityzen',
 					heading: 'City-zen cafe&bar',
 					desc: 'Чат-бот для подписки на доставку кофе',
 					isAlternate: true
+				},
+				{
+					name: 'dnipro',
+					heading: 'Диспетчерская г. Днепр',
+					desc: 'Чат-бот для диспетчерской службы',
 				},
 				{
 					name: 'sapori-veri',

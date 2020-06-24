@@ -16,6 +16,8 @@ const transporter = nodemailer.createTransport({
 });
 
 function mail(from) {
+	console.dir(config.mailing);
+
 	// Get params
 	const {
 		name,
