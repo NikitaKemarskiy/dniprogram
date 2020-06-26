@@ -331,5 +331,8 @@ function stopPropagation(e) {
 }
 
 function sendAnalyticsDevelopmentRequestEvent(event, service) {
-  ga('send', 'event', 'development', 'request', service);
+  gtag('event', 'request', {
+    'event_category': 'development',
+    'event_label': service
+  });
 }
