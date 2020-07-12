@@ -13,9 +13,9 @@ if (!MAIL_USER || !MAIL_PASS || !SSL_PATH) {
 const config = {
 	prod: { // Production config
 		ssl: {
-			keyPath: SSL_PATH + 'privkey.pem',
-			certPath: SSL_PATH + 'cert.pem',
-			chainPath: SSL_PATH + 'chain.pem'
+			keyPath: SSL_PATH + 'localhost.key',
+			certPath: SSL_PATH + 'localhost.crt',
+			chainPath: SSL_PATH + 'localhost.csr'
 		},
 		mailing: {
 			user: MAIL_USER,

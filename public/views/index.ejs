@@ -109,7 +109,9 @@
 		</header>
 		<!-- END HEADER -->
 		<!-- INFO PART -->
-		<%- include(`parts/info/${part.info}`) %>
+		<% if (part.info) { %>
+			<%- include(`parts/info/${part.info}`) %>
+		<% } %>
 		<!-- END INFO PART -->
 		<!-- ***** Cool Facts Area Start ***** -->
 		<section class="cool_facts_area clearfix">
