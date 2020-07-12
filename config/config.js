@@ -11,7 +11,7 @@ if (!MAIL_USER || !MAIL_PASS || !SSL_PATH) {
 }
 
 const config = {
-	prod: { // Production config
+	dev: { // Development config
 		ssl: {
 			keyPath: SSL_PATH + 'localhost.key',
 			certPath: SSL_PATH + 'localhost.crt',
@@ -29,7 +29,7 @@ const config = {
 			amount: 5
 		}
 	},
-	dev: { // Development config
+	prod: { // Production config
 		ssl: {
 			keyPath: SSL_PATH + 'privkey.pem',
 			certPath: SSL_PATH + 'cert.pem',
