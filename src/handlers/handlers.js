@@ -26,6 +26,11 @@ const CASES_PARTS = new Set([
 	'chatbot',
 	'onlineStore'
 ]);
+const PAGES = new Set([
+	'about',
+	'cases',
+	'services'
+]);
 const DEFAULT_PART = {
 	info: 'home'
 };
@@ -87,10 +92,13 @@ async function langAndPathSpecifiedHandler(ctx) {
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
 	const operators = getOperators(contentLanguage);
-	await ctx.render('index', { local, operators, part, contentLanguage });
+	await ctx.render(
+		PAGES.has(info) ? info : 'index',
+		{ local, operators, part, contentLanguage }
+	);
 }
 
-async function casesHandler(ctx) {
+async function caseHandler(ctx) {
 	// Get website content part
 	// For example: home | onlineStore | landing etc.
 	const service = ctx.params.part;
@@ -109,7 +117,7 @@ async function casesHandler(ctx) {
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
 	const operators = getOperators(contentLanguage);
-	await ctx.render(`cases`, {
+	await ctx.render(`case`, {
 		local,
 		operators,
 		service,
@@ -138,7 +146,7 @@ async function mailHandler(ctx) {
 module.exports = {
 	langSpecifiedHandler,
 	langAndPathSpecifiedHandler,
-	casesHandler,
+	caseHandler,
 	redirectHandler,
 	mailHandler
 };

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="<%= local.lang %>">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155533957-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-155533957-1');
+		</script>
+		<!-- META TAGS -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="<%= local[service].description %>">
+		<meta name="author" content="Dniprogram" />
+		<!-- SITE TITLE -->
+		<title><%= local[service].title %></title>
+		<!-- STYLESHEETS -->
+		<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="/css/style.css" type="text/css">
+		<link rel="stylesheet" href="/css/responsive.css" type="text/css">
+		<link rel="stylesheet" href="/css/ionicons.min.css" type="text/css">
+		<link rel="stylesheet" href="/css/owl.carousel.min.css" type="text/css">
+		<link rel="stylesheet" href="/css/owl.theme.default.min.css" type="text/css">
+		<link rel="stylesheet" href="/css/rmodal.min.css" type="text/css">
+		<!-- FAVICON  -->
+		<link rel="icon" href="/img/favicon.ico">
+	</head>
+	<body>
+		<!-- MAIN NAV -->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+			<div class="container">
+				<div class="navbar-header page-scroll">
+					<a class="logo page-scroll" href="/<%= contentLanguage %>/home">
+						<img src="/img/logos/dniprogram1.png"
+							 class="img-responsive header-logo"
+							 alt="Dniprogram logo"
+							 title="Dniprogram logo">
+					</a>
+					<span class="button-wrapper">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</span>
+				</div>
+				<div class="collapse navbar-collapse" id="main-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<!-- <li>
+							<a class="page-scroll" href="#why">
+								<%= local.navbar.text1 %>		
+							</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#services">
+								<%= local.navbar.text2 %>
+							</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#team">
+								<%= local.navbar.text3 %>
+							</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#testimonials">
+								<%= local.navbar.text4 %>
+							</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#contact">
+								<%= local.navbar.text5 %>
+							</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END MAIN NAV -->
+		<!-- CASE -->
+		<section id="case">
+			<div class="container">
+				<div class="row header">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading"><%= local.cases.case.desc.heading %></h2>
+						<span class="separator"></span>
+					</div>
+				</div>
+				<div class="row desc margin-bottom-30">
+					<div class="col-xs-12 col-sm-6">
+						<h4>📌 <%= local.cases.case.desc.case %></h4>
+						<p><%- local.cases.chatbot[caseName].case.desc.case %></p>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>👨‍⚖️ <%= local.cases.case.desc.customer %></h4>
+						<p><%- local.cases.chatbot[caseName].case.desc.customer %></p>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<% if (local.cases.chatbot[caseName].case.desc.levels) { %>
+							<h4>📝 <%= local.cases.case.desc.levels %></h4>
+							<p>
+								<ul>
+									<% for (let i = 0; i < local.cases.chatbot[caseName].case.desc.levels.length; i++) { %>
+										<li><%= local.cases.chatbot[caseName].case.desc.levels[i] %></li>
+									<% } %>
+								</ul>
+							</p>
+						<% } else { %>
+							<h4>📝 <%= local.cases.case.desc.functional %></h4>
+							<p>
+								<ul>
+									<% for (let i = 0; i < local.cases.chatbot[caseName].case.desc.functional.length; i++) { %>
+										<li><%= local.cases.chatbot[caseName].case.desc.functional[i] %></li>
+									<% } %>
+								</ul>
+							</p>
+						<% } %>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>💯 <%= local.cases.case.desc.result %></h4>
+						<p>
+							<%- local.cases.chatbot[caseName].case.desc.result %>
+							<!-- <%= local.cases.case.desc.working %>: <a href="https://<%= local.cases.chatbot[caseName].case.desc.result %>"><%= local.cases.chatbot[caseName].case.desc.result %></a>
+							<% if (local.cases.chatbot[caseName].case.desc.isLimited) { %> <br><%= local.cases.chatbot[caseName].case.desc.limitedText %> <% } %> -->
+						</p>
+					</div>
+					<% if (local.cases.chatbot[caseName].case.desc.desc) { %>
+						<div class="col-xs-12">
+							<h4>💡 <%= local.cases.case.desc.desc %></h4>
+							<p><%= local.cases.chatbot[caseName].case.desc.desc %></p>
+						</div>
+					<% } %>
+				</div>
+				<div class="row header">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading"><%= local.cases.case.screens.heading %></h2>
+						<span class="separator"></span>
+					</div>
+				</div>
+				<% if (local.cases.chatbot[caseName].case.screens) { %>
+					<div class="row screens">
+						<% for (let i = 0; i < local.cases.chatbot[caseName].case.screens.length; i++) { %>
+							<div class="col-xs-12 col-sm-6 col-md-4">
+								<div class="heading"><%= local.cases.chatbot[caseName].case.screens[i].title %></div>
+								<img src="/img/cases/chatbot/<%= caseName %>/<%= local.cases.chatbot[caseName].case.screens[i].fileName %>" style="width: 100%; <% if (local.cases.chatbot[caseName].case.isWindows) { %> margin: 10px 0 20px 0; <% } %>" alt="">
+							</div>
+						<% } %>
+					</div>
+				<% } %>
+				<% if (local.cases.chatbot[caseName].case.screensFullScreen) { %>
+					<div class="row screens">
+						<% for (let i = 0; i < local.cases.chatbot[caseName].case.screensFullScreen.length; i++) { %>
+							<div class="col-12">
+								<div class="heading"><%= local.cases.chatbot[caseName].case.screensFullScreen[i].title %></div>
+								<img src="/img/cases/chatbot/<%= caseName %>/<%= local.cases.chatbot[caseName].case.screensFullScreen[i].fileName %>" style="width: 100%; <% if (local.cases.chatbot[caseName].case.isWindows) { %> margin: 10px 0 20px 0; <% } %>" alt="">
+							</div>
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+		</section>
+		<!-- END CASE -->
+		<!-- CONTACT -->
+		<section class="footer-contact-area section_padding_100 clearfix" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<!-- Heading Text  -->
+						<div class="section-heading">
+							<h2><%= local.contact.heading %></h2>
+							<div class="line-shape"></div>
+						</div>
+						<div class="footer-text">
+							<p><%- local.contact.text %></p>
+						</div>
+						<div class="address-text">
+							<p><span><i class="fa fa-paper-plane" aria-hidden="true"></i>Telegram:</span><a href="https://t.me/kemarskiy"> @kemarskiy</a></p>
+						</div>
+						<div class="phone-text">
+							<p><span><i class="fa fa-phone" aria-hidden="true"></i><%= local.contact.phone1 %></span><a href="tel:+380963705888"> +380-96-370-58-88</a></p>
+							<p><span><i class="fa fa-phone" aria-hidden="true"></i><%= local.contact.phone2 %></span><a href="tel:+380977351159"> +380-97-735-11-59</a></p>
+						</div>
+						<div class="email-text">
+							<p><span><i class="fa fa-envelope"></i>Email:</span><a href="mailto:dniprogramua@gmail.com"> dniprogramua@gmail.com</a></p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<!-- CONTACT FORM -->
+						<form
+							action="/<%= contentLanguage %>/mail"
+							method="post"
+							name="sentMessage"
+							id="contactForm"
+							onsubmit="sendAnalyticsDevelopmentRequestEvent(event, '<%= service %>-case')"
+						>
+							<div class="row">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="<%= local.contact.form.input.name %>" id="name" name="name" required>
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group pull-right">
+									<input type="email" class="form-control" placeholder="Email" id="email" name="email">
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group full-size">
+									<input type="tel" class="form-control" placeholder="<%= local.contact.form.input.phone %>" id="phone" name="phone">
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group form-textarea">
+									<textarea class="form-control" placeholder="<%= local.contact.form.input.message %>" id="message" name="message"></textarea>
+									<p class="help-block text-danger"></p>
+								</div>
+								<input name="service" type="text" value="<%= local[service].service %>" class="display-none">
+								<div class="clearfix"></div>
+								<div class="text-center">
+									<div id="success"></div>
+									<button type="submit" class="btn btn-xl"><%= local.contact.form.input.send %></button>
+								</div>
+							</div>
+						</form>
+						<!-- END CONTACT FORM -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END CONTACT -->
+		<!-- FOOTER -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<!-- UPPER FOOTER -->
+					<div class="upper-footer">
+						<div class="pull-left">
+							<a class="logo page-scroll" href="/<%= contentLanguage %>/home">
+								<img src="/img/logos/dniprogram1.png"
+									 class="img-responsive"
+									 alt="Dniprogram logo"
+									 title="Dniprogram logo">
+							</a>
+							<p><%= local.footer.text %></p>
+						</div>
+						<div class="pull-right">
+							<ul class="footer-nav">
+								<li class="">
+									<a class="page-scroll" href="#why">
+										<%= local.navbar.text1 %>
+									</a>
+								</li>
+								<li class="">
+									<a class="page-scroll" href="#services">
+										<%= local.navbar.text2 %>
+									</a>
+								</li>
+								<li class="">
+									<a class="page-scroll" href="#team">
+										<%= local.navbar.text3 %>
+									</a>
+								</li>
+								<li class="">
+									<a class="page-scroll" href="#testimonials">
+										<%= local.navbar.text4 %>
+									</a>
+								</li>
+								<li class="">
+									<a class="page-scroll" href="#contacts">
+										<%= local.navbar.text5 %>
+									</a>
+								</li>
+							</ul>
+							<ul class="footer-secondary-nav">
+								<li class="">
+									<a href="tel:+380977351159"><span class="fa fa-phone"></span>+380-97-735-11-59</a>
+								</li>
+								<li class="">
+									<a class="page-scroll" href="mailto:dniprogramua@gmail.com"><span class="fa fa-envelope"></span>dniprogramua@gmail.com</a>
+								</li>
+								<li class="">
+									<a class="page-scroll" href="https://www.google.com/maps/@50.4496376,30.4504477,17z"><span class="fa fa-map-marker"></span><%= local.footer.address %></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- END UPPER FOOTER -->
+					<!-- LOWER FOOTER -->
+					<!-- <div class="lower-footer">
+						<div class="pull-left">
+							<span>© 2019 Dniprogram. All rights reserved </span>
+						</div>
+						<div class="pull-right">
+							<a href="#"><span class="fa fa-facebook"></span></a>
+							<a href="#"><span class="fa fa-paper-plane"></span></a>
+							<a href="#"><span class="fa fa-skype"></span></a>
+						</div>
+					</div> -->
+					<!-- END LOWER FOOTER -->
+				</div>
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+		<!-- SCRIPTS -->
+		<!-- jQuery & Bootstrap -->
+		<script src="/js/jquery.js"></script>
+		<script src="/js/jquery.easing.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<!-- smoothscroll  -->
+		<script src="/js/smoothscroll.js"></script>
+		<!-- classie  -->
+		<script src="/js/classie.js"></script>
+		<!-- piechart  -->
+		<script src="/js/jquery.easytabs.min.js"></script>
+		<!-- jquery mask plugin -->
+		<script src="/js/jquery.mask.js"></script>
+		<!-- tabs  -->
+		<script src="/js/piechart.js"></script>
+		<!-- sliders -->
+		<script src="/js/owl.carousel.min.js"></script>
+		<script src="/js/owl.animate.js"></script>
+		<!-- contact form -->
+		<script src="/js/jqBootstrapValidation.js"></script>
+		<!-- numscroller -->
+		<script src="/js/jquery.numscroller-1.0.js"></script>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<section class="footer-contact-area section_padding_100 clearfix" id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<!-- Heading Text  -->
+				<div class="section-heading">
+					<h2><%= local.contact.heading %></h2>
+					<div class="line-shape"></div>
+				</div>
+				<div class="footer-text">
+					<p><%- local.contact.text %></p>
+				</div>
+				<div class="address-text">
+					<p><span><i class="fa fa-paper-plane" aria-hidden="true"></i>Telegram:</span><a href="https://t.me/kemarskiy"> @kemarskiy</a></p>
+				</div>
+				<div class="phone-text">
+					<p><span><i class="fa fa-phone" aria-hidden="true"></i><%= local.contact.phone1 %></span><a href="tel:+380963705888"> +380-96-370-58-88</a></p>
+					<p><span><i class="fa fa-phone" aria-hidden="true"></i><%= local.contact.phone2 %></span><a href="tel:+380977351159"> +380-97-735-11-59</a></p>
+				</div>
+				<div class="email-text">
+					<p><span><i class="fa fa-envelope"></i>Email:</span><a href="mailto:dniprogramua@gmail.com"> dniprogramua@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<!-- CONTACT FORM -->
+				<form
+					action="/<%= contentLanguage %>/mail"
+					method="post"
+					name="sentMessage"
+					id="contactForm"
+					onsubmit="sendAnalyticsDevelopmentRequestEvent(event, '<%= part.info %>-service')"
+				>
+					<div class="row">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="<%= local.contact.form.input.name %>" id="name" name="name" required>
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group pull-right">
+							<input type="email" class="form-control" placeholder="Email" id="email" name="email">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group full-size">
+							<input type="tel" class="form-control" placeholder="<%= local.contact.form.input.phone %>" id="phone" name="phone">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group form-textarea">
+							<textarea class="form-control" placeholder="<%= local.contact.form.input.message %>" id="message" name="message"></textarea>
+							<p class="help-block text-danger"></p>
+						</div>
+						<input name="service" type="text" value="<%= local[part.info].service %>" class="display-none">
+						<div class="clearfix"></div>
+						<div class="text-center">
+							<div id="success"></div>
+							<button type="submit" class="btn btn-xl"><%= local.contact.form.input.send %></button>
+						</div>
+					</div>
+				</form>
+				<!-- END CONTACT FORM -->
+			</div>
+		</div>
+	</div>
+</section>

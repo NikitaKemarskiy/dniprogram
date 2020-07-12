@@ -1,0 +1,26 @@
+<div id="popup-wrapper" class="popup-wrapper" onclick="closeForm()">
+	<div class="popup-container" onclick="stopPropagation(event)">
+		<div class="popup-header">
+			<h5><%= local.popup.heading %></h5>
+			<button class="close" onclick="closeForm()">x</button>
+		</div>
+		<form id="popup-contact"  class="popup-contact" action="/<%= contentLanguage %>/mail" method="post">
+			<fieldset>
+				<label for="name"><%= local.popup.form.input.name %></label>
+				<input placeholder="<%= local.popup.form.input.name %>" name="name" type="text" tabindex="1" required autofocus>
+			</fieldset>
+			<fieldset>
+				<label for="email">Email</label>
+				<input placeholder="Email" name="email" type="email" tabindex="2">
+			</fieldset>
+			<fieldset>
+				<label for="phone"><%= local.popup.form.input.phone %></label>
+				<input placeholder="<%= local.popup.form.input.phone %>" name="phone" type="text" tabindex="2">
+			</fieldset>
+			<input name="service" type="text" value="<%= local[part.info].service %>" class="display-none">
+			<fieldset>
+				<button name="submit" type="submit" id="contact-submit" class="contact-submit" data-submit="...Sending"><%= local.popup.form.input.send %></button>
+			</fieldset>
+		</form>
+	</div>
+</div>

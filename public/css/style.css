@@ -598,13 +598,15 @@ body.modal-open {
 @media(min-width:960px) {
     .navbar-default {
         padding: 25px 0;
-        border: 0;
+        padding: 10px 0;
+        background-color: #273140;
+        /*border: 0;
         background-color: transparent;
         -webkit-transition: all 0.25s ease-in-out;
         -moz-transition: all 0.25s ease-in-out;
         -o-transition: all 0.25s ease-in-out;
         -ms-transition: all 0.25s ease-in-out;
-        transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;*/
     }
     .navbar-default.navbar-shrink {
         padding: 10px 0;
@@ -2130,16 +2132,6 @@ div.navbar-header a img {
 div.navbar-header span.button-wrapper {
     display: inline-block;
     float: right;
-}
-
-div.navbar-header span.button-wrapper .navbar-toggle {
-    margin-right: 0;
-    position: relative;
-    left: -22px;
-}
-
-div.navbar-header button {
-    width: 22px !important;
 }
 
 div.navbar-header button span.icon-bar {

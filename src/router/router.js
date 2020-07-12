@@ -9,7 +9,7 @@ const router = new KoaRouter();
 const {
 	langSpecifiedHandler,
 	langAndPathSpecifiedHandler,
-	casesHandler,
+	caseHandler,
 	redirectHandler,
 	mailHandler
 } = require('../handlers/handlers');
@@ -28,7 +28,7 @@ router.get('/:lang', langSpecifiedHandler);
 router.get('/:lang/:part', langAndPathSpecifiedHandler);
 
 // Cases route
-router.get('/:lang/:part/cases/:case', casesHandler);
+router.get('/:lang/:part/cases/:case', caseHandler);
 
 // Send mail
 router.post('/:lang/mail', mailHandler);

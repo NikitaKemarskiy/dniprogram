@@ -6,11 +6,9 @@ const EN = {
 		more: 'More'
 	},
 	navbar: {
-		text1: 'About us',
-		text2: 'Why choose us?',
-		text3: 'Team',
-		text4: 'Feedback',
-		text5: 'Contacts'
+		text1: 'Cases',
+		text2: 'Services',
+		text3: 'About us'
 	},
 	header: {
 		intro: 'Dniprogram',
@@ -44,6 +42,21 @@ const EN = {
 			heading: 'Desktop applications',
 			text: 'Desktop software for Windows, Linux, MacOS'
 		}
+	},
+	about: {
+		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
+		service: 'Не указана',
+		description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',
+	},
+	services: {
+		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
+		service: 'Не указана',
+		description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',
+	},
+	cases: {
+		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
+		service: 'Не указана',
+		description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',
 	},
 	website: {
 		introHeading: 'Professional website development on order',

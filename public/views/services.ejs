@@ -40,49 +40,10 @@
 		<!-- MAIN NAV -->
 		<%- include(`parts/blocks/navbar`) %>
 		<!-- END MAIN NAV -->
-		
-		<!-- HEADER -->
-		<%- include(`parts/blocks/header`) %>
-		<!-- END HEADER -->
-		
-		<!-- INFO PART -->
-		<% if (part.info) { %>
-			<%- include(`parts/info/${part.info}`) %>
-		<% } %>
-		<!-- END INFO PART -->
-		
-		<!-- COOL FACTS AND NUMBERS -->
-		<%- include(`parts/blocks/facts`) %>
-		<!-- COOL FACTS AND NUMBERS -->
-		<!-- END SOLUTIONS -->
-		
-		<!-- WHY WE -->
-		<%- include(`parts/blocks/whyWe`) %>
-		<!-- END WHY WE -->
-		
-		<!-- CASES -->
-		<% if (part.cases) { %>
-			<%- include(`parts/blocks/cases`) %>
-		<% } %>
-		<!-- END CASES -->
 
-		<!-- PARTNERS -->
-		<%- include(`parts/blocks/partners`) %>
-		<!-- END PARTNERS -->
-		
-		<!-- TEAM -->
-		<%- include(`parts/blocks/team`) %>
-		<!-- END TEAM -->
-		
-		<!-- TESTIMONIALS -->
-		<%- include(`parts/blocks/testimonials`) %>
-		<!-- END TESTIMONIALS -->
-		
-		<!-- PRICING -->
-		<% if (part.pricing) { %>
-			<%- include(`parts/pricing/${part.pricing}`) %>
-		<% } %>
-		<!-- END PRICING -->
+		<!-- SERVICES -->
+		<%- include(`parts/blocks/services`) %>
+		<!-- END SERVICES -->
 		
 		<!-- CONTACT -->
 		<%- include(`parts/blocks/contact`) %>
@@ -115,9 +76,6 @@
 		<script src="/js/jquery.mask.js"></script>
 		<!-- tabs  -->
 		<script src="/js/piechart.js"></script>
-		<!-- animated header -->
-		<script src="/js/particles.js" type="text/javascript"></script>
-		<script src="/js/particlesEffect.js" type="text/javascript"></script>
 		<!-- sliders -->
 		<script src="/js/owl.carousel.min.js"></script>
 		<script src="/js/owl.animate.js"></script>
