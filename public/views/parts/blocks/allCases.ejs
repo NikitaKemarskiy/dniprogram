@@ -1,5 +1,11 @@
 <section id="cases">
     <div class="container">
+        <div class="row header">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading"><%= local.cases.heading %></h2>
+                <span class="separator"></span>
+            </div>
+        </div>
         <div class="row cases-tabs">
             <ul class="nav nav-tabs nav-justified fixed">
                 <% for (let i = 0; i < Object.keys(local.cases.services).length; i++) { %>

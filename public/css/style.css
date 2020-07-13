@@ -2398,6 +2398,10 @@ b.highlight {
   text-transform: uppercase;
 }
 
+.cases-tabs a {
+  color: #000;
+}
+
 .cases-tabs hr {
   display: none;
 }

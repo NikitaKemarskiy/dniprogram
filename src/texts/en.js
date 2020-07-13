@@ -44,16 +44,19 @@ const EN = {
 		}
 	},
 	about: {
+		introHeading: 'We always work on the result and quality of the project',
 		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
 		service: 'Не указана',
 		description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',
 	},
 	services: {
+		introHeading: 'From development to marketing: trust the professionals',
 		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
 		service: 'Не указана',
 		description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',
 	},
 	portfolio: {
+		introHeading: 'The portfolio speaks for itself: trust the professionals',
 		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
 		service: 'Не указана',
 		description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',
