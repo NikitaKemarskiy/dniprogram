@@ -135,6 +135,10 @@ async function redirectHandler(ctx) {
 }
 
 async function mailHandler(ctx) {
+	console.log('>>> Send a letter to email');
+	console.dir(ctx.request.body);
+	console.log('==========================');
+
 	// Get language
 	const contentLanguage = ctx.params.lang;
 	// Mailing
