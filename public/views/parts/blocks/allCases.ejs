@@ -9,7 +9,7 @@
                         <% } %>
                     >
                         <a data-toggle="tab" href="#<%= Object.keys(local.cases.services)[i] %>">
-                            <%= Object.keys(local.cases.services)[i] %>
+                            <%= local[Object.keys(local.cases.services)[i]].name %>
                         </a>
                         <hr>
                     </li>
