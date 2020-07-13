@@ -199,6 +199,7 @@ const EN = {
 		}
 	},
 	onlineStore: {
+		name: 'Online store',
 		introHeading: 'Professional development of online stores on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Development of online stores | For your business, turnkey, unique design',
@@ -235,6 +236,7 @@ const EN = {
 		}
 	},
 	chatbot: {
+		name: 'Chatbot',
 		introHeading: 'Professional development of Telegram, Viber, Facebook chatbots on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Chatbot development | Telegram, Viber, Facebook',

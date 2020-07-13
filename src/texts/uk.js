@@ -199,6 +199,7 @@ const UK = {
 		}
 	},
 	onlineStore: {
+		name: 'Інтернет-магазин',
 		introHeading: 'Професійна розробка інтернет-магазинів під замовлення',
 		heading: 'Що ви отримуєте?',
 		title: 'Dniprogram - Розробка інтернет-магазинів | Для вашого бізнесу, під ключ, унікальний дизайн',
@@ -235,6 +236,7 @@ const UK = {
 		}
 	},
 	chatbot: {
+		name: 'Чат-бот',
 		introHeading: 'Професійна розробка чат-ботів Telegram, Viber, Facebook під замовлення',
 		heading: 'Що ви отримуєте?',
 		title: 'Dniprogram - Розробка чат-ботів | Telegram, Viber, Facebook',
