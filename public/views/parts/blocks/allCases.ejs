@@ -1,0 +1,35 @@
+<section id="cases">
+    <div class="container">
+        <div class="row cases-tabs">
+            <ul class="nav nav-tabs nav-justified fixed">
+                <% for (let i = 0; i < Object.keys(local.cases.services).length; i++) { %>
+                    <li class=
+                        <% if (i === 0) { %>
+                            <%= "active" %>
+                        <% } %>
+                    >
+                        <a data-toggle="tab" href="#<%= Object.keys(local.cases.services)[i] %>">
+                            <%= Object.keys(local.cases.services)[i] %>
+                        </a>
+                        <hr>
+                    </li>
+                <% } %>
+            </ul>
+            <div class="tab-content">
+                <% for (let i = 0; i < Object.keys(local.cases.services).length; i++) { %>
+                    <% let key = Object.keys(local.cases.services)[i] %>
+                    <% let val = local.cases.services[key] %>
+
+                    <div class="tab-pane fade in<% if (i === 0) { %> <%= "active" %><% } %>"
+                         id="<%= Object.keys(local.cases.services)[i] %>">
+                        <div class="row cases-content">
+                            <% for (let i = 0; i < val.cases.length; i++) { %>
+                                <%- include(`case`, { singleCase: val.cases[i], service: key }) %>
+                            <% } %>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</section>
