@@ -53,7 +53,7 @@ const EN = {
 		service: 'Не указана',
 		description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',
 	},
-	cases: {
+	portfolio: {
 		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
 		service: 'Не указана',
 		description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',

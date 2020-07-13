@@ -28,7 +28,7 @@ const CASES_PARTS = new Set([
 ]);
 const PAGES = new Set([
 	'about',
-	'cases',
+	'portfolio',
 	'services'
 ]);
 const DEFAULT_PART = {
