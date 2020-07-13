@@ -8,7 +8,7 @@
 		</div>
 		<div class="row cases-content">
 			<% for (let i = 0; i < local.cases.services[part.info].cases.length; i++) { %>
-				<%- include(`case`, { singleCase: local.cases.services[part.info].cases[i] }) %>
+				<%- include(`case`, { singleCase: local.cases.services[part.info].cases[i], service: part.info }) %>
 			<% } %>
 		</div>
 	</div>

@@ -1,6 +1,6 @@
 <div class="col-12 col-sm-6 case">
-	<a href="<%= singleCase.link || `/${contentLanguage}/${part.info}/cases/${singleCase.name}` %>">
-		<img src="/img/cases/<%= part.info %>/<%= singleCase.name %>.jpg" alt="">
+	<a href="<%= singleCase.link || `/${contentLanguage}/${service}/cases/${singleCase.name}` %>">
+		<img src="/img/cases/<%= service %>/<%= singleCase.name %>.jpg" alt="">
 	</a>
 	<div class="desc <% if (singleCase.isAlternate) { %> alternate <% } %>">
 		<h3><%- singleCase.heading %></h3>

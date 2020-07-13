@@ -2365,6 +2365,13 @@ img.header-logo {
     margin-bottom: 50px;
 }
 
+b.highlight {
+    color: #1080f2;
+    background: #fff;
+    box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;
+    padding: 5px;
+}
+
 /* CUSTOM BOOTSTRAP 4 STYLES */
 .d-flex {
     display: flex !important;

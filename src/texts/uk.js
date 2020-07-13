@@ -369,448 +369,450 @@ const UK = {
 				heading: 'Скріншоти'
 			}
 		},
-		chatbot: {
-			cases: [
-				{
-					name: 'sanahunt-lounge',
-					heading: 'SANAHUNT',
-					desc: 'Чат-бот для ресторану класу "люкс"',
-				},
-				{
-					name: 'cybercentre',
-					heading: 'Донецький інститут МВС України',
-					desc: 'Чат-бот для проекту "Cybercentre"',
-					isAlternate: true
-				},
-				{
-					name: 'tklaser',
-					heading: 'TK-laser',
-					desc: 'Чат-бот для мережі салонів лазерної епіляції',
-					isAlternate: true
-				},
-				{
-					name: 'cityzen',
-					heading: 'City-zen cafe&bar',
-					desc: 'Чат-бот для підписки на каву',
-					isAlternate: true
-				},
-				{
-					name: 'dnipro',
-					heading: 'Диспетчерська м. Дніпро',
-					desc: 'Чат-бот для диспетчерської служби',
-				},
-				{
-					name: 'sapori-veri',
-					heading: 'Sapori Veri',
-					desc: 'Чат-бот для італьянського ресторану',
-					isAlternate: true
-				},
-				{
-					name: 'quizbot',
-					heading: 'QuizBot',
-					desc: 'Чат-бот для вікторин та опитувань',
-					isAlternate: true
-				},
-				{
-					name: 'inventory',
-					heading: 'Rocket Manufacture',
-					desc: 'Чат-бот для інвентаризації та ведення складського обліку',
-				},
-				{
-					name: 'budprokat',
-					heading: 'Будпрокат',
-					desc: 'Чат-бот для прокату будівельного обладнання',
-					isAlternate: true
-				},
-				{
-					name: 'skyeng',
-					heading: 'SkyEng',
-					desc: 'Чат-бот для викладачів школи англійської мови',
-				},
-				{
-					name: 'restabot',
-					heading: 'Restabot',
-					desc: 'Чат-бот для ресторану (презентаційний)',
-					isAlternate: true
-				},
-				{
-					name: 'esabot',
-					heading: 'EsaBot',
-					desc: 'Чат-бот для ведення відкритого реєстру контрагентів',
-				},
-				/*{
-					name: 'anglogram',
-					heading: 'Anglogram',
-					desc: 'Чат-бот для запису на курси англійської мови',
-					isAlternate: true
-				}*/
-			],
-			'sanahunt-lounge': {
-				case: {
-					desc: {
-						case: 'Чат-бот для ресторану класу "люкс" <b>SANAHUNT LOUNGE</b>',
-						customer: 'Компанія <b>Sanahunt Group</b>. Sanahunt Luxury Department Store – найбільший магазин України в сегменті luxury: <a href="https://sanahunt.com/">веб-сайт</a>',
-						functional: [
-							'Можливість перегляду меню ресторану',
-							'Додавання страв в кошик',
-							'Оформлення замовлення з доставкою додому',
-							'Відправка замовлень в канал з персоналом ресторану',
-							'Обмежений доступ до чат-боту за посиланням'
-						],
-						result: 'Посилання на робочий чат-бот: <a href="https://t.me/sanahuntlounge_bot">t.me/sanahuntlounge_bot</a>',
-						isLimited: true,
-						limitedText: 'Доступ до чат-боту обмежений. Якщо хочете перевірити роботу бота - телефонуйте / пишіть нам, ми видамо посилання для переходу на чат-бот'
+		services: {
+			chatbot: {
+				cases: [
+					{
+						name: 'sanahunt-lounge',
+						heading: 'SANAHUNT',
+						desc: 'Чат-бот для ресторану класу "люкс"',
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Початок роботи' },
-						{ fileName: 'screen2.png', title: 'Вибір меню' },
-						{ fileName: 'screen3.png', title: 'Категорії страв' },
-						{ fileName: 'screen4.png', title: 'Перегляд страв' },
-						{ fileName: 'screen5.png', title: 'Додавання до кошику' },
-						{ fileName: 'screen6.png', title: 'Перегляд кошику' },
-						{ fileName: 'screen7.png', title: 'Оформлення замовлення' },
-						{ fileName: 'screen8.png', title: 'Оформлення замовлення' }
-					],
-					isWindows: true
-				}
-			},
-			cybercentre: {
-				case: {
-					desc: {
-						case: 'Чат-бот для освітнього <b> проекту "Cybercentre" </b> Донецького інституту МВС України',
-						customer: 'Донецький юридичний інститут МВС України за підтримки ЄС, ГО "Фонд "Професійний розвиток Харкова"" і UPSHIFT Україна',
-						functional: [
-							'Зручний перегляд інформації по розділах',
-							'Гнучке налаштування контенту в боті з боку адміністраторів',
-							'Можливість попросити допомоги у фахівців Cybercentre'
-						],
-						result: 'Посилання на працюючий чат-бот: <a href="https://t.me/Cybercentre_bot"> t.me/Cybercentre_bot </a>'
+					{
+						name: 'cybercentre',
+						heading: 'Донецький інститут МВС України',
+						desc: 'Чат-бот для проекту "Cybercentre"',
+						isAlternate: true
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Головне меню' },
-						{ fileName: 'screen2.png', title: 'Перегляд розділу' },
-						{ fileName: 'screen3.png', title: 'Зміна розділу' },
-						{ fileName: 'screen4.png', title: 'Про проект' },
-						{ fileName: 'screen5.png', title: 'Зворотній зв\'язок' },
-					]
-				}
-			},
-			tklaser: {
-				case: {
-					desc: {
-						case: 'Чат-боти для мережі салонів лазерної епіляції',
-						customer: 'Мережа салонів лазерної епіляції по Україні TK-laser',
-						functional: [
-							'Чат-боти Telegram + Viber + Facebook Messenger',
-							'Інтеграція з телефонією Binotel (сценарії спілкування з клієнтом)',
-							'Можливість замовити зворотний дзвінок',
-							'Можливість залишити відгук',
-							'Інформаційний блок з частими запитаннями',
-							'Адмін-панель для управління контентом, заявками на зворотний дзвінок і розсилкою, що налаштовєуться',
-						],
-						result: 'Посилання на працюючі чат-боти: <a href="https://t.me/TK_Laser_Bot"> Telegram </a>; <a href="viber://pa?chatURI=tklaser_bot"> Viber </a>; <a href="https://www.facebook.com/diod.lazer.kiev/"> Facebook Messenger </a> '
+					{
+						name: 'tklaser',
+						heading: 'TK-laser',
+						desc: 'Чат-бот для мережі салонів лазерної епіляції',
+						isAlternate: true
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Зворотній дзвінок' },
-						{ fileName: 'screen2.png', title: 'FAQ (Facebook)' },
-						{ fileName: 'screen3.png', title: 'FAQ (Facebook)' },
-						{ fileName: 'screen4.png', title: 'Головне меню' },
-						{ fileName: 'screen5.png', title: 'FAQ (Telegram)' },
-					],
-					screensFullScreen: [
-						{ fileName: 'screen6.png', title: 'Початок роботи' },
-						{ fileName: 'screen7.png', title: 'FAQ (Viber)' },
-						{ fileName: 'screen8.png', title: 'Зворотній дзвінок' },
-						{ fileName: 'screen9.png', title: 'Управління контентом' },
-						{ fileName: 'screen10.png', title: 'Управління контентом' },
-						{ fileName: 'screen11.png', title: 'Заявки на зворотний дзвінок' },
-						{ fileName: 'screen12.png', title: 'Розсилка' }
-					]
-				}
-			},
-			quizbot: {
-				case: {
-					desc: {
-						case: 'Чат-бот для проведення вікторин і опитувань в каналі',
-						customer: 'Фіз. особа',
-						functional: [
-							'Постинг вікторин і опитувань в канал. Взаємодія з питаннями супроводжується оповіщенням',
-							'Створення вікторин в адмін-панелі. Вікторина складається з питань, має свій приз, час на відповідь, можливо налаштувати інтервал між питаннями',
-							'Редагування текстів в адмін-панелі',
-							'Створення опитувань в адмін-панелі. Опитування складається з одного питання, також має час на відповідь',
-							'Вивантаження звітів Excel: рейтинг користувачів за опитуваннями за тиждень / місяць, результати вікторини'
-						],
-						result: 'Посилання на канал, в якому працює чат-бот: <a href="https://t.me/joinchat/AAAAAEZJc8LNHJhlUsdClA"> t.me/joinchat </a>'
+					{
+						name: 'cityzen',
+						heading: 'City-zen cafe&bar',
+						desc: 'Чат-бот для підписки на каву',
+						isAlternate: true
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Опитування' },
-						{ fileName: 'screen2.png', title: 'Вікторина' },
-					],
-					screensFullScreen: [
-						{ fileName: 'screen3.png', title: 'Управління текстами' },
-						{ fileName: 'screen4.png', title: 'Створення опитування' },
-						{ fileName: 'screen5.png', title: 'Перегляд опитувань' },
-						{ fileName: 'screen6.png', title: 'Перегляд вікторин' },
-						{ fileName: 'screen7.png', title: 'Створення вікторини' }
-					]
-				}
-			},
-			dnipro: {
-				case: {
-					desc: {
-						case: 'Чат-бот для диспетчерської служби <b>міста Дніпро</b>',
-						customer: 'Дніпровська міська рада',
-						functional: [
-							'Можливість подати заявку в диспетчерську службу',
-							'Відстеження статусів своїх заявок',
-							'Перегляд аварійних відключень по місту',
-							'Отримання повідомлень про аварійні відключення',
-							'Налаштування особистого кабінету і повідомлень'
-						],
-						result: 'Посилання на робочий чат-бот: <a href="https://t.me/ekcumBot">t.me/ekcumBot</a>'
+					{
+						name: 'dnipro',
+						heading: 'Диспетчерська м. Дніпро',
+						desc: 'Чат-бот для диспетчерської служби',
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Мої заявки' },
-						{ fileName: 'screen2.png', title: 'Подати заявку' },
-						{ fileName: 'screen3.png', title: 'Зв\'язатися з диспетчером' },
-						{ fileName: 'screen4.png', title: 'Аварійні відключення' },
-						{ fileName: 'screen5.png', title: 'Налаштування' },
-					]
-				}
-			},
-			'sapori-veri': {
-				case: {
-					desc: {
-						case: 'Чат-бот для італьянського ресторану <b>Sapori Veri</b>',
-						customer: 'Італьянський ресторан <b>Sapori Veri</b>',
-						functional: [
-							'Можливість перегляду меню ресторану',
-							'Наявність картки лояльності',
-							'Накопичення бонусів на картку лояльності від кожного замовлення',
-							'Можливість скористатися накопиченими бонусами',
-							'Бронювання столика'
-						],
-						result: 'Посилання на робочий чат-бот: <a href="https://t.me/saporiveri_bot">t.me/saporiveri_bot</a>'
+					{
+						name: 'sapori-veri',
+						heading: 'Sapori Veri',
+						desc: 'Чат-бот для італьянського ресторану',
+						isAlternate: true
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Перегляд меню' },
-						{ fileName: 'screen2.png', title: 'Перегляд страв' },
-						{ fileName: 'screen3.png', title: 'Перегляд страви' },
-						{ fileName: 'screen4.png', title: 'Бронювання столика' },
-						{ fileName: 'screen5.png', title: 'Картка лояльності' },
-					],
-					isWindows: true
-				}
-			},
-			cityzen: {
-				case: {
-					desc: {
-						case: 'Чат-бот для підписки на доставку кави',
-						customer: 'Мережа ресторанів "City-zen cafe&bar": <a href="https://cityzen.com.ua/">веб-сайт</a>',
-						functional: [
-							'Ознайомлення з підпискою на каву',
-							'Вибір типу заварювання, помелу кави',
-							'Вибір сорту кави і розміру пакета для підписки',
-							'Введення даних про доставку',
-							'Оплата в чат-боті і оформлення підписки'
-						],
-						result: 'Посилання на робочий чат-бот: <a href="https://t.me/coffeeloverua_bot">t.me/coffeeloverua_bot</a>',
+					{
+						name: 'quizbot',
+						heading: 'QuizBot',
+						desc: 'Чат-бот для вікторин та опитувань',
+						isAlternate: true
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Початок роботи' },
-						{ fileName: 'screen2.png', title: 'Вибір опцій' },
-						{ fileName: 'screen3.png', title: 'Вибір сорту' },
-						{ fileName: 'screen4.png', title: 'Вибір пакету' },
-						{ fileName: 'screen5.png', title: 'Дані про доставку' },
-						{ fileName: 'screen6.png', title: 'Оплата підписки' }
-					],
-					isWindows: true
-				}
-			},
-			inventory: {
-				case: {
-					desc: {
-						case: 'Чат-бот для інвентаризації та складського обліку в цеху',
-						customer: 'ТОВ "Rocket Manufacture", Москва - меблева мануфактура, яка виробляє предмети інтер\'єру та екстер\'єру преміум-класу',
-						levels: [
-							'Працівник',
-							'Комірник',
-							'Постачальник',
-							'Начальник цеха',
-							'Адміністратор'
-						],
-						result: 'Посилання на робочий чат-бот: <a href="https://t.me/inventoryUseBot">t.me/inventoryUseBot</a>',
-						desc: 'Бот робить роботу складу набагато ефективнішою. Кожен користувач має доступний спектр дій в залежності від своєї ролі. Наприклад, працівник може отримувати позиції на певний термін, повертати їх, а також запитувати списування інструментів у адміністратора в разі їх поломки. При наближенні терміну отримання до кінця працівник буде отримувати повідомлення про те, що потрібно повернути позиції в склад. Постачальник може узгодити закупівлю з адміністратором, а також виконати поставку закуплених позицій в склад. Начальник цеху може створити запит комірникові на закупівлю, на видачу позицій працівникові, а також має доступ до адміністрування вмісту складу (перегляд позицій по комірках, перегляд відсутніх позицій і т.д.). Комірник підтверджує всі дії, пов\'язані з видачею / отриманням позицій, а також має доступ до інструментів управління складу (переміщення позицій по складу, додавання фото до позицій і т.д.). Адміністратор може виконувати будь-які дії, перераховані вище, а також додавати нових користувачів, нові позиції в базу, переглядати прострочені отримання, боржників тощо'
+					{
+						name: 'inventory',
+						heading: 'Rocket Manufacture',
+						desc: 'Чат-бот для інвентаризації та ведення складського обліку',
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Працівник: отримання інструменту' },
-						{ fileName: 'screen2.png', title: 'Працівник: повернення інструменту' },
-						{ fileName: 'screen3.png', title: 'Комірник: перегляд комірок' },
-						{ fileName: 'screen4.png', title: 'Комірник: підтвердження повернення' },
-						{ fileName: 'screen5.png', title: 'Комірник: відсутні позиції' },
-						{ fileName: 'screen6.png', title: 'Постачальник: зміна фото' },
-						{ fileName: 'screen7.png', title: 'Начальник цеху: додавання позиції' }
-					]
-				}
-			},
-			restabot: {
-				case: {
-					desc: {
-						case: 'Чат-бот для ресторану (презентаційний)',
-						customer: 'Чат-бот для презентації можливостей',
-						functional: [
-							'Можливість перегляду меню ресторану',
-							'Додавання страв до кошику',
-							'Зручний інтерфейс роботи з кошиком',
-							'Оформлення замовлення з доставкою додому',
-							'Відправка замовлень в канал з персоналом ресторану',
-							'Бронювання столика'
-						],
-						result: 'Посилання на робочий чат-бот: <a href="https://t.me/restaTeleBot">t.me/restaTeleBot</a>'
+					{
+						name: 'budprokat',
+						heading: 'Будпрокат',
+						desc: 'Чат-бот для прокату будівельного обладнання',
+						isAlternate: true
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Перегляд меню' },
-						{ fileName: 'screen2.png', title: 'Перегляд страв' },
-						{ fileName: 'screen3.png', title: 'Перегляд страви' },
-						{ fileName: 'screen4.png', title: 'Перегляд страв' },
-						{ fileName: 'screen5.png', title: 'Перегляд кошику' },
-						{ fileName: 'screen6.png', title: 'Оформлення замовлення' },
-						{ fileName: 'screen7.png', title: 'Бронювання столика' }
-					],
-					isWindows: true
-				}
-			},
-			esabot: {
-				case: {
-					desc: {
-						case: 'Чат-бот для ведення реєстру для перевірки репутації постачальників',
-						customer: 'Компанія "RentAll", займається комплексним технічним забезпеченням заходів: <a href="https://www.rentall.in.ua">веб-сайт</a>',
-						functional: [
-							'Можливість додати дані про постачальника до реєстру',
-							'Можливість додати дані про обладнання до реєстру',
-							'Можливість пошуку постачальника по ПІБ та номеру телефона',
-							'Можливість пошуку обладнання',
-							'Розсилка по базі підписників бота',
-							'Ведення і перегляд статистики адміном',
-						],
-						result: 'Посилання на робочий чат-бот: <a href="https://t.me/esabot_bot">t.me/esabot_bot</a>'
+					{
+						name: 'skyeng',
+						heading: 'SkyEng',
+						desc: 'Чат-бот для викладачів школи англійської мови',
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Пошук даних' },
-						{ fileName: 'screen2.png', title: 'Додавання інформації' },
-						{ fileName: 'screen3.png', title: 'Пошук обладнання' },
-					]
-				}
-			},
-			skyeng: {
-				case: {
-					desc: {
-						case: 'Чат-бот для школи англійської мови',
-						customer: '"Skyeng" - міжнародна онлайн школа англійської мови: <a href="https://skyeng.com.ua">веб-сайт</a>',
-						functional: [
-							'Відстеження пропусків учнів викладачами',
-							'Нагадування учням про оплату навчання',
-							'Ведення журналів відвідувань викладачами',
-							'Розсилка по базі викладачів'
-						],
-						result: 'Посилання на робочий чат-бот: <a href="https://t.me/skyengAlertsBot">t.me/skyengAlertsBot</a>'
+					{
+						name: 'restabot',
+						heading: 'Restabot',
+						desc: 'Чат-бот для ресторану (презентаційний)',
+						isAlternate: true
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Початок роботи' },
-						{ fileName: 'screen2.png', title: 'Перегляд журналів' },
-						{ fileName: 'screen3.png', title: 'Перегляд журналів' },
-					]
-				}
-			},
-			budprokat: {
-				case: {
-					desc: {
-						case: 'Чат-бот для прокату будівельного обладнання',
-						customer: 'ТОВ "Будпрокат", компанія займається прокатом і орендою будівельного обладнання: <a href="https://budprokat.kiev.ua/">веб-сайт</a>',
-						functional: [
-							'Перегляд каталогу інструментів і обладнання',
-							'Наповнення кошика обладнанням',
-							'Оформлення заявки на оренду',
-							'Направлення заявки в канал відповідного офісу в залежності від району міста',
-							'Можливість зв\'язатися з менедежром',
-							'Розсилка по базі підписників',
-							'Ведення і перегляд статистики адміном'
-						],
-						result: 'Посилання на робочий чат-бот: <a href="https://t.me/budprokatBot">t.me/budprokatBot</a>'
+					{
+						name: 'esabot',
+						heading: 'EsaBot',
+						desc: 'Чат-бот для ведення відкритого реєстру контрагентів',
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Перегляд каталогу' },
-						{ fileName: 'screen2.png', title: 'Зв\'язок з call-центром' },
-						{ fileName: 'screen3.png', title: 'Переглянути кошик' },
-						{ fileName: 'screen4.png', title: 'Вибір офісу' },
-						{ fileName: 'screen5.png', title: 'Замовлення' }
-					]
-				}
-			},
-			anglogram: {
-				case: {
-					desc: {
-						case: 'Чат-бот для запису на курси англійської мови',
-						customer: 'Школа англійської мови "Anglogram"',
-						functional: [
-							'Можливість записатися на курси',
-							'Підігрів аудиторії чат-ботом',
-							'Розсилка по базі підписників',
-							'Ведення і перегляд статистики адміном'
+					/*{
+						name: 'anglogram',
+						heading: 'Anglogram',
+						desc: 'Чат-бот для запису на курси англійської мови',
+						isAlternate: true
+					}*/
+				],
+				'sanahunt-lounge': {
+					case: {
+						desc: {
+							case: 'Чат-бот для ресторану класу "люкс" <b>SANAHUNT LOUNGE</b>',
+							customer: 'Компанія <b>Sanahunt Group</b>. Sanahunt Luxury Department Store – найбільший магазин України в сегменті luxury: <a href="https://sanahunt.com/">веб-сайт</a>',
+							functional: [
+								'Можливість перегляду меню ресторану',
+								'Додавання страв в кошик',
+								'Оформлення замовлення з доставкою додому',
+								'Відправка замовлень в канал з персоналом ресторану',
+								'Обмежений доступ до чат-боту за посиланням'
+							],
+							result: 'Посилання на робочий чат-бот: <a href="https://t.me/sanahuntlounge_bot">t.me/sanahuntlounge_bot</a>',
+							isLimited: true,
+							limitedText: 'Доступ до чат-боту обмежений. Якщо хочете перевірити роботу бота - телефонуйте / пишіть нам, ми видамо посилання для переходу на чат-бот'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Початок роботи' },
+							{ fileName: 'screen2.png', title: 'Вибір меню' },
+							{ fileName: 'screen3.png', title: 'Категорії страв' },
+							{ fileName: 'screen4.png', title: 'Перегляд страв' },
+							{ fileName: 'screen5.png', title: 'Додавання до кошику' },
+							{ fileName: 'screen6.png', title: 'Перегляд кошику' },
+							{ fileName: 'screen7.png', title: 'Оформлення замовлення' },
+							{ fileName: 'screen8.png', title: 'Оформлення замовлення' }
 						],
-						result: 'Посилання на робочий чат-бот: <a href="https://t.me/AnglogramBot">t.me/AnglogramBot</a>'
-					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Запис на курс' },
-						{ fileName: 'screen2.png', title: 'Введення групи' },
-					]
-				}
-			},
-		},
-		onlineStore: {
-			cases: [
-				{
-					name: 'issa',
-					heading: 'Issa Plus',
-					desc: 'Жіночий бутік',
-					isAlternate: true,
-					link: '/redirect?href=https://issaplus.com/'
+						isWindows: true
+					}
 				},
-				{
-					name: 'citycom',
-					heading: 'CityCom',
-					desc: 'Магазин електроніки',
-					link: '/redirect?href=https://city.com.ua/'
+				cybercentre: {
+					case: {
+						desc: {
+							case: 'Чат-бот для освітнього <b> проекту "Cybercentre" </b> Донецького інституту МВС України',
+							customer: 'Донецький юридичний інститут МВС України за підтримки ЄС, ГО "Фонд "Професійний розвиток Харкова"" і UPSHIFT Україна',
+							functional: [
+								'Зручний перегляд інформації по розділах',
+								'Гнучке налаштування контенту в боті з боку адміністраторів',
+								'Можливість попросити допомоги у фахівців Cybercentre'
+							],
+							result: 'Посилання на працюючий чат-бот: <a href="https://t.me/Cybercentre_bot"> t.me/Cybercentre_bot </a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Головне меню' },
+							{ fileName: 'screen2.png', title: 'Перегляд розділу' },
+							{ fileName: 'screen3.png', title: 'Зміна розділу' },
+							{ fileName: 'screen4.png', title: 'Про проект' },
+							{ fileName: 'screen5.png', title: 'Зворотній зв\'язок' },
+						]
+					}
 				},
-				{
-					name: 'muzikant',
-					heading: 'Muzikant',
-					desc: 'Магазин музичних інструментів',
-					isAlternate: true,
-					link: '/redirect?href=https://muzikant.ua/'
+				tklaser: {
+					case: {
+						desc: {
+							case: 'Чат-боти для мережі салонів лазерної епіляції',
+							customer: 'Мережа салонів лазерної епіляції по Україні TK-laser',
+							functional: [
+								'Чат-боти Telegram + Viber + Facebook Messenger',
+								'Інтеграція з телефонією Binotel (сценарії спілкування з клієнтом)',
+								'Можливість замовити зворотний дзвінок',
+								'Можливість залишити відгук',
+								'Інформаційний блок з частими запитаннями',
+								'Адмін-панель для управління контентом, заявками на зворотний дзвінок і розсилкою, що налаштовєуться',
+							],
+							result: 'Посилання на працюючі чат-боти: <a href="https://t.me/TK_Laser_Bot"> Telegram </a>; <a href="viber://pa?chatURI=tklaser_bot"> Viber </a>; <a href="https://www.facebook.com/diod.lazer.kiev/"> Facebook Messenger </a> '
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Зворотній дзвінок' },
+							{ fileName: 'screen2.png', title: 'FAQ (Facebook)' },
+							{ fileName: 'screen3.png', title: 'FAQ (Facebook)' },
+							{ fileName: 'screen4.png', title: 'Головне меню' },
+							{ fileName: 'screen5.png', title: 'FAQ (Telegram)' },
+						],
+						screensFullScreen: [
+							{ fileName: 'screen6.png', title: 'Початок роботи' },
+							{ fileName: 'screen7.png', title: 'FAQ (Viber)' },
+							{ fileName: 'screen8.png', title: 'Зворотній дзвінок' },
+							{ fileName: 'screen9.png', title: 'Управління контентом' },
+							{ fileName: 'screen10.png', title: 'Управління контентом' },
+							{ fileName: 'screen11.png', title: 'Заявки на зворотний дзвінок' },
+							{ fileName: 'screen12.png', title: 'Розсилка' }
+						]
+					}
 				},
-				{
-					name: 'gepur',
-					heading: 'Gepur',
-					desc: 'Магазин дизайнерського жіночого одягу',
-					isAlternate: true,
-					link: '/redirect?href=https://gepur.com/'
+				quizbot: {
+					case: {
+						desc: {
+							case: 'Чат-бот для проведення вікторин і опитувань в каналі',
+							customer: 'Фіз. особа',
+							functional: [
+								'Постинг вікторин і опитувань в канал. Взаємодія з питаннями супроводжується оповіщенням',
+								'Створення вікторин в адмін-панелі. Вікторина складається з питань, має свій приз, час на відповідь, можливо налаштувати інтервал між питаннями',
+								'Редагування текстів в адмін-панелі',
+								'Створення опитувань в адмін-панелі. Опитування складається з одного питання, також має час на відповідь',
+								'Вивантаження звітів Excel: рейтинг користувачів за опитуваннями за тиждень / місяць, результати вікторини'
+							],
+							result: 'Посилання на канал, в якому працює чат-бот: <a href="https://t.me/joinchat/AAAAAEZJc8LNHJhlUsdClA"> t.me/joinchat </a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Опитування' },
+							{ fileName: 'screen2.png', title: 'Вікторина' },
+						],
+						screensFullScreen: [
+							{ fileName: 'screen3.png', title: 'Управління текстами' },
+							{ fileName: 'screen4.png', title: 'Створення опитування' },
+							{ fileName: 'screen5.png', title: 'Перегляд опитувань' },
+							{ fileName: 'screen6.png', title: 'Перегляд вікторин' },
+							{ fileName: 'screen7.png', title: 'Створення вікторини' }
+						]
+					}
 				},
-				{
-					name: 'eparts',
-					heading: 'Eparts',
-					desc: 'Магазин автозапчастин',
-					isAlternate: true,
-					link: '/redirect?href=https://eparts.kiev.ua/'
+				dnipro: {
+					case: {
+						desc: {
+							case: 'Чат-бот для диспетчерської служби <b>міста Дніпро</b>',
+							customer: 'Дніпровська міська рада',
+							functional: [
+								'Можливість подати заявку в диспетчерську службу',
+								'Відстеження статусів своїх заявок',
+								'Перегляд аварійних відключень по місту',
+								'Отримання повідомлень про аварійні відключення',
+								'Налаштування особистого кабінету і повідомлень'
+							],
+							result: 'Посилання на робочий чат-бот: <a href="https://t.me/ekcumBot">t.me/ekcumBot</a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Мої заявки' },
+							{ fileName: 'screen2.png', title: 'Подати заявку' },
+							{ fileName: 'screen3.png', title: 'Зв\'язатися з диспетчером' },
+							{ fileName: 'screen4.png', title: 'Аварійні відключення' },
+							{ fileName: 'screen5.png', title: 'Налаштування' },
+						]
+					}
 				},
-				{
-					name: 'pixus',
-					heading: 'Pixus',
-					desc: 'Магазин форм для декоративного каменю',
-					isAlternate: true,
-					link: '/redirect?href=http://pixus.in.ua/'
-				}
-			]
+				'sapori-veri': {
+					case: {
+						desc: {
+							case: 'Чат-бот для італьянського ресторану <b>Sapori Veri</b>',
+							customer: 'Італьянський ресторан <b>Sapori Veri</b>',
+							functional: [
+								'Можливість перегляду меню ресторану',
+								'Наявність картки лояльності',
+								'Накопичення бонусів на картку лояльності від кожного замовлення',
+								'Можливість скористатися накопиченими бонусами',
+								'Бронювання столика'
+							],
+							result: 'Посилання на робочий чат-бот: <a href="https://t.me/saporiveri_bot">t.me/saporiveri_bot</a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Перегляд меню' },
+							{ fileName: 'screen2.png', title: 'Перегляд страв' },
+							{ fileName: 'screen3.png', title: 'Перегляд страви' },
+							{ fileName: 'screen4.png', title: 'Бронювання столика' },
+							{ fileName: 'screen5.png', title: 'Картка лояльності' },
+						],
+						isWindows: true
+					}
+				},
+				cityzen: {
+					case: {
+						desc: {
+							case: 'Чат-бот для підписки на доставку кави',
+							customer: 'Мережа ресторанів "City-zen cafe&bar": <a href="https://cityzen.com.ua/">веб-сайт</a>',
+							functional: [
+								'Ознайомлення з підпискою на каву',
+								'Вибір типу заварювання, помелу кави',
+								'Вибір сорту кави і розміру пакета для підписки',
+								'Введення даних про доставку',
+								'Оплата в чат-боті і оформлення підписки'
+							],
+							result: 'Посилання на робочий чат-бот: <a href="https://t.me/coffeeloverua_bot">t.me/coffeeloverua_bot</a>',
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Початок роботи' },
+							{ fileName: 'screen2.png', title: 'Вибір опцій' },
+							{ fileName: 'screen3.png', title: 'Вибір сорту' },
+							{ fileName: 'screen4.png', title: 'Вибір пакету' },
+							{ fileName: 'screen5.png', title: 'Дані про доставку' },
+							{ fileName: 'screen6.png', title: 'Оплата підписки' }
+						],
+						isWindows: true
+					}
+				},
+				inventory: {
+					case: {
+						desc: {
+							case: 'Чат-бот для інвентаризації та складського обліку в цеху',
+							customer: 'ТОВ "Rocket Manufacture", Москва - меблева мануфактура, яка виробляє предмети інтер\'єру та екстер\'єру преміум-класу',
+							levels: [
+								'Працівник',
+								'Комірник',
+								'Постачальник',
+								'Начальник цеха',
+								'Адміністратор'
+							],
+							result: 'Посилання на робочий чат-бот: <a href="https://t.me/inventoryUseBot">t.me/inventoryUseBot</a>',
+							desc: 'Бот робить роботу складу набагато ефективнішою. Кожен користувач має доступний спектр дій в залежності від своєї ролі. Наприклад, працівник може отримувати позиції на певний термін, повертати їх, а також запитувати списування інструментів у адміністратора в разі їх поломки. При наближенні терміну отримання до кінця працівник буде отримувати повідомлення про те, що потрібно повернути позиції в склад. Постачальник може узгодити закупівлю з адміністратором, а також виконати поставку закуплених позицій в склад. Начальник цеху може створити запит комірникові на закупівлю, на видачу позицій працівникові, а також має доступ до адміністрування вмісту складу (перегляд позицій по комірках, перегляд відсутніх позицій і т.д.). Комірник підтверджує всі дії, пов\'язані з видачею / отриманням позицій, а також має доступ до інструментів управління складу (переміщення позицій по складу, додавання фото до позицій і т.д.). Адміністратор може виконувати будь-які дії, перераховані вище, а також додавати нових користувачів, нові позиції в базу, переглядати прострочені отримання, боржників тощо'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Працівник: отримання інструменту' },
+							{ fileName: 'screen2.png', title: 'Працівник: повернення інструменту' },
+							{ fileName: 'screen3.png', title: 'Комірник: перегляд комірок' },
+							{ fileName: 'screen4.png', title: 'Комірник: підтвердження повернення' },
+							{ fileName: 'screen5.png', title: 'Комірник: відсутні позиції' },
+							{ fileName: 'screen6.png', title: 'Постачальник: зміна фото' },
+							{ fileName: 'screen7.png', title: 'Начальник цеху: додавання позиції' }
+						]
+					}
+				},
+				restabot: {
+					case: {
+						desc: {
+							case: 'Чат-бот для ресторану (презентаційний)',
+							customer: 'Чат-бот для презентації можливостей',
+							functional: [
+								'Можливість перегляду меню ресторану',
+								'Додавання страв до кошику',
+								'Зручний інтерфейс роботи з кошиком',
+								'Оформлення замовлення з доставкою додому',
+								'Відправка замовлень в канал з персоналом ресторану',
+								'Бронювання столика'
+							],
+							result: 'Посилання на робочий чат-бот: <a href="https://t.me/restaTeleBot">t.me/restaTeleBot</a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Перегляд меню' },
+							{ fileName: 'screen2.png', title: 'Перегляд страв' },
+							{ fileName: 'screen3.png', title: 'Перегляд страви' },
+							{ fileName: 'screen4.png', title: 'Перегляд страв' },
+							{ fileName: 'screen5.png', title: 'Перегляд кошику' },
+							{ fileName: 'screen6.png', title: 'Оформлення замовлення' },
+							{ fileName: 'screen7.png', title: 'Бронювання столика' }
+						],
+						isWindows: true
+					}
+				},
+				esabot: {
+					case: {
+						desc: {
+							case: 'Чат-бот для ведення реєстру для перевірки репутації постачальників',
+							customer: 'Компанія "RentAll", займається комплексним технічним забезпеченням заходів: <a href="https://www.rentall.in.ua">веб-сайт</a>',
+							functional: [
+								'Можливість додати дані про постачальника до реєстру',
+								'Можливість додати дані про обладнання до реєстру',
+								'Можливість пошуку постачальника по ПІБ та номеру телефона',
+								'Можливість пошуку обладнання',
+								'Розсилка по базі підписників бота',
+								'Ведення і перегляд статистики адміном',
+							],
+							result: 'Посилання на робочий чат-бот: <a href="https://t.me/esabot_bot">t.me/esabot_bot</a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Пошук даних' },
+							{ fileName: 'screen2.png', title: 'Додавання інформації' },
+							{ fileName: 'screen3.png', title: 'Пошук обладнання' },
+						]
+					}
+				},
+				skyeng: {
+					case: {
+						desc: {
+							case: 'Чат-бот для школи англійської мови',
+							customer: '"Skyeng" - міжнародна онлайн школа англійської мови: <a href="https://skyeng.com.ua">веб-сайт</a>',
+							functional: [
+								'Відстеження пропусків учнів викладачами',
+								'Нагадування учням про оплату навчання',
+								'Ведення журналів відвідувань викладачами',
+								'Розсилка по базі викладачів'
+							],
+							result: 'Посилання на робочий чат-бот: <a href="https://t.me/skyengAlertsBot">t.me/skyengAlertsBot</a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Початок роботи' },
+							{ fileName: 'screen2.png', title: 'Перегляд журналів' },
+							{ fileName: 'screen3.png', title: 'Перегляд журналів' },
+						]
+					}
+				},
+				budprokat: {
+					case: {
+						desc: {
+							case: 'Чат-бот для прокату будівельного обладнання',
+							customer: 'ТОВ "Будпрокат", компанія займається прокатом і орендою будівельного обладнання: <a href="https://budprokat.kiev.ua/">веб-сайт</a>',
+							functional: [
+								'Перегляд каталогу інструментів і обладнання',
+								'Наповнення кошика обладнанням',
+								'Оформлення заявки на оренду',
+								'Направлення заявки в канал відповідного офісу в залежності від району міста',
+								'Можливість зв\'язатися з менедежром',
+								'Розсилка по базі підписників',
+								'Ведення і перегляд статистики адміном'
+							],
+							result: 'Посилання на робочий чат-бот: <a href="https://t.me/budprokatBot">t.me/budprokatBot</a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Перегляд каталогу' },
+							{ fileName: 'screen2.png', title: 'Зв\'язок з call-центром' },
+							{ fileName: 'screen3.png', title: 'Переглянути кошик' },
+							{ fileName: 'screen4.png', title: 'Вибір офісу' },
+							{ fileName: 'screen5.png', title: 'Замовлення' }
+						]
+					}
+				},
+				anglogram: {
+					case: {
+						desc: {
+							case: 'Чат-бот для запису на курси англійської мови',
+							customer: 'Школа англійської мови "Anglogram"',
+							functional: [
+								'Можливість записатися на курси',
+								'Підігрів аудиторії чат-ботом',
+								'Розсилка по базі підписників',
+								'Ведення і перегляд статистики адміном'
+							],
+							result: 'Посилання на робочий чат-бот: <a href="https://t.me/AnglogramBot">t.me/AnglogramBot</a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Запис на курс' },
+							{ fileName: 'screen2.png', title: 'Введення групи' },
+						]
+					}
+				},
+			},
+			onlineStore: {
+				cases: [
+					{
+						name: 'issa',
+						heading: 'Issa Plus',
+						desc: 'Жіночий бутік',
+						isAlternate: true,
+						link: '/redirect?href=https://issaplus.com/'
+					},
+					{
+						name: 'citycom',
+						heading: 'CityCom',
+						desc: 'Магазин електроніки',
+						link: '/redirect?href=https://city.com.ua/'
+					},
+					{
+						name: 'muzikant',
+						heading: 'Muzikant',
+						desc: 'Магазин музичних інструментів',
+						isAlternate: true,
+						link: '/redirect?href=https://muzikant.ua/'
+					},
+					{
+						name: 'gepur',
+						heading: 'Gepur',
+						desc: 'Магазин дизайнерського жіночого одягу',
+						isAlternate: true,
+						link: '/redirect?href=https://gepur.com/'
+					},
+					{
+						name: 'eparts',
+						heading: 'Eparts',
+						desc: 'Магазин автозапчастин',
+						isAlternate: true,
+						link: '/redirect?href=https://eparts.kiev.ua/'
+					},
+					{
+						name: 'pixus',
+						heading: 'Pixus',
+						desc: 'Магазин форм для декоративного каменю',
+						isAlternate: true,
+						link: '/redirect?href=http://pixus.in.ua/'
+					}
+				]
+			}
 		}
 	},
 	team: {

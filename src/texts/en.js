@@ -369,221 +369,223 @@ const EN = {
 				heading: 'Screenshots'
 			}
 		},
-		chatbot: {
-			cases: [
-				{
-					name: 'dnipro',
-					heading: 'Dispatching service of the city of Dnipro',
-					desc: 'Chatbot for dispatching service',
-				},
-				{
-					name: 'inventory',
-					heading: 'Rocket Manufacture',
-					desc: 'Chatbot for inventory',
-				},
-				{
-					name: 'budprokat',
-					heading: 'Budprokat',
-					desc: 'Chatbot for construction equipment rental',
-					isAlternate: true
-				},
-				{
-					name: 'skyeng',
-					heading: 'SkyEng',
-					desc: 'Chatbot for English school teachers',
-				},
-				{
-					name: 'esabot',
-					heading: 'EsaBot',
-					desc: 'Chatbot for maintaining an open registry of counterparties',
-				},
-				{
-					name: 'anglogram',
-					heading: 'Anglogram',
-					desc: 'Chatbot for English course',
-					isAlternate: true
-				}
-			],
-			dnipro: {
-				case: {
-					desc: {
-						case: 'Chatbot for the dispatching service of the <b>city of Dnipro</b>',
-						customer: 'Dnipro City State Administration',
-						functional: [
-							'Ability to create a request to the dispatch service',
-							'Track the status of your applications',
-							'View city outages',
-							'Receive emergency shutdowns notifications',
-							'Setting up your personal account and notifications'
-						],
-						result: 'Chatbot link: <a href="https://t.me/ekcumBot">t.me/ekcumBot</a>'
+		services: {
+			chatbot: {
+				cases: [
+					{
+						name: 'dnipro',
+						heading: 'Dispatching service of the city of Dnipro',
+						desc: 'Chatbot for dispatching service',
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'My applications' },
-						{ fileName: 'screen2.png', title: 'New application' },
-						{ fileName: 'screen3.png', title: 'Contact dispatcher' },
-						{ fileName: 'screen4.png', title: 'Emergency shutdowns' },
-						{ fileName: 'screen5.png', title: 'Settings' }
-					]
-				}
-			},
-			inventory: {
-				case: {
-					desc: {
-						case: 'Chatbot for inventory and warehouse accounting in the workshop',
-						customer: '"Rocket Manufacture" LLC, Moscow - furniture manufactory producing interior and exterior items of premium class',
-						levels: [
-							'Worker',
-							'Stockman',
-							'Supplier',
-							'Chief',
-							'Admin'
-						],
-						result: 'Chatbot link: <a href="https://t.me/inventoryUseBot">t.me/inventoryUseBot</a>',
-						desc: 'The bot makes warehouse operations much more efficient. Each user has an accessible range of actions depending on his role. For example, an employee can receive positions for a certain period of time, return them, and also request cancellation of instruments from the administrator in case of breakage. When the deadline for receipt approaches the end, the employee will receive notifications that he needs to return the items to the warehouse. The supplier can coordinate the purchase with the administrator, as well as deliver the purchased items to the warehouse. The shop manager can create a request to the storekeeper for the purchase, for the issuance of positions to the employee, and also has access to administer the contents of the warehouse (view items by cell, view missing items, etc.). The storekeeper confirms all the actions associated with the issuance / receipt of positions, and also has access to warehouse management tools (moving positions in the warehouse, adding photos to positions, etc.). The administrator can perform any of the actions listed above, as well as add new users, new positions to the database, view overdue receipts, debtors, etc.'
+					{
+						name: 'inventory',
+						heading: 'Rocket Manufacture',
+						desc: 'Chatbot for inventory',
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Worker: getting the instrument' },
-						{ fileName: 'screen2.png', title: 'Worker: returning the instruments' },
-						{ fileName: 'screen3.png', title: 'Stockman: view cells content' },
-						{ fileName: 'screen4.png', title: 'Stockman: return confirmation' },
-						{ fileName: 'screen5.png', title: 'Stockman: view absent positions' },
-						{ fileName: 'screen6.png', title: 'Supplier: changing position photo' },
-						{ fileName: 'screen7.png', title: 'Chief: adding position' }
-					]
-				}
-			},
-			esabot: {
-				case: {
-					desc: {
-						case: 'Chatbot for maintaining an open registry of suppliers',
-						customer: 'Company "RentAll", engaged in comprehensive technical support of events: <a href="https://www.rentall.in.ua">website</a>',
-						functional: [
-							'Ability to add supplier data to the registry',
-							'Ability to add equipment data to the registry',
-							'Ability to search for data by name and phone number',
-							'The ability to search for equipment',
-							'Mailing to chatbot subscribers',
-							'Keep statistics, the ability of admin to view it',
-						],
-						result: 'Chatbot link: <a href="https://t.me/esabot_bot">t.me/esabot_bot</a>'
+					{
+						name: 'budprokat',
+						heading: 'Budprokat',
+						desc: 'Chatbot for construction equipment rental',
+						isAlternate: true
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Search for supplier' },
-						{ fileName: 'screen2.png', title: 'Adding data' },
-						{ fileName: 'screen3.png', title: 'Search for equipment' },
-					]
-				}
-			},
-			skyeng: {
-				case: {
-					desc: {
-						case: 'Chatbot for English school teachers',
-						customer: '"Skyeng" - international online english language school: <a href="https://skyeng.com.ua">website</a>',
-						functional: [
-							'Ability for teacher to track students absenteeism',
-							'Students reminders about tuition payment',
-							'Keeping students\' attendance journals by teachers',
-							'Mailing to teachers'
-						],
-						result: 'Chatbot link: <a href="https://t.me/skyengAlertsBot">t.me/skyengAlertsBot</a>'
+					{
+						name: 'skyeng',
+						heading: 'SkyEng',
+						desc: 'Chatbot for English school teachers',
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Start screen' },
-						{ fileName: 'screen2.png', title: 'Students journals' },
-						{ fileName: 'screen3.png', title: 'Students journals' }
-					]
-				}
-			},
-			budprokat: {
-				case: {
-					desc: {
-						case: 'Chatbot for construction equipment rental',
-						customer: '"Budprokat" LLC, the company is engaged in the rental of construction equipment: <a href="https://budprokat.kiev.ua/">website</a>',
-						functional: [
-							'Ability to view the catalog of tools and equipment',
-							'Filling the basket with equipment',
-							'Ability to apply for a rental',
-							'Sending an application to the channel of the corresponding office, depending on the city district',
-							'Ability to contact the manager',
-							'Mailing to chatbot subscribers',
-							'Keep statistics, the ability of admin to view it'
-						],
-						result: 'Chatbot link: <a href="https://t.me/budprokatBot">t.me/budprokatBot</a>'
+					{
+						name: 'esabot',
+						heading: 'EsaBot',
+						desc: 'Chatbot for maintaining an open registry of counterparties',
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'View catalog' },
-						{ fileName: 'screen2.png', title: 'Call center' },
-						{ fileName: 'screen3.png', title: 'View cart' },
-						{ fileName: 'screen4.png', title: 'Office selection' },
-						{ fileName: 'screen5.png', title: 'Making order' }
-					]
-				}
+					{
+						name: 'anglogram',
+						heading: 'Anglogram',
+						desc: 'Chatbot for English course',
+						isAlternate: true
+					}
+				],
+				dnipro: {
+					case: {
+						desc: {
+							case: 'Chatbot for the dispatching service of the <b>city of Dnipro</b>',
+							customer: 'Dnipro City State Administration',
+							functional: [
+								'Ability to create a request to the dispatch service',
+								'Track the status of your applications',
+								'View city outages',
+								'Receive emergency shutdowns notifications',
+								'Setting up your personal account and notifications'
+							],
+							result: 'Chatbot link: <a href="https://t.me/ekcumBot">t.me/ekcumBot</a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'My applications' },
+							{ fileName: 'screen2.png', title: 'New application' },
+							{ fileName: 'screen3.png', title: 'Contact dispatcher' },
+							{ fileName: 'screen4.png', title: 'Emergency shutdowns' },
+							{ fileName: 'screen5.png', title: 'Settings' }
+						]
+					}
+				},
+				inventory: {
+					case: {
+						desc: {
+							case: 'Chatbot for inventory and warehouse accounting in the workshop',
+							customer: '"Rocket Manufacture" LLC, Moscow - furniture manufactory producing interior and exterior items of premium class',
+							levels: [
+								'Worker',
+								'Stockman',
+								'Supplier',
+								'Chief',
+								'Admin'
+							],
+							result: 'Chatbot link: <a href="https://t.me/inventoryUseBot">t.me/inventoryUseBot</a>',
+							desc: 'The bot makes warehouse operations much more efficient. Each user has an accessible range of actions depending on his role. For example, an employee can receive positions for a certain period of time, return them, and also request cancellation of instruments from the administrator in case of breakage. When the deadline for receipt approaches the end, the employee will receive notifications that he needs to return the items to the warehouse. The supplier can coordinate the purchase with the administrator, as well as deliver the purchased items to the warehouse. The shop manager can create a request to the storekeeper for the purchase, for the issuance of positions to the employee, and also has access to administer the contents of the warehouse (view items by cell, view missing items, etc.). The storekeeper confirms all the actions associated with the issuance / receipt of positions, and also has access to warehouse management tools (moving positions in the warehouse, adding photos to positions, etc.). The administrator can perform any of the actions listed above, as well as add new users, new positions to the database, view overdue receipts, debtors, etc.'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Worker: getting the instrument' },
+							{ fileName: 'screen2.png', title: 'Worker: returning the instruments' },
+							{ fileName: 'screen3.png', title: 'Stockman: view cells content' },
+							{ fileName: 'screen4.png', title: 'Stockman: return confirmation' },
+							{ fileName: 'screen5.png', title: 'Stockman: view absent positions' },
+							{ fileName: 'screen6.png', title: 'Supplier: changing position photo' },
+							{ fileName: 'screen7.png', title: 'Chief: adding position' }
+						]
+					}
+				},
+				esabot: {
+					case: {
+						desc: {
+							case: 'Chatbot for maintaining an open registry of suppliers',
+							customer: 'Company "RentAll", engaged in comprehensive technical support of events: <a href="https://www.rentall.in.ua">website</a>',
+							functional: [
+								'Ability to add supplier data to the registry',
+								'Ability to add equipment data to the registry',
+								'Ability to search for data by name and phone number',
+								'The ability to search for equipment',
+								'Mailing to chatbot subscribers',
+								'Keep statistics, the ability of admin to view it',
+							],
+							result: 'Chatbot link: <a href="https://t.me/esabot_bot">t.me/esabot_bot</a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Search for supplier' },
+							{ fileName: 'screen2.png', title: 'Adding data' },
+							{ fileName: 'screen3.png', title: 'Search for equipment' },
+						]
+					}
+				},
+				skyeng: {
+					case: {
+						desc: {
+							case: 'Chatbot for English school teachers',
+							customer: '"Skyeng" - international online english language school: <a href="https://skyeng.com.ua">website</a>',
+							functional: [
+								'Ability for teacher to track students absenteeism',
+								'Students reminders about tuition payment',
+								'Keeping students\' attendance journals by teachers',
+								'Mailing to teachers'
+							],
+							result: 'Chatbot link: <a href="https://t.me/skyengAlertsBot">t.me/skyengAlertsBot</a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Start screen' },
+							{ fileName: 'screen2.png', title: 'Students journals' },
+							{ fileName: 'screen3.png', title: 'Students journals' }
+						]
+					}
+				},
+				budprokat: {
+					case: {
+						desc: {
+							case: 'Chatbot for construction equipment rental',
+							customer: '"Budprokat" LLC, the company is engaged in the rental of construction equipment: <a href="https://budprokat.kiev.ua/">website</a>',
+							functional: [
+								'Ability to view the catalog of tools and equipment',
+								'Filling the basket with equipment',
+								'Ability to apply for a rental',
+								'Sending an application to the channel of the corresponding office, depending on the city district',
+								'Ability to contact the manager',
+								'Mailing to chatbot subscribers',
+								'Keep statistics, the ability of admin to view it'
+							],
+							result: 'Chatbot link: <a href="https://t.me/budprokatBot">t.me/budprokatBot</a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'View catalog' },
+							{ fileName: 'screen2.png', title: 'Call center' },
+							{ fileName: 'screen3.png', title: 'View cart' },
+							{ fileName: 'screen4.png', title: 'Office selection' },
+							{ fileName: 'screen5.png', title: 'Making order' }
+						]
+					}
+				},
+				anglogram: {
+					case: {
+						desc: {
+							case: 'Chatbot for enrolling in English courses',
+							customer: 'English language school "Anglogram"',
+							functional: [
+								'Ability to enroll in courses',
+								'Increasing audience engagement',
+								'Mailing to chatbot subscribers',
+								'Keep statistics, the ability of admin to view it'
+							],
+							result: 'Chatbot link: <a href="https://t.me/AnglogramBot">t.me/AnglogramBot</a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Enroll in course' },
+							{ fileName: 'screen2.png', title: 'Input your group' }
+						]
+					}
+				},
 			},
-			anglogram: {
-				case: {
-					desc: {
-						case: 'Chatbot for enrolling in English courses',
-						customer: 'English language school "Anglogram"',
-						functional: [
-							'Ability to enroll in courses',
-							'Increasing audience engagement',
-							'Mailing to chatbot subscribers',
-							'Keep statistics, the ability of admin to view it'
-						],
-						result: 'Chatbot link: <a href="https://t.me/AnglogramBot">t.me/AnglogramBot</a>'
+			onlineStore: {
+				cases: [
+					{
+						name: 'issa',
+						heading: 'Issa Plus',
+						desc: 'Women\'s Online Boutique',
+						isAlternate: true,
+						link: '/redirect?href=https://issaplus.com/'
 					},
-					screens: [
-						{ fileName: 'screen1.png', title: 'Enroll in course' },
-						{ fileName: 'screen2.png', title: 'Input your group' }
-					]
-				}
-			},
-		},
-		onlineStore: {
-			cases: [
-				{
-					name: 'issa',
-					heading: 'Issa Plus',
-					desc: 'Women\'s Online Boutique',
-					isAlternate: true,
-					link: '/redirect?href=https://issaplus.com/'
-				},
-				{
-					name: 'citycom',
-					heading: 'CityCom',
-					desc: 'Online Electronics Store',
-					link: '/redirect?href=https://city.com.ua/'
-				},
-				{
-					name: 'muzikant',
-					heading: 'Muzikant',
-					desc: 'Online Musical Instrument Store',
-					isAlternate: true,
-					link: '/redirect?href=https://muzikant.ua/'
-				},
-				{
-					name: 'gepur',
-					heading: 'Gepur',
-					desc: 'Designer Women\'s Online Clothing Store',
-					isAlternate: true,
-					link: '/redirect?href=https://gepur.com/'
-				},
-				{
-					name: 'eparts',
-					heading: 'Eparts',
-					desc: 'Online Auto Parts Store',
-					isAlternate: true,
-					link: '/redirect?href=https://eparts.kiev.ua/'
-				},
-				{
-					name: 'pixus',
-					heading: 'Pixus',
-					desc: 'Online Store of Forms for Decorative Stone',
-					isAlternate: true,
-					link: '/redirect?href=http://pixus.in.ua/'
-				}
-			]
+					{
+						name: 'citycom',
+						heading: 'CityCom',
+						desc: 'Online Electronics Store',
+						link: '/redirect?href=https://city.com.ua/'
+					},
+					{
+						name: 'muzikant',
+						heading: 'Muzikant',
+						desc: 'Online Musical Instrument Store',
+						isAlternate: true,
+						link: '/redirect?href=https://muzikant.ua/'
+					},
+					{
+						name: 'gepur',
+						heading: 'Gepur',
+						desc: 'Designer Women\'s Online Clothing Store',
+						isAlternate: true,
+						link: '/redirect?href=https://gepur.com/'
+					},
+					{
+						name: 'eparts',
+						heading: 'Eparts',
+						desc: 'Online Auto Parts Store',
+						isAlternate: true,
+						link: '/redirect?href=https://eparts.kiev.ua/'
+					},
+					{
+						name: 'pixus',
+						heading: 'Pixus',
+						desc: 'Online Store of Forms for Decorative Stone',
+						isAlternate: true,
+						link: '/redirect?href=http://pixus.in.ua/'
+					}
+				]
+			}
 		}
 	},
 	team: {
