@@ -92,19 +92,19 @@
 				<div class="row desc margin-bottom-30">
 					<div class="col-xs-12 col-sm-6">
 						<h4>📌 <%= local.cases.case.desc.case %></h4>
-						<p><%- local.cases.chatbot[caseName].case.desc.case %></p>
+						<p><%- local.cases.services.chatbot[caseName].case.desc.case %></p>
 					</div>
 					<div class="col-xs-12 col-sm-6">
 						<h4>👨‍⚖️ <%= local.cases.case.desc.customer %></h4>
-						<p><%- local.cases.chatbot[caseName].case.desc.customer %></p>
+						<p><%- local.cases.services.chatbot[caseName].case.desc.customer %></p>
 					</div>
 					<div class="col-xs-12 col-sm-6">
-						<% if (local.cases.chatbot[caseName].case.desc.levels) { %>
+						<% if (local.cases.services.chatbot[caseName].case.desc.levels) { %>
 							<h4>📝 <%= local.cases.case.desc.levels %></h4>
 							<p>
 								<ul>
-									<% for (let i = 0; i < local.cases.chatbot[caseName].case.desc.levels.length; i++) { %>
-										<li><%= local.cases.chatbot[caseName].case.desc.levels[i] %></li>
+									<% for (let i = 0; i < local.cases.services.chatbot[caseName].case.desc.levels.length; i++) { %>
+										<li><%= local.cases.services.chatbot[caseName].case.desc.levels[i] %></li>
 									<% } %>
 								</ul>
 							</p>
@@ -112,8 +112,8 @@
 							<h4>📝 <%= local.cases.case.desc.functional %></h4>
 							<p>
 								<ul>
-									<% for (let i = 0; i < local.cases.chatbot[caseName].case.desc.functional.length; i++) { %>
-										<li><%= local.cases.chatbot[caseName].case.desc.functional[i] %></li>
+									<% for (let i = 0; i < local.cases.services.chatbot[caseName].case.desc.functional.length; i++) { %>
+										<li><%= local.cases.services.chatbot[caseName].case.desc.functional[i] %></li>
 									<% } %>
 								</ul>
 							</p>
@@ -122,15 +122,15 @@
 					<div class="col-xs-12 col-sm-6">
 						<h4>💯 <%= local.cases.case.desc.result %></h4>
 						<p>
-							<%- local.cases.chatbot[caseName].case.desc.result %>
-							<!-- <%= local.cases.case.desc.working %>: <a href="https://<%= local.cases.chatbot[caseName].case.desc.result %>"><%= local.cases.chatbot[caseName].case.desc.result %></a>
-							<% if (local.cases.chatbot[caseName].case.desc.isLimited) { %> <br><%= local.cases.chatbot[caseName].case.desc.limitedText %> <% } %> -->
+							<%- local.cases.services.chatbot[caseName].case.desc.result %>
+							<!-- <%= local.cases.case.desc.working %>: <a href="https://<%= local.cases.services.chatbot[caseName].case.desc.result %>"><%= local.cases.services.chatbot[caseName].case.desc.result %></a>
+							<% if (local.cases.services.chatbot[caseName].case.desc.isLimited) { %> <br><%= local.cases.services.chatbot[caseName].case.desc.limitedText %> <% } %> -->
 						</p>
 					</div>
-					<% if (local.cases.chatbot[caseName].case.desc.desc) { %>
+					<% if (local.cases.services.chatbot[caseName].case.desc.desc) { %>
 						<div class="col-xs-12">
 							<h4>💡 <%= local.cases.case.desc.desc %></h4>
-							<p><%= local.cases.chatbot[caseName].case.desc.desc %></p>
+							<p><%= local.cases.services.chatbot[caseName].case.desc.desc %></p>
 						</div>
 					<% } %>
 				</div>
@@ -140,22 +140,22 @@
 						<span class="separator"></span>
 					</div>
 				</div>
-				<% if (local.cases.chatbot[caseName].case.screens) { %>
+				<% if (local.cases.services.chatbot[caseName].case.screens) { %>
 					<div class="row screens">
-						<% for (let i = 0; i < local.cases.chatbot[caseName].case.screens.length; i++) { %>
+						<% for (let i = 0; i < local.cases.services.chatbot[caseName].case.screens.length; i++) { %>
 							<div class="col-xs-12 col-sm-6 col-md-4">
-								<div class="heading"><%= local.cases.chatbot[caseName].case.screens[i].title %></div>
-								<img src="/img/cases/chatbot/<%= caseName %>/<%= local.cases.chatbot[caseName].case.screens[i].fileName %>" style="width: 100%; <% if (local.cases.chatbot[caseName].case.isWindows) { %> margin: 10px 0 20px 0; <% } %>" alt="">
+								<div class="heading"><%= local.cases.services.chatbot[caseName].case.screens[i].title %></div>
+								<img src="/img/cases/chatbot/<%= caseName %>/<%= local.cases.services.chatbot[caseName].case.screens[i].fileName %>" style="width: 100%; <% if (local.cases.services.chatbot[caseName].case.isWindows) { %> margin: 10px 0 20px 0; <% } %>" alt="">
 							</div>
 						<% } %>
 					</div>
 				<% } %>
-				<% if (local.cases.chatbot[caseName].case.screensFullScreen) { %>
+				<% if (local.cases.services.chatbot[caseName].case.screensFullScreen) { %>
 					<div class="row screens">
-						<% for (let i = 0; i < local.cases.chatbot[caseName].case.screensFullScreen.length; i++) { %>
+						<% for (let i = 0; i < local.cases.services.chatbot[caseName].case.screensFullScreen.length; i++) { %>
 							<div class="col-12">
-								<div class="heading"><%= local.cases.chatbot[caseName].case.screensFullScreen[i].title %></div>
-								<img src="/img/cases/chatbot/<%= caseName %>/<%= local.cases.chatbot[caseName].case.screensFullScreen[i].fileName %>" style="width: 100%; <% if (local.cases.chatbot[caseName].case.isWindows) { %> margin: 10px 0 20px 0; <% } %>" alt="">
+								<div class="heading"><%= local.cases.services.chatbot[caseName].case.screensFullScreen[i].title %></div>
+								<img src="/img/cases/chatbot/<%= caseName %>/<%= local.cases.services.chatbot[caseName].case.screensFullScreen[i].fileName %>" style="width: 100%; <% if (local.cases.services.chatbot[caseName].case.isWindows) { %> margin: 10px 0 20px 0; <% } %>" alt="">
 							</div>
 						<% } %>
 					</div>

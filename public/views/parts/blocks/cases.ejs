@@ -7,16 +7,8 @@
 			</div>
 		</div>
 		<div class="row cases-content">
-			<% for (let i = 0; i < local.cases[part.info].cases.length; i++) { %>
-				<div class="col-12 col-sm-6 case">
-					<a href="<%= local.cases[part.info].cases[i].link || `/${contentLanguage}/${part.info}/cases/${local.cases[part.info].cases[i].name}` %>">
-						<img src="/img/cases/<%= part.info %>/<%= local.cases[part.info].cases[i].name %>.jpg" alt="">
-					</a>
-					<div class="desc <% if (local.cases[part.info].cases[i].isAlternate) { %> alternate <% } %>">
-						<h3><%- local.cases[part.info].cases[i].heading %></h3>
-						<h5><%- local.cases[part.info].cases[i].desc %></h5>
-					</div>
-				</div>
+			<% for (let i = 0; i < local.cases.services[part.info].cases.length; i++) { %>
+				<%- include(`case`, { singleCase: local.cases.services[part.info].cases[i] }) %>
 			<% } %>
 		</div>
 	</div>
