@@ -112,7 +112,7 @@ textarea:focus, input:focus {
 h1,
 h2,
 h3 {
-    font-family: "WorkSans", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 body {
     font-family: "PTSans", Helvetica, Arial, sans-serif;
@@ -2369,7 +2369,6 @@ b.highlight {
     color: #1080f2;
     background: #fff;
     box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;
-    padding: 5px;
 }
 
 /* CUSTOM BOOTSTRAP 4 STYLES */

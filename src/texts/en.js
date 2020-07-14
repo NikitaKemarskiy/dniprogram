@@ -335,7 +335,7 @@ const EN = {
 	},
 	facts: {
 		text1: 'PROJECTS <br> COMPLETED',
-		text2: 'HAPPY <br> CLIENTS',
+		text2: 'REGULAR <br> CUSTOMERS',
 		text3: 'COMPANY <br>STAFF',
 		text4: 'YEARS ON <br>MARKET'
 	},
