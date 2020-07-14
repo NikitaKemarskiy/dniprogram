@@ -15,6 +15,16 @@ const UK = require('../texts/uk');
 
 // Constants
 const SUPPORTED_LANGS = new Set(['en', 'ru', 'uk']);
+const SERVICES = new Set([
+	'chatbot',
+	'website',
+	'businessCard',
+	'corporate',
+	'landing',
+	'onlineStore',
+	'server',
+	'desktop'
+]);
 const PRICING_PARTS = new Set([
 	'businessCard',
 	'chatbot',
@@ -34,6 +44,15 @@ const PAGES = new Set([
 const DEFAULT_PART = {
 	info: 'home'
 };
+
+function getViewName(info) {
+	if (PAGES.has(info)) {
+		return info;
+	} else if (SERVICES.has(info)) {
+		return 'service';
+	}
+	return 'index';
+}
 
 // Handlers
 async function langSpecifiedHandler(ctx) {
@@ -93,7 +112,7 @@ async function langAndPathSpecifiedHandler(ctx) {
 				  contentLanguage === 'uk' ? UK : RU;
 	const operators = getOperators(contentLanguage);
 	await ctx.render(
-		PAGES.has(info) ? info : 'index',
+		getViewName(info),
 		{ local, operators, part, contentLanguage }
 	);
 }
