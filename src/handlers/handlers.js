@@ -15,16 +15,6 @@ const UK = require('../texts/uk');
 
 // Constants
 const SUPPORTED_LANGS = new Set(['en', 'ru', 'uk']);
-const SERVICES = new Set([
-	'chatbot',
-	'website',
-	'businessCard',
-	'corporate',
-	'landing',
-	'onlineStore',
-	'server',
-	'desktop'
-]);
 const PRICING_PARTS = new Set([
 	'businessCard',
 	'chatbot',
@@ -39,7 +29,15 @@ const CASES_PARTS = new Set([
 const PAGES = new Set([
 	'about',
 	'portfolio',
-	'services'
+	'services',
+	'chatbot',
+	'website',
+	'businessCard',
+	'corporate',
+	'landing',
+	'onlineStore',
+	'server',
+	'desktop'
 ]);
 const DEFAULT_PART = {
 	info: 'home'
@@ -48,8 +46,6 @@ const DEFAULT_PART = {
 function getViewName(info) {
 	if (PAGES.has(info)) {
 		return info;
-	} else if (SERVICES.has(info)) {
-		return 'service';
 	}
 	return 'index';
 }
