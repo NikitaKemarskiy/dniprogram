@@ -269,6 +269,14 @@ const EN = {
 			content3: 'Make a newsletter for bot subscribers',
 			content4: 'Create a channel for promoting your business',
 			content5: 'Reduce business process costs'
+		},
+		developmentPlan: {
+			heading: 'A chatbot will let you:',
+			content1: 'Automate up to 80% of routine tasks',
+			content2: 'Increase audience engagement',
+			content3: 'Make a newsletter for bot subscribers',
+			content4: 'Create a channel for promoting your business',
+			content5: 'Reduce business process costs'
 		}
 	},
 	server: {
