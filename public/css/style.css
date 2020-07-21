@@ -2360,17 +2360,54 @@ img.header-logo {
 #partners .partner {
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#partners .row-partners {
+    margin-bottom: 50px;
+}
+
+#partners .row-partners.row-last {
+    margin-bottom: 0px;
 }
 
 #partners .partner a {
-    padding: 0;
+    padding: 0 15px;
     margin: 0;
 }
 
 #partners img {
     max-width: 100%;
+    width: 150px;
     height: auto;
 }
+
+#partners .row-partners {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+
+#partners .row-partners > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+/*#partners .partner-min-height-60 .partner {
+    min-height: 60px;
+}
+
+#partners .partner-min-height-125 .partner {
+    min-height: 125px;
+}
+
+#partners .partner-min-height-140 .partner {
+    min-height: 140px;
+}*/
 
 .cool_facts_area {
     position: relative;
