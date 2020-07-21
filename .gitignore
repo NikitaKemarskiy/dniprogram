@@ -1,3 +1,6 @@
+# MacOS
+.DS_Store
+
 # My directives
 deploy_rsa
 deploy_rsa.pub
