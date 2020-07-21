@@ -2357,8 +2357,19 @@ img.header-logo {
     line-height: 28px;
 }
 
+#partners .partner {
+    padding: 0;
+    margin: 0;
+}
+
+#partners .partner a {
+    padding: 0;
+    margin: 0;
+}
+
 #partners img {
-    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
 }
 
 .cool_facts_area {
