@@ -2419,8 +2419,31 @@ b.highlight {
 }
 
 /* WEBSITE EXTRAS */
-#website-extras .website-extra {
-	/**/
+.carousel-card {
+	border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 0 20px 20px 20px;
+    transition: 0.3s all;
+    -webkit-box-shadow: 10px 10px 13px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 13px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 13px -10px rgba(0,0,0,0.75);
+}
+
+.carousel-card:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 19px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 19px -11px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 19px -11px rgba(0,0,0,0.75);
+}
+
+.website-extra__image img {
+    height: 60px !important;
+    width: 60px !important;
+}
+
+.website-extra__title {
+    margin-top: 60px;
 }
 
 /* CUSTOM BOOTSTRAP 4 STYLES */
