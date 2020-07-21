@@ -125,26 +125,6 @@
   }
   autoPlayYouTubeModal();
 
-  // TESTIMONIALS SLIDER
-
-  $("#testimonials .slider").owlCarousel({
-    navigation: true,
-    slideSpeed: 300,
-    paginationSpeed: 400,
-    singleItem: true
-  });
-
-  // CLIENTS SLIDER
-
-  $("#clients .slider").owlCarousel({
-    navigation: true,
-    pagination: false,
-    autoPlay: 5000, //Set AutoPlay to 3 seconds 
-    items: 5,
-  });
-
-  // MAIN MENU TOGGLE AND SMOOTH SCROLL
-
 
   $('.navbar-collapse ul li a').on( 'click' , function() {
     $('.navbar-toggle:visible').click();

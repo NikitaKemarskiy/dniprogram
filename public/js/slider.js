@@ -32,4 +32,27 @@ $(document).ready(function(){
     nav: true,
     navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
   });
+  $(".owl-carousel-website-extras").owlCarousel({
+    margin: 10,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    nav: true,
+    responsive : {
+      // breakpoint from 0 up
+      0 : {
+          items: 1
+      },
+      // breakpoint from 480 up
+      480 : {
+          items: 2
+      },
+      // breakpoint from 768 up
+      768 : {
+          items: 3
+      }
+    },
+    navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
+  });
 });
