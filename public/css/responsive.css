@@ -118,7 +118,9 @@
         margin-top: 20px;
     }
     section h2.section-heading {
+        font-size: 40px;
         margin-top: 0;
+        text-align: center;
         /*margin-bottom: 15px;*/
         /*font-size: 28px;
         letter-spacing: -1px;
@@ -179,9 +181,6 @@
         float: none;
         line-height: 21px;
         max-width: 80%;
-        text-align: center;
-    }
-    section h2.section-heading {
         text-align: center;
     }
     #features-tabs {

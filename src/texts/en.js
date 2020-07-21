@@ -127,6 +127,13 @@ const EN = {
 			content2: 'Provide information about your products and services',
 			content3: 'Increase brand awareness and relevance',
 			content4: 'Provide contact and other information to visitors'
+		},
+		developmentPlan: {
+			heading: 'A business card website will let you:',
+			content1: 'Introduce you or your company on the Internet',
+			content2: 'Provide information about your products and services',
+			content3: 'Increase brand awareness and relevance',
+			content4: 'Provide contact and other information to visitors'
 		}
 	},
 	corporate: {
@@ -158,6 +165,14 @@ const EN = {
 		leaveApplication: {
 			heading: 'Order <b>corporate website</b>!',
 			subheading: 'A corporate website will let you:',
+			content1: 'Present your company on the Internet',
+			content2: 'Attract new customers',
+			content3: 'Strengthen existing partnerships',
+			content4: 'Develop a business by revealing the advantages of a company',
+			content5: 'Provide a detailed description of the company\'s activities, services or products'
+		},
+		developmentPlan: {
+			heading: 'A corporate website will let you:',
 			content1: 'Present your company on the Internet',
 			content2: 'Attract new customers',
 			content3: 'Strengthen existing partnerships',
@@ -199,6 +214,14 @@ const EN = {
 			content3: 'Spend less on advertising',
 			content4: 'Convince visitors to buy from you',
 			content5: 'Engage target audience'
+		},
+		developmentPlan: {
+			heading: 'A landing will let your business:',
+			content1: 'Turn visitors into customers',
+			content2: 'Increase sales',
+			content3: 'Spend less on advertising',
+			content4: 'Convince visitors to buy from you',
+			content5: 'Engage target audience'
 		}
 	},
 	onlineStore: {
@@ -231,6 +254,14 @@ const EN = {
 		leaveApplication: {
 			heading: 'Order <b>online store</b>!',
 			subheading: 'An online store will let you:',
+			content1: 'Sell goods without renting industrial premises',
+			content2: 'Do business without regional restrictions',
+			content3: 'Organize availability 24/7',
+			content4: 'Focus on potentially interested customers',
+			content5: 'Create effective targeted online promotion'
+		},
+		developmentPlan: {
+			heading: 'An online store will let you:',
 			content1: 'Sell goods without renting industrial premises',
 			content2: 'Do business without regional restrictions',
 			content3: 'Organize availability 24/7',
