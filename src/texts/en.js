@@ -16,6 +16,7 @@ const EN = {
 		contact: 'Contact us',
 		more: 'Read more'
 	},
+	/*** SEPARATE PAGES ***/
 	home: {
 		introHeading: 'Digital agency that will take your business to the next level',
 		heading: 'What do we offer?',
@@ -372,31 +373,7 @@ const EN = {
 			content4: 'Take your company one step further'
 		}
 	},
-	facts: {
-		text1: 'PROJECTS <br> COMPLETED',
-		text2: 'REGULAR <br> CUSTOMERS',
-		text3: 'COMPANY <br>STAFF',
-		text4: 'YEARS ON <br>MARKET'
-	},
-	why: {
-		heading: 'Why choose us?',
-		content1: {
-			heading: 'Professional turnkey development',
-			text: 'We carry out the project from the beginning to the end'
-		},
-		content2: {
-			heading: 'We are able to work with large customers',
-			text: 'Individual approach to every customer. We study the features of the market and the "subtleties" of the client\'s area'
-		},
-		content3: {
-			heading: 'We always complete projects on time',
-			text: 'Plan your time accurately! The named deadlines always correspond to the real ones'
-		},
-		content4: {
-			heading: 'We work for the result',
-			text: 'Our purpose is to make effective and successful product, focusing on quality and customers wishes'
-		}
-	},
+	/*** CASES ***/
 	cases: {
 		heading: 'Portfolio',
 		case: {
@@ -630,6 +607,52 @@ const EN = {
 					}
 				]
 			}
+		}
+	},
+	/*** GENERAL BLOCKS ***/
+	facts: {
+		text1: 'PROJECTS <br> COMPLETED',
+		text2: 'REGULAR <br> CUSTOMERS',
+		text3: 'COMPANY <br>STAFF',
+		text4: 'YEARS ON <br>MARKET'
+	},
+	why: {
+		heading: 'Why choose us?',
+		content1: {
+			heading: 'Professional turnkey development',
+			text: 'We carry out the project from the beginning to the end'
+		},
+		content2: {
+			heading: 'We are able to work with large customers',
+			text: 'Individual approach to every customer. We study the features of the market and the "subtleties" of the client\'s area'
+		},
+		content3: {
+			heading: 'We always complete projects on time',
+			text: 'Plan your time accurately! The named deadlines always correspond to the real ones'
+		},
+		content4: {
+			heading: 'We work for the result',
+			text: 'Our purpose is to make effective and successful product, focusing on quality and customers wishes'
+		}
+	},
+	// CHANGE
+	websiteExtras: {
+		heading: 'We take all difficulties upon ourselves',
+		content1: {
+			heading: 'Domain',
+			text: 'We will help you find and purchase a suitable domain name for your website'
+		},
+		content2: {
+			heading: 'Hosting',
+			text: 'We will host your site with a reliable hosting provider. Set up corporate email'
+		},
+		content3: {
+			heading: 'Training',
+			text: 'We teach you how to use and manage the site for free. We always promptly resolve any difficulties encountered'
+		},
+		content4: {
+			heading: 'SEO optimization',
+			text: 'We optimize the site for search results at the design stage. Setting up Google Analytics and Search Console'
 		}
 	},
 	team: {

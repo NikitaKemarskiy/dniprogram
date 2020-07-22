@@ -876,7 +876,7 @@ const RU = {
 		},
 		content4: {
 			heading: 'SEO-оптимизация',
-			text: 'Оптимизируем сайт под эффективную поисковую выдачу уже на этапе проектирования. Настраиваем Google Analytics и Search Console'
+			text: 'Оптимизируем сайт под поисковую выдачу на этапе проектирования. Настраиваем Google Analytics и Search Console'
 		}
 	},
 	team: {
