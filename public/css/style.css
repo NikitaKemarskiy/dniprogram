@@ -2060,7 +2060,7 @@ fieldset {
     color: white;
     position: absolute;
     bottom: 24px;
-    left: 8%;
+    left: 6%;
 }
 
 #cases .case .desc.alternate {
@@ -2068,7 +2068,7 @@ fieldset {
 }
 
 #cases .case .desc h3 {
-    font-weight: 700;
+    /*font-weight: 700;*/
     font-size: 20px;
     line-height: 20px;
 }
@@ -2481,6 +2481,11 @@ b.highlight {
     color: #1080f2;
     background: #fff;
     box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;
+}
+
+/* DOCUMENTS */
+.documents-area .col-image img {
+    width: 100%;
 }
 
 /* WEBSITE EXTRAS */
