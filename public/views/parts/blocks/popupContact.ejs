@@ -18,6 +18,7 @@
 				<input placeholder="<%= local.popup.form.input.phone %>" name="phone" type="text" tabindex="2">
 			</fieldset>
 			<input name="service" type="text" value="<%= local[part.info].service %>" class="display-none">
+			<input name="redirectUrl" type="text" value="/<%= contentLanguage %>/<%= part.info %>" class="display-none">
 			<fieldset>
 				<button name="submit" type="submit" id="contact-submit" class="contact-submit" data-submit="...Sending"><%= local.popup.form.input.send %></button>
 			</fieldset>

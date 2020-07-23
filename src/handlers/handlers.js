@@ -107,10 +107,16 @@ async function langAndPathSpecifiedHandler(ctx) {
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
 	const operators = getOperators(contentLanguage);
+
+	console.log(getViewName(info));
+	console.dir(part);
+
 	await ctx.render(
 		getViewName(info),
 		{ local, operators, part, contentLanguage }
 	);
+
+	console.log(2);
 }
 
 async function caseHandler(ctx) {
@@ -159,7 +165,7 @@ async function mailHandler(ctx) {
 	// Mailing
 	mail(ctx.request.body);
 	// Redirect
-	ctx.redirect(`/${contentLanguage}/home`); // Redirect to home page
+	ctx.redirect(ctx.request.body.redirectUrl || `/${contentLanguage}/home`); // Redirect to home page
 }
 
 module.exports = {
