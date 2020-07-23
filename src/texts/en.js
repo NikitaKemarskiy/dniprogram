@@ -635,7 +635,6 @@ const EN = {
 			text: 'Our purpose is to make effective and successful product, focusing on quality and customers wishes'
 		}
 	},
-	// CHANGE
 	websiteExtras: {
 		heading: 'We take all difficulties upon ourselves',
 		content1: {
@@ -653,6 +652,37 @@ const EN = {
 		content4: {
 			heading: 'SEO optimization',
 			text: 'We optimize the site for search results at the design stage. Setting up Google Analytics and Search Console'
+		}
+	},
+	developmentStage: {
+		heading: 'Development stages',
+		content1: {
+			heading: 'Market analysis',
+			text: 'We analyze competitors, products, analogues. We define the strategy and concept of the project'
+		},
+		content2: {
+			heading: 'Technical assignment',
+			text: 'Development of technical specifications for the project'
+		},
+		content3: {
+			heading: 'Planning',
+			text: 'We develop a prototype. We lay down a convenient structure, a clear interface'
+		},
+		content4: {
+			heading: 'Design',
+			text: 'Project design creation and approval'
+		},
+		content5: {
+			heading: 'Development',
+			text: 'Implementation of the technical specifications functional based on the prototype'
+		},
+		content6: {
+			heading: 'Testing',
+			text: 'Troubleshooting for stable and correct project work'
+		},
+		content7: {
+			heading: 'Launching',
+			text: 'Setting up the server, running the project in production'
 		}
 	},
 	team: {
