@@ -532,14 +532,14 @@ body.modal-open {
 
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap;}
 
-.owl-item{
+.owl-item {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     height: auto !important;
+    margin-bottom: 10px;
 }
 /* --------------------------------------
 4. MENU
@@ -1498,8 +1498,9 @@ footer .logo img {
     height: 100px;
     position: absolute;
     top: 40%;
+    left: -10px;
     display: block !important;
-    border:0px solid black;
+    border: 0px solid black;
     outline: none;
 }
 
@@ -1508,9 +1509,9 @@ footer .logo img {
     height: 100px;
     position: absolute;
     top: 40%;
-    right: 0px;
+    right: -10px;
     display: block !important;
-    border:0px solid black;
+    border: 0px solid black;
     outline: none;
 }
 
@@ -2483,23 +2484,27 @@ b.highlight {
     box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;
 }
 
-/* WEBSITE EXTRAS */
-.carousel-card {
-	border: 1px solid #e7e7e7;
+.card {
+    height: 100%;
+    border: 1px solid #e7e7e7;
     border-radius: 5px;
     padding: 25px;
-    margin: 0 20px 20px 20px;
     transition: 0.3s all;
     -webkit-box-shadow: 10px 10px 13px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 13px -10px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 13px -10px rgba(0,0,0,0.75);
 }
 
-.carousel-card:hover {
+.card:hover {
     cursor: pointer;
     -webkit-box-shadow: 10px 10px 19px -11px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 19px -11px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 19px -11px rgba(0,0,0,0.75);
+}
+
+/* WEBSITE EXTRAS */
+.carousel-card {
+    margin: 0 20px 20px 20px !important;
 }
 
 .website-extra__image img {
@@ -2514,6 +2519,12 @@ b.highlight {
 /* CUSTOM BOOTSTRAP 4 STYLES */
 .d-flex {
     display: flex !important;
+    flex-wrap: wrap;
+}
+
+.row.d-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
 }
 
 .justify-content-center {
@@ -2778,4 +2789,30 @@ b.highlight {
   .development-plan__items {
     padding-bottom: 60px;
   }
+}
+
+.development-stage-cards-row [class*='col-'] {
+    margin-bottom: 30px;
+}
+
+.development-stage__title {
+    margin-top: 60px;
+}
+
+.development-stage__image img {
+    width: 40px;
+    height: 40px;
+}
+
+.development-stage__arrow img {
+    float: right;
+    width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .development-stage__arrow img {
+        margin-right: -30px !important;
+        margin-top: -70px !important;
+        transform: rotate(90deg);
+    }
 }
