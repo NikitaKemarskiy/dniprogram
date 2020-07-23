@@ -2792,10 +2792,14 @@ b.highlight {
 }
 
 .development-stage-cards-row [class*='col-'] {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .development-stage__title {
+    margin-top: 60px;
+}
+
+.development-stage__text {
     margin-top: 60px;
 }
 
@@ -2804,15 +2808,30 @@ b.highlight {
     height: 40px;
 }
 
+.development-stage__arrow {
+    min-height: 50px;
+}
+
 .development-stage__arrow img {
-    float: right;
+    position: absolute;
+    bottom: 20px;
+    right: -35px;
     width: 100px;
+    z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
     .development-stage__arrow img {
-        margin-right: -30px !important;
-        margin-top: -70px !important;
+        margin: auto;
+        bottom: -35px;
+        left: 0;
+        right: 0;
         transform: rotate(90deg);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .development-stage__arrow img {
+        display: none;
     }
 }
