@@ -2835,8 +2835,8 @@ b.highlight {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .development-stage__arrow img {
-        display: none;
-    }
-}
+/*@media screen and (min-width: 768px) and (max-width: 992px) {*/
+/*    .development-stage__arrow img {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
