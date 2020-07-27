@@ -790,6 +790,33 @@ const RU = {
 			onlineStore: {
 				cases: [
 					{
+						name: 'leroy-merlin',
+						heading: 'Leroy Merlin',
+						desc: 'Магазин строительных материалов',
+						isAlternate: true,
+						link: '/redirect?href=https://leroymerlin.ua'
+					},
+					{
+						name: 'bloom',
+						heading: 'Bloom',
+						desc: 'Цветочная мастерская',
+						isAlternate: true,
+						link: '/redirect?href=https://bloom.ua/'
+					},
+					{
+						name: 'mebel',
+						heading: 'Мебель В Дом',
+						desc: 'Магазин мебели',
+						link: '/redirect?href=https://www.mebelvdom.ua/'
+					},
+					{
+						name: 'amel',
+						heading: 'Amel Dental Store',
+						desc: 'Магазин стоматологических материалов',
+						isAlternate: true,
+						link: '/redirect?href=https://amelmedical.com.ua/'
+					},
+					{
 						name: 'issa',
 						heading: 'Issa Plus',
 						desc: 'Женский бутик',
