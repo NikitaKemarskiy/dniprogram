@@ -138,6 +138,7 @@ const RU = {
 		}
 	},
 	corporate: {
+		name: 'Корпоративный сайт',
 		introHeading: 'Профессиональная разработка корпоративных веб-сайтов под заказ',
 		heading: 'Что вы получаете?',
 		title: 'Dniprogram - Разработка корпоративных сайтов | На заказ, под ваш бизнес, уникальный дизайн',
@@ -805,7 +806,7 @@ const RU = {
 					},
 					{
 						name: 'mebel',
-						heading: 'Мебель В Дом',
+						heading: 'Mebelvdom',
 						desc: 'Магазин мебели',
 						link: '/redirect?href=https://www.mebelvdom.ua/'
 					},
@@ -856,6 +857,65 @@ const RU = {
 						desc: 'Магазин форм для декоративного камня',
 						isAlternate: true,
 						link: '/redirect?href=http://pixus.in.ua/'
+					}
+				]
+			},
+			corporate: {
+				cases: [
+					{
+						name: 'kadorr38',
+						heading: 'Kadorr Group',
+						desc: 'ЖК "38 Жемчужина"',
+						isAlternate: true,
+						link: '/redirect?href=https://38.kadorr.com/'
+					},
+					{
+						name: 'infiniti',
+						heading: 'Infiniti',
+						desc: 'Автосалон премиум-класса',
+						isAlternate: true,
+						link: '/redirect?href=https://uk.infiniti.ua/'
+					},
+					{
+						name: 'land-rover',
+						heading: 'Land Rover',
+						desc: 'Автосалон премиум-класса',
+						isAlternate: true,
+						link: '/redirect?href=https://www.landrover.ua/'
+					},
+					{
+						name: 'metropolis',
+						heading: 'Metropolis',
+						desc: 'ЖК "Metropolis"',
+						isAlternate: true,
+						link: '/redirect?href=https://metropolis.com.ua/'
+					},
+					{
+						name: 'maija',
+						heading: 'Maija',
+						desc: 'Сеть салонов красоты',
+						isAlternate: true,
+						link: '/redirect?href=https://maija.ua/'
+					},
+					{
+						name: 'kadorr52',
+						heading: 'Kadorr Group',
+						desc: 'ЖК "52 Жемчужина"',
+						link: '/redirect?href=https://52.kadorrgroup.com/'
+					},
+					{
+						name: 'pervak',
+						heading: 'Первак',
+						desc: 'Киевская ресторация',
+						isAlternate: true,
+						link: '/redirect?href=http://pervak.kiev.ua/'
+					},
+					{
+						name: 'nova-dent',
+						heading: 'Нова Dent',
+						desc: 'Сеть стоматологических кабинетов',
+						isAlternate: true,
+						link: '/redirect?href=https://www.novadent.ru/'
 					}
 				]
 			}
