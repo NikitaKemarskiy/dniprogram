@@ -1,0 +1,7 @@
+User-agent: *
+Host: https://dniprogram.com
+Sitemap: https://dniprogram.com/sitemap.xml
+Disallow: /ru/mail
+Disallow: /uk/mail
+Disallow: /en/mail
+Disallow: /redirect
