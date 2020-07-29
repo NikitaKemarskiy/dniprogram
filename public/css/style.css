@@ -630,6 +630,42 @@ body.modal-open {
         background-color: #273140;
     }
 }
+
+.language-list ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+}
+
+.language-list a {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.language-list div.single-language {
+    margin: 0;
+    padding: 0px 25px;
+}
+
+.language-list div.single-language.current-language {
+    padding: 8px 25px;
+}
+
+.language-list ul li {
+    margin-bottom: 10px;
+}
+
+.language-list:hover > ul {
+    display: block;
+}
+
+/*.language-list:active > ul {
+    display: block;
+}*/
+
 /* --------------------------------------
 5. HEADER
 -----------------------------------------*/

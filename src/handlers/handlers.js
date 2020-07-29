@@ -51,6 +51,17 @@ function getViewName(info) {
 	return 'index';
 }
 
+function getOtherLanguages(contentLanguage) {
+	const otherLanguages = [];
+	SUPPORTED_LANGS.forEach((language) => {
+		if (contentLanguage === language) {
+			return;
+		}
+		otherLanguages.push(language);
+	});
+	return otherLanguages;
+}
+
 // Handlers
 async function langSpecifiedHandler(ctx) {
 	let contentLanguage = ctx.params.lang;
@@ -76,8 +87,21 @@ async function langSpecifiedHandler(ctx) {
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
 	const operators = getOperators(contentLanguage);
+
+	const otherLanguages = getOtherLanguages(contentLanguage);
+
 	const part = DEFAULT_PART;
-	await ctx.render('index', { local, operators, part, contentLanguage });
+
+	await ctx.render(
+		'index',
+		{
+			local,
+			operators,
+			part,
+			contentLanguage,
+			otherLanguages
+		}
+	);
 }
 
 async function langAndPathSpecifiedHandler(ctx) {
@@ -109,15 +133,18 @@ async function langAndPathSpecifiedHandler(ctx) {
 				  contentLanguage === 'uk' ? UK : RU;
 	const operators = getOperators(contentLanguage);
 
-	console.log(getViewName(info));
-	console.dir(part);
+	const otherLanguages = getOtherLanguages(contentLanguage);
 
 	await ctx.render(
 		getViewName(info),
-		{ local, operators, part, contentLanguage }
+		{
+			local,
+			operators,
+			part,
+			contentLanguage,
+			otherLanguages
+		}
 	);
-
-	console.log(2);
 }
 
 async function caseHandler(ctx) {
@@ -139,12 +166,16 @@ async function caseHandler(ctx) {
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
 	const operators = getOperators(contentLanguage);
+
+	const otherLanguages = getOtherLanguages(contentLanguage);
+
 	await ctx.render(`case`, {
 		local,
 		operators,
 		service,
 		caseName,
-		contentLanguage
+		contentLanguage,
+		otherLanguages
 	});
 }
 

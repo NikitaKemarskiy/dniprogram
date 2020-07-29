@@ -74,6 +74,13 @@
     #services .col-md-3.last {
         padding-left: 0;
     }
+    .language-list div.single-language.current-language {
+        padding: 8px 15px;
+    }
+
+    .language-list div.single-language {
+        padding: 0px 15px;
+    }
 }
 @media (max-width: 960px) {
     header .header-dashboard .dashboard {
