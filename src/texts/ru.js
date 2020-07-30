@@ -880,7 +880,6 @@ const RU = {
 						name: 'land-rover',
 						heading: 'Land Rover',
 						desc: 'Автосалон премиум-класса',
-						isAlternate: true,
 						link: '/redirect?href=https://www.landrover.ua/'
 					},
 					{

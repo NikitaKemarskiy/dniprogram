@@ -655,7 +655,6 @@ const EN = {
 						name: 'land-rover',
 						heading: 'Land Rover',
 						desc: 'Premium car dealership',
-						isAlternate: true,
 						link: '/redirect?href=https://www.landrover.ua/'
 					},
 					{
