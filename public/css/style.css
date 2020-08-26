@@ -2576,12 +2576,6 @@ b.highlight {
     align-items: center !important;
 }
 
-@media screen and (max-width: 768px) {
-  #cases {
-    padding-top: 10px;
-  }
-}
-
 .cases-tabs a {
   font-size: 18px;
   border: none !important;

@@ -133,6 +133,9 @@
         letter-spacing: -1px;
         line-height: 28px;*/
     }
+    section#team {
+        padding-bottom: 0;
+    }
     section {
         padding: 70px 0 50px 0;
     }
@@ -426,6 +429,9 @@
         margin: 0;
         width: 33.33333%;
         float: left;
+    }
+    section#team {
+        padding-bottom: 50px;
     }
 }
 @media (min-width: 992px) {
