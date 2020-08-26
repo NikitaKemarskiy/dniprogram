@@ -630,6 +630,42 @@ body.modal-open {
         background-color: #273140;
     }
 }
+
+.language-list ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+}
+
+.language-list a {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.language-list div.single-language {
+    margin: 0;
+    padding: 0px 25px;
+}
+
+.language-list div.single-language.current-language {
+    padding: 8px 25px;
+}
+
+.language-list ul li {
+    margin-bottom: 10px;
+}
+
+.language-list:hover > ul {
+    display: block;
+}
+
+/*.language-list:active > ul {
+    display: block;
+}*/
+
 /* --------------------------------------
 5. HEADER
 -----------------------------------------*/
@@ -2061,7 +2097,7 @@ fieldset {
     color: white;
     position: absolute;
     bottom: 24px;
-    left: 8%;
+    left: 6%;
 }
 
 #cases .case .desc.alternate {
@@ -2069,7 +2105,7 @@ fieldset {
 }
 
 #cases .case .desc h3 {
-    font-weight: 700;
+    /*font-weight: 700;*/
     font-size: 20px;
     line-height: 20px;
 }
@@ -2484,6 +2520,12 @@ b.highlight {
     box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;
 }
 
+/* DOCUMENTS */
+.documents-area .col-image img {
+    width: 100%;
+}
+
+/* WEBSITE EXTRAS */
 .card {
     height: 100%;
     border: 1px solid #e7e7e7;
@@ -2502,7 +2544,6 @@ b.highlight {
     box-shadow: 10px 10px 19px -11px rgba(0,0,0,0.75);
 }
 
-/* WEBSITE EXTRAS */
 .carousel-card {
     margin: 0 20px 20px 20px !important;
 }
@@ -2533,12 +2574,6 @@ b.highlight {
 
 .align-items-center {
     align-items: center !important;
-}
-
-@media screen and (max-width: 768px) {
-  #cases {
-    padding-top: 10px;
-  }
 }
 
 .cases-tabs a {

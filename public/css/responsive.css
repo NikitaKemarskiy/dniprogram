@@ -74,6 +74,13 @@
     #services .col-md-3.last {
         padding-left: 0;
     }
+    .language-list div.single-language.current-language {
+        padding: 8px 15px;
+    }
+
+    .language-list div.single-language {
+        padding: 0px 15px;
+    }
 }
 @media (max-width: 960px) {
     header .header-dashboard .dashboard {
@@ -125,6 +132,9 @@
         /*font-size: 28px;
         letter-spacing: -1px;
         line-height: 28px;*/
+    }
+    section#team {
+        padding-bottom: 0;
     }
     section {
         padding: 70px 0 50px 0;
@@ -419,6 +429,9 @@
         margin: 0;
         width: 33.33333%;
         float: left;
+    }
+    section#team {
+        padding-bottom: 50px;
     }
 }
 @media (min-width: 992px) {

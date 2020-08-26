@@ -138,6 +138,7 @@ const UK = {
 		}
 	},
 	corporate: {
+		name: 'Корпоративний сайт',
 		introHeading: 'Професійна розробка корпоративних веб-сайтів під замовлення',
 		heading: 'Що Ви отримуєте?',
 		title: 'Dniprogram - Розробка корпоративних сайтів | На замовлення, під ваш бізнес, унікальний дизайн',
@@ -792,6 +793,33 @@ const UK = {
 			onlineStore: {
 				cases: [
 					{
+						name: 'leroy-merlin',
+						heading: 'Leroy Merlin',
+						desc: 'Магазин будівельних матеріалів',
+						isAlternate: true,
+						link: '/redirect?href=https://leroymerlin.ua'
+					},
+					{
+						name: 'bloom',
+						heading: 'Bloom',
+						desc: 'Квіткова майстерня',
+						isAlternate: true,
+						link: '/redirect?href=https://bloom.ua/'
+					},
+					{
+						name: 'mebel',
+						heading: 'Mebelvdom',
+						desc: 'Магазин меблів',
+						link: '/redirect?href=https://www.mebelvdom.ua/'
+					},
+					{
+						name: 'amel',
+						heading: 'Amel Dental Store',
+						desc: 'Магазин стоматологічних матеріалів',
+						isAlternate: true,
+						link: '/redirect?href=https://amelmedical.com.ua/'
+					},
+					{
 						name: 'issa',
 						heading: 'Issa Plus',
 						desc: 'Жіночий бутік',
@@ -831,6 +859,64 @@ const UK = {
 						desc: 'Магазин форм для декоративного каменю',
 						isAlternate: true,
 						link: '/redirect?href=http://pixus.in.ua/'
+					}
+				]
+			},
+			corporate: {
+				cases: [
+					{
+						name: 'kadorr38',
+						heading: 'Kadorr Group',
+						desc: 'ЖК "38 Перлина"',
+						isAlternate: true,
+						link: '/redirect?href=https://38.kadorr.com/'
+					},
+					{
+						name: 'infiniti',
+						heading: 'Infiniti',
+						desc: 'Автосалон преміум-класу',
+						isAlternate: true,
+						link: '/redirect?href=https://uk.infiniti.ua/'
+					},
+					{
+						name: 'land-rover',
+						heading: 'Land Rover',
+						desc: 'Автосалон преміум-класу',
+						link: '/redirect?href=https://www.landrover.ua/'
+					},
+					{
+						name: 'metropolis',
+						heading: 'Metropolis',
+						desc: 'ЖК "Metropolis"',
+						isAlternate: true,
+						link: '/redirect?href=https://metropolis.com.ua/'
+					},
+					{
+						name: 'maija',
+						heading: 'Maija',
+						desc: 'Мережа салонів краси',
+						isAlternate: true,
+						link: '/redirect?href=https://maija.ua/'
+					},
+					{
+						name: 'kadorr52',
+						heading: 'Kadorr Group',
+						desc: 'ЖК "52 Перлина"',
+						link: '/redirect?href=https://52.kadorrgroup.com/'
+					},
+					{
+						name: 'pervak',
+						heading: 'Первак',
+						desc: 'Київська ресторація',
+						isAlternate: true,
+						link: '/redirect?href=http://pervak.kiev.ua/'
+					},
+					{
+						name: 'nova-dent',
+						heading: 'Нова Dent',
+						desc: 'Мережа стоматологічних кабінетів',
+						isAlternate: true,
+						link: '/redirect?href=https://www.novadent.ru/'
 					}
 				]
 			}
@@ -879,6 +965,37 @@ const UK = {
 		content4: {
 			heading: 'SEO-оптимізація',
 			text: 'Оптимізуємо сайт під пошукову видачу на етапі проектування. Налаштовуємо Google Analytics і Search Console'
+		}
+	},
+	developmentStage: {
+		heading: 'Етапи розробки',
+		content1: {
+			heading: 'Аналіз ринку',
+			text: 'Аналізуємо конкурентів, продукт, аналоги. Визначаємо стратегію і концепцію проекту'
+		},
+		content2: {
+			heading: 'Складання ТЗ',
+			text: 'Розробка технічного завдання проекту'
+		},
+		content3: {
+			heading: 'Проектування',
+			text: 'Розробляємо прототип. Закладаємо зручну структуру, зрозумілий інтерфейс'
+		},
+		content4: {
+			heading: 'Дизайн',
+			text: 'Створення та узгодження дизайну проекту'
+		},
+		content5: {
+			heading: 'Розробка',
+			text: 'Реалізація функціоналу ТЗ на основі прототипу'
+		},
+		content6: {
+			heading: 'Тестування',
+			text: 'Пошук та усунення несправностей для стабільної та коректної роботи проекту'
+		},
+		content7: {
+			heading: 'Запуск',
+			text: 'Налаштування сервера, запуск проекту в production'
 		}
 	},
 	team: {

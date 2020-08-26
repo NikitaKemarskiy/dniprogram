@@ -25,6 +25,7 @@ const PRICING_PARTS = new Set([
 const CASES_PARTS = new Set([
 	'chatbot',
 	'onlineStore'
+	// 'corporate'
 ]);
 const PAGES = new Set([
 	'about',
@@ -48,6 +49,17 @@ function getViewName(info) {
 		return info;
 	}
 	return 'index';
+}
+
+function getOtherLanguages(contentLanguage) {
+	const otherLanguages = [];
+	SUPPORTED_LANGS.forEach((language) => {
+		if (contentLanguage === language) {
+			return;
+		}
+		otherLanguages.push(language);
+	});
+	return otherLanguages;
 }
 
 // Handlers
@@ -75,8 +87,21 @@ async function langSpecifiedHandler(ctx) {
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
 	const operators = getOperators(contentLanguage);
+
+	const otherLanguages = getOtherLanguages(contentLanguage);
+
 	const part = DEFAULT_PART;
-	await ctx.render('index', { local, operators, part, contentLanguage });
+
+	await ctx.render(
+		'index',
+		{
+			local,
+			operators,
+			part,
+			contentLanguage,
+			otherLanguages
+		}
+	);
 }
 
 async function langAndPathSpecifiedHandler(ctx) {
@@ -107,9 +132,18 @@ async function langAndPathSpecifiedHandler(ctx) {
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
 	const operators = getOperators(contentLanguage);
+
+	const otherLanguages = getOtherLanguages(contentLanguage);
+
 	await ctx.render(
 		getViewName(info),
-		{ local, operators, part, contentLanguage }
+		{
+			local,
+			operators,
+			part,
+			contentLanguage,
+			otherLanguages
+		}
 	);
 }
 
@@ -132,12 +166,16 @@ async function caseHandler(ctx) {
 				  contentLanguage === 'ru' ? RU :
 				  contentLanguage === 'uk' ? UK : RU;
 	const operators = getOperators(contentLanguage);
+
+	const otherLanguages = getOtherLanguages(contentLanguage);
+
 	await ctx.render(`case`, {
 		local,
 		operators,
 		service,
 		caseName,
-		contentLanguage
+		contentLanguage,
+		otherLanguages
 	});
 }
 
@@ -159,7 +197,7 @@ async function mailHandler(ctx) {
 	// Mailing
 	mail(ctx.request.body);
 	// Redirect
-	ctx.redirect(`/${contentLanguage}/home`); // Redirect to home page
+	ctx.redirect(ctx.request.body.redirectUrl || `/${contentLanguage}/home`); // Redirect to home page
 }
 
 module.exports = {

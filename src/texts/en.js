@@ -138,6 +138,7 @@ const EN = {
 		}
 	},
 	corporate: {
+		name: 'Corporate website',
 		introHeading: 'Professional development of corporate websites on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Development of corporate sites | Custom-made, for your business, unique design',
@@ -565,6 +566,33 @@ const EN = {
 			onlineStore: {
 				cases: [
 					{
+						name: 'leroy-merlin',
+						heading: 'Leroy Merlin',
+						desc: 'Building materials store',
+						isAlternate: true,
+						link: '/redirect?href=https://leroymerlin.ua'
+					},
+					{
+						name: 'bloom',
+						heading: 'Bloom',
+						desc: 'Flower workshop',
+						isAlternate: true,
+						link: '/redirect?href=https://bloom.ua/'
+					},
+					{
+						name: 'mebel',
+						heading: 'Mebelvdom',
+						desc: 'Furniture store',
+						link: '/redirect?href=https://www.mebelvdom.ua/'
+					},
+					{
+						name: 'amel',
+						heading: 'Amel Dental Store',
+						desc: 'Dental materials store',
+						isAlternate: true,
+						link: '/redirect?href=https://amelmedical.com.ua/'
+					},
+					{
 						name: 'issa',
 						heading: 'Issa Plus',
 						desc: 'Women\'s Online Boutique',
@@ -606,6 +634,64 @@ const EN = {
 						link: '/redirect?href=http://pixus.in.ua/'
 					}
 				]
+			},
+			corporate: {
+				cases: [
+					{
+						name: 'kadorr38',
+						heading: 'Kadorr Group',
+						desc: 'Residential complex "38 Pearl"',
+						isAlternate: true,
+						link: '/redirect?href=https://38.kadorr.com/'
+					},
+					{
+						name: 'infiniti',
+						heading: 'Infiniti',
+						desc: 'Premium car dealership',
+						isAlternate: true,
+						link: '/redirect?href=https://uk.infiniti.ua/'
+					},
+					{
+						name: 'land-rover',
+						heading: 'Land Rover',
+						desc: 'Premium car dealership',
+						link: '/redirect?href=https://www.landrover.ua/'
+					},
+					{
+						name: 'metropolis',
+						heading: 'Metropolis',
+						desc: 'Residential complex "Metropolis"',
+						isAlternate: true,
+						link: '/redirect?href=https://metropolis.com.ua/'
+					},
+					{
+						name: 'maija',
+						heading: 'Maija',
+						desc: 'Beauty salon network',
+						isAlternate: true,
+						link: '/redirect?href=https://maija.ua/'
+					},
+					{
+						name: 'kadorr52',
+						heading: 'Kadorr Group',
+						desc: 'Residential complex "52 Pearl"',
+						link: '/redirect?href=https://52.kadorrgroup.com/'
+					},
+					{
+						name: 'pervak',
+						heading: 'Pervak',
+						desc: 'Kiev restaurant',
+						isAlternate: true,
+						link: '/redirect?href=http://pervak.kiev.ua/'
+					},
+					{
+						name: 'nova-dent',
+						heading: 'Nova Dent',
+						desc: 'Dental office network',
+						isAlternate: true,
+						link: '/redirect?href=https://www.novadent.ru/'
+					}
+				]
 			}
 		}
 	},
@@ -635,7 +721,6 @@ const EN = {
 			text: 'Our purpose is to make effective and successful product, focusing on quality and customers wishes'
 		}
 	},
-	// CHANGE
 	websiteExtras: {
 		heading: 'We take all difficulties upon ourselves',
 		content1: {
@@ -653,6 +738,37 @@ const EN = {
 		content4: {
 			heading: 'SEO optimization',
 			text: 'We optimize the site for search results at the design stage. Setting up Google Analytics and Search Console'
+		}
+	},
+	developmentStage: {
+		heading: 'Development stages',
+		content1: {
+			heading: 'Market analysis',
+			text: 'We analyze competitors, products, analogues. We define the strategy and concept of the project'
+		},
+		content2: {
+			heading: 'Technical assignment',
+			text: 'Development of technical specifications for the project'
+		},
+		content3: {
+			heading: 'Planning',
+			text: 'We develop a prototype. We lay down a convenient structure, a clear interface'
+		},
+		content4: {
+			heading: 'Design',
+			text: 'Project design creation and approval'
+		},
+		content5: {
+			heading: 'Development',
+			text: 'Implementation of the technical specifications functional based on the prototype'
+		},
+		content6: {
+			heading: 'Testing',
+			text: 'Troubleshooting for stable and correct project work'
+		},
+		content7: {
+			heading: 'Launching',
+			text: 'Setting up the server, running the project in production'
 		}
 	},
 	team: {
