@@ -1145,6 +1145,11 @@ header .container {
     bottom: 0;
     margin-bottom: 0;
 }
+
+#testimonials .client-feedback-text {
+  margin: 0 auto;
+}
+
 #testimonials .owl-pagination {
     position: absolute;
     width: 100%;
