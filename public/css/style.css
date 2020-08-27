@@ -2576,9 +2576,28 @@ b.highlight {
     align-items: center !important;
 }
 
+.cases-tabs ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cases-tabs ul li {
+  flex-grow: 1;
+  width: auto;
+  text-align: center;
+  /*background-color: #1b6d85;*/
+  padding-bottom: 8px;
+}
+
+.cases-tabs ul .active {
+  border-bottom: 4px solid #207DEF;
+}
+
 .cases-tabs a {
   font-size: 18px;
-  border: none !important;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -2587,27 +2606,24 @@ b.highlight {
   color: #000;
 }
 
-.cases-tabs hr {
-  display: none;
-}
+@media screen and (max-width: 768px) {
+  #cases .header {
+    margin-bottom: 20px;
+  }
 
-.cases-tabs li.active hr {
-  display: block;
-  break-after: avoid;
-  height: .25rem;
-  width: 80%;
-  margin: auto auto 7px;
-  background: #207DEF;
-  border: none;
-  transition: .3s all;
-}
+  .cases-tabs ul li {
+    width: 100%;
+    padding: 10px;
+    margin: auto 10px;
+  }
 
-.cases-tabs a:hover {
-  background-color: transparent !important;
-}
+  .cases-tabs ul li a {
+    font-size: 16px;
+  }
 
-.cases-tabs .tab-content {
-  border: none !important;
+  .cases-tabs ul .active {
+    border: 2px solid #207DEF;
+  }
 }
 
 .development-plan {

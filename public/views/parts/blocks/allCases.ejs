@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="row cases-tabs">
-            <ul class="nav nav-tabs nav-justified fixed">
+            <ul>
                 <% for (let i = 0; i < Object.keys(local.cases.services).length; i++) { %>
                     <li class=
                         <% if (i === 0) { %>
@@ -17,10 +17,10 @@
                         <a data-toggle="tab" href="#<%= Object.keys(local.cases.services)[i] %>">
                             <%= local[Object.keys(local.cases.services)[i]].name %>
                         </a>
-                        <hr>
                     </li>
                 <% } %>
             </ul>
+
             <div class="tab-content">
                 <% for (let i = 0; i < Object.keys(local.cases.services).length; i++) { %>
                     <% let key = Object.keys(local.cases.services)[i] %>
