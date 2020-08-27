@@ -2586,7 +2586,7 @@ b.highlight {
 
 .cases-tabs ul li {
   flex-grow: 1;
-  width: auto;
+  flex-basis: 0;
   text-align: center;
   /*background-color: #1b6d85;*/
   padding-bottom: 8px;
@@ -2615,6 +2615,7 @@ b.highlight {
     width: 100%;
     padding: 10px;
     margin: auto 10px;
+    flex-basis: auto;
   }
 
   .cases-tabs ul li a {
