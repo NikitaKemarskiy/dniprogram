@@ -18,6 +18,7 @@ const EN = {
 	},
 	/*** SEPARATE PAGES ***/
 	home: {
+		intro: 'Dniprogram',
 		introHeading: 'Digital agency that will take your business to the next level',
 		heading: 'What do we offer?',
 		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
@@ -45,24 +46,28 @@ const EN = {
 		}
 	},
 	about: {
+		intro: 'Dniprogram',
 		introHeading: 'We always work on the result and quality of the project',
 		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
 		service: 'Не указана',
 		description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',
 	},
 	services: {
+		intro: 'Dniprogram',
 		introHeading: 'From development to marketing: trust the professionals',
 		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
 		service: 'Не указана',
 		description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',
 	},
 	portfolio: {
+		intro: 'Dniprogram',
 		introHeading: 'The portfolio speaks for itself: trust the professionals',
 		title: 'Dniprogram - Development of websites, web applications, desktop applications, chatbots and so on!',
 		service: 'Не указана',
 		description: 'Development of websites, web applications, desktop applications, chatbots, server applications. Different types of sites: for sales, landing page etc.',
 	},
 	website: {
+		intro: 'Dniprogram',
 		introHeading: 'Professional website development on order',
 		heading: 'What websites do we offer?',
 		title: 'Dniprogram - Website Development | For sales, landing page, business cards, corporate, online stores',
@@ -96,6 +101,7 @@ const EN = {
 		}
 	},
 	businessCard: {
+		intro: 'Dniprogram',
 		introHeading: 'Individual development of business card sites on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Development of business card sites | Custom-made, responsive display, unique design',
@@ -139,6 +145,7 @@ const EN = {
 	},
 	corporate: {
 		name: 'Corporate website',
+		intro: 'Dniprogram',
 		introHeading: 'Professional development of corporate websites on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Development of corporate sites | Custom-made, for your business, unique design',
@@ -183,6 +190,7 @@ const EN = {
 		}
 	},
 	landing: {
+		intro: 'Dniprogram',
 		introHeading: 'Professional development of landing pages on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Landing Development | For your business, selling texts, unique design',
@@ -228,6 +236,7 @@ const EN = {
 	},
 	onlineStore: {
 		name: 'Online store',
+		intro: 'Dniprogram',
 		introHeading: 'Professional development of online stores on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Development of online stores | For your business, turnkey, unique design',
@@ -273,6 +282,7 @@ const EN = {
 	},
 	chatbot: {
 		name: 'Chatbot',
+		intro: 'Dniprogram',
 		introHeading: 'Professional development of Telegram, Viber, Facebook chatbots on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Chatbot development | Telegram, Viber, Facebook',
@@ -313,6 +323,7 @@ const EN = {
 		}
 	},
 	server: {
+		intro: 'Dniprogram',
 		introHeading: 'Professional development of server applications, API on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Server applications development | API',
@@ -344,6 +355,7 @@ const EN = {
 		}
 	},
 	desktop: {
+		intro: 'Dniprogram',
 		introHeading: 'Professional development of desktop applications on order',
 		heading: 'What are you getting?',
 		title: 'Dniprogram - Desktop applications development | For Windows, MacOS, Linux',
