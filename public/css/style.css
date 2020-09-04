@@ -324,7 +324,7 @@ body.modal-open {
     overflow: visible;
     background: #1080f2
 }
-}
+
 .spinner {
     opacity: 0.9;
     width: 50px;
@@ -631,6 +631,18 @@ body.modal-open {
     }
 }
 
+.language-list {
+    border-radius: 5px 5px 0 0;
+}
+
+.language-list ul {
+    border-radius: 0 0 5px 5px;
+}
+
+.language-list, .language-list ul {
+    background-color: transparent;
+}
+
 .language-list ul {
     list-style: none;
     display: none;
@@ -646,20 +658,28 @@ body.modal-open {
 }
 
 .language-list div.single-language {
+    cursor: pointer;
     margin: 0;
-    padding: 0px 25px;
+    padding: 0px 20px;
 }
 
 .language-list div.single-language.current-language {
-    padding: 8px 25px;
+    padding: 8px 20px;
 }
 
 .language-list ul li {
     margin-bottom: 10px;
 }
 
-.language-list:hover > ul {
+.language-list:hover > ul, .language-list:hover {
     display: block;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 768px){
+    .language-list, .language-list ul {
+        background-color: transparent !important;
+    }
 }
 
 /*.language-list:active > ul {
@@ -695,7 +715,7 @@ header .intro-text {
 }
 header .intro-text .intro-lead-in {
     font-family: PTSans;
-    font-size: 58px;
+    font-size: 52px;
     font-weight: 200;
     letter-spacing: -1px;
     margin: 0;
@@ -704,7 +724,7 @@ header .intro-text .intro-lead-in {
     margin-bottom: 30px;
 }
 header .header-dashboard {
-    height: 300px;
+    height: 260px;
     display: block;
     margin: auto;
     margin-top: -60px;
@@ -722,6 +742,31 @@ header .container {
     left: 0;
     right: 0;
 }
+
+@media screen and (max-width: 768px) {
+    header .intro-text .intro-lead-in {
+        text-align: left;
+        font-size: 36px !important;
+        line-height: 52px !important;
+    }
+
+    header .intro-text .intro-heading {
+        text-align: left;
+    }
+
+    header .intro-text .header-buttons {
+        text-align: left;
+    }
+
+    header .intro-text .header-buttons a {
+        margin-left: 0;
+    }
+
+    header .header-dashboard {
+        height: 170px;
+    }
+}
+
 /* --------------------------------------
 6. SECTIONS
 -----------------------------------------*/
