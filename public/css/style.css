@@ -694,12 +694,14 @@ header .intro-text {
     padding-bottom: 0;
 }
 header .intro-text .intro-lead-in {
-    font-family: WorkSans;
+    font-family: PTSans;
     font-size: 58px;
     font-weight: 200;
     letter-spacing: -1px;
     margin: 0;
-    line-height: 120px;
+    /*line-height: 120px;*/
+    line-height: 64px;
+    margin-bottom: 30px;
 }
 header .header-dashboard {
     height: 300px;
