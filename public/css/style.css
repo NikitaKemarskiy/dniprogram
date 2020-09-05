@@ -767,6 +767,17 @@ header .container {
     }
 }
 
+@media screen and (max-width: 960px) {
+    header .intro-text .intro-lead-in {
+        font-size: 40px !important;
+        line-height: 52px !important;
+    }
+
+    header .header-dashboard {
+        height: 170px;
+    }
+}
+
 /* --------------------------------------
 6. SECTIONS
 -----------------------------------------*/
