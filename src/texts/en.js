@@ -101,6 +101,7 @@ const EN = {
 		}
 	},
 	businessCard: {
+		name: 'Business card',
 		intro: 'Dniprogram',
 		introHeading: 'Individual development of business card sites on order',
 		heading: 'What are you getting?',
@@ -190,6 +191,7 @@ const EN = {
 		}
 	},
 	landing: {
+		name: 'Landing',
 		intro: 'Dniprogram',
 		introHeading: 'Professional development of landing pages on order',
 		heading: 'What are you getting?',
@@ -574,6 +576,122 @@ const EN = {
 						]
 					}
 				},
+			},
+			landing: {
+				cases: [
+					{
+						name: 'balsoy',
+						heading: 'Balsoy',
+						desc: 'Promotion of French sauce',
+						isAlternate: true,
+						link: '/redirect?href=https://www.balsoy.fr/'
+					},
+					{
+						name: 'new-england',
+						heading: 'New England',
+						desc: 'Residential complex "New England"',
+						isAlternate: true,
+						link: '/redirect?href=https://landing.new-england.com.ua/'
+					},
+					{
+						name: 'medova-rodyna',
+						heading: 'Honey family',
+						desc: 'Honey production company',
+						isAlternate: true,
+						link: '/redirect?href=https://medova-rodyna.com.ua/'
+					}
+					,
+					{
+						name: 'woodcity',
+						heading: 'Woodcity',
+						desc: 'Thermowood company',
+						isAlternate: true,
+						link: '/redirect?href=https://termo.biz.ua/'
+					},
+					{
+						name: 'ji-fruits',
+						heading: 'Ji Fruits',
+						desc: 'Exotic Fruit Delivery Company',
+						isAlternate: true,
+						link: '/redirect?href=https://ji-fruits.ru/'
+					},
+					{
+						name: 'bookmate',
+						heading: 'Bookmate',
+						desc: 'Reading application',
+						isAlternate: true,
+						link: '/redirect?href=https://ru.bookmate.com/'
+					},
+					{
+						name: 'brewing-coffee-school',
+						heading: 'Brewing Coffee School',
+						desc: 'Barista courses',
+						isAlternate: true,
+						link: '/redirect?href=https://brewingcoffeeschool.com/'
+					},
+					{
+						name: 'telerobots',
+						heading: 'Telerobots',
+						desc: 'Chatbot development company',
+						link: '/redirect?href=https://telerobots.com.ua/'
+					}
+				]
+			},
+			businessCard: {
+				cases: [
+					{
+						name: 'premier',
+						heading: 'Premier Palace',
+						desc: 'Hotel in Kiev',
+						isAlternate: true,
+						link: '/redirect?href=https://premier-palace.phnr.com/'
+					},
+					{
+						name: 'sanatrelo',
+						heading: 'SANATRELO',
+						desc: 'Georgian restaurant',
+						link: '/redirect?href=https://sanatrelo.kiev.ua/'
+					},
+					{
+						name: 'smoove',
+						heading: 'Smoove',
+						desc: 'Public bike rental',
+						link: '/redirect?href=https://www.smoove.ru/'
+					},
+					{
+						name: 'steel-center',
+						heading: 'Steel center',
+						desc: 'Construction company',
+						isAlternate: true,
+						link: '/redirect?href=https://steel-center.com.ua/'
+					},
+					{
+						name: 'design-remont',
+						heading: 'DesignRemont',
+						desc: 'Design and renovation of apartments',
+						isAlternate: true,
+						link: '/redirect?href=https://design-remont.com.ua/'
+					},
+					{
+						name: 'pro-consulting',
+						heading: 'Pro consulting',
+						desc: 'Consulting company',
+						isAlternate: true,
+						link: '/redirect?href=https://pro-consulting.ua/'
+					},
+					{
+						name: 'crazy-panda',
+						heading: 'Crazy panda',
+						desc: 'Mobile games company',
+						link: '/redirect?href=https://crazypanda.ru/ru/'
+					},
+					{
+						name: 'checkpoint',
+						heading: 'Checkpoint',
+						desc: 'Musical complex',
+						link: '/redirect?href=https://checkpoint.kiev.ua/'
+					}
+				]
 			},
 			onlineStore: {
 				cases: [

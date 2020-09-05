@@ -101,6 +101,7 @@ const UK = {
 		}
 	},
 	businessCard: {
+		name: 'Сайт-візитка',
 		intro: 'Час отримувати нових клієнтів!<br>Розробимо ефективний сайт-візитку під ключ',
 		introHeading: 'Солідно презентуйте Вашу компанію в Інтернеті. Запустіть прибутковий веб-сайт вже зараз',
 		heading: 'Що Ви отримуєте?',
@@ -190,6 +191,7 @@ const UK = {
 		}
 	},
 	landing: {
+		name: 'Лендінг',
 		intro: 'Розробка і просування ефективних landing page, що приносять гроші',
 		introHeading: 'Запустіть прибутковий landing вже зараз. Досить витрачати гроші даремно!',
 		heading: 'Що Ви отримуєте?',
@@ -801,6 +803,122 @@ const UK = {
 						]
 					}
 				},
+			},
+			landing: {
+				cases: [
+					{
+						name: 'balsoy',
+						heading: 'Balsoy',
+						desc: 'Просування французького соусу',
+						isAlternate: true,
+						link: '/redirect?href=https://www.balsoy.fr/'
+					},
+					{
+						name: 'new-england',
+						heading: 'Нова Англія',
+						desc: 'ЖК "Нова Англія"',
+						isAlternate: true,
+						link: '/redirect?href=https://landing.new-england.com.ua/'
+					},
+					{
+						name: 'medova-rodyna',
+						heading: 'Медова родина',
+						desc: 'Компанія з виробництва меда',
+						isAlternate: true,
+						link: '/redirect?href=https://medova-rodyna.com.ua/'
+					}
+					,
+					{
+						name: 'woodcity',
+						heading: 'Woodcity',
+						desc: 'Компанія з виробництва термодерева',
+						isAlternate: true,
+						link: '/redirect?href=https://termo.biz.ua/'
+					},
+					{
+						name: 'ji-fruits',
+						heading: 'Фрукты жи есть!',
+						desc: 'Компанія з доставки екзотичних фруктів',
+						isAlternate: true,
+						link: '/redirect?href=https://ji-fruits.ru/'
+					},
+					{
+						name: 'bookmate',
+						heading: 'Bookmate',
+						desc: 'Додаток для читання',
+						isAlternate: true,
+						link: '/redirect?href=https://ru.bookmate.com/'
+					},
+					{
+						name: 'brewing-coffee-school',
+						heading: 'Brewing Coffee School',
+						desc: 'Курси бариста',
+						isAlternate: true,
+						link: '/redirect?href=https://brewingcoffeeschool.com/'
+					},
+					{
+						name: 'telerobots',
+						heading: 'Telerobots',
+						desc: 'Компанія з розробки чат-ботів',
+						link: '/redirect?href=https://telerobots.com.ua/'
+					}
+				]
+			},
+			businessCard: {
+				cases: [
+					{
+						name: 'premier',
+						heading: 'Premier Palace',
+						desc: 'Готель в Києві',
+						isAlternate: true,
+						link: '/redirect?href=https://premier-palace.phnr.com/'
+					},
+					{
+						name: 'sanatrelo',
+						heading: 'SANATRELO',
+						desc: 'Грузинський ресторан',
+						link: '/redirect?href=https://sanatrelo.kiev.ua/'
+					},
+					{
+						name: 'smoove',
+						heading: 'Smoove',
+						desc: 'Громадський велопрокат',
+						link: '/redirect?href=https://www.smoove.ru/'
+					},
+					{
+						name: 'steel-center',
+						heading: 'Steel center',
+						desc: 'Будівельна компанія',
+						isAlternate: true,
+						link: '/redirect?href=https://steel-center.com.ua/'
+					},
+					{
+						name: 'design-remont',
+						heading: 'DesignRemont',
+						desc: 'Дизайн та ремонт квартир',
+						isAlternate: true,
+						link: '/redirect?href=https://design-remont.com.ua/'
+					},
+					{
+						name: 'pro-consulting',
+						heading: 'Pro consulting',
+						desc: 'Консалтингова компанія',
+						isAlternate: true,
+						link: '/redirect?href=https://pro-consulting.ua/'
+					},
+					{
+						name: 'crazy-panda',
+						heading: 'Crazy panda',
+						desc: 'Компанія-разработчик мобільних ігор',
+						link: '/redirect?href=https://crazypanda.ru/ru/'
+					},
+					{
+						name: 'checkpoint',
+						heading: 'Checkpoint',
+						desc: 'Музичний комплекс',
+						link: '/redirect?href=https://checkpoint.kiev.ua/'
+					}
+				]
 			},
 			onlineStore: {
 				cases: [

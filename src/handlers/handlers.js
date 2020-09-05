@@ -25,7 +25,9 @@ const PRICING_PARTS = new Set([
 const CASES_PARTS = new Set([
 	'chatbot',
 	'onlineStore',
-	'corporate'
+	'corporate',
+	'landing',
+	'businessCard'
 ]);
 const PAGES = new Set([
 	'about',
