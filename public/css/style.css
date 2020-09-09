@@ -2950,3 +2950,28 @@ b.highlight {
 /*        display: none;*/
 /*    }*/
 /*}*/
+
+#promotion .promotion-text {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#promotion img {
+    width: 100%;
+}
+
+#promotion .margin-bottom-50 {
+    margin-bottom: 50px;
+}
+
+#promotion h3 {
+    font-size: 36px;
+    margin: 0 0 10px;
+    color: #000;
+}
+
+#promotion p {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 1rem;
+}

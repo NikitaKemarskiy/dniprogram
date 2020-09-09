@@ -34,7 +34,7 @@
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9GR6ZS"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		
+
 		<!-- PRELOADER -->
 		<div id="preloader">
 			<div class="spinner"></div>
@@ -44,22 +44,22 @@
 		<!-- MAIN NAV -->
 		<%- include(`parts/blocks/navbar`) %>
 		<!-- END MAIN NAV -->
-		
+
 		<!-- HEADER -->
 		<%- include(`parts/blocks/header`) %>
 		<!-- END HEADER -->
-		
+
 		<!-- INFO PART -->
 		<% if (part.info) { %>
 			<%- include(`parts/info/${part.info}`) %>
 		<% } %>
 		<!-- END INFO PART -->
-		
+
 		<!-- COOL FACTS AND NUMBERS -->
 		<%- include(`parts/blocks/facts`) %>
 		<!-- COOL FACTS AND NUMBERS -->
 		<!-- END SOLUTIONS -->
-		
+
 		<!-- WHY WE -->
 		<%- include(`parts/blocks/whyWe`) %>
 		<!-- END WHY WE -->
@@ -76,36 +76,40 @@
 		<%- include(`parts/blocks/websiteExtras`) %>
 		<!-- END WEBSITE EXTRAS -->
 
+        <!-- PROMOTION -->
+        <%- include(`parts/blocks/promotion`) %>
+        <!-- END PROMOTION -->
+
 		<!-- PARTNERS -->
 		<%- include(`parts/blocks/partners`) %>
 		<!-- END PARTNERS -->
-		
+
 		<!-- TEAM -->
 		<%- include(`parts/blocks/team`) %>
 		<!-- END TEAM -->
-		
+
 		<!-- PRICING -->
 		<% if (part.pricing) { %>
 			<%- include(`parts/pricing/${part.pricing}`) %>
 		<% } %>
 		<!-- END PRICING -->
-		
+
 		<!-- CONTACT -->
 		<%- include(`parts/blocks/contact`) %>
 		<!-- END CONTACT -->
-		
+
 		<!-- FOOTER -->
 		<%- include(`parts/blocks/footer`) %>
 		<!-- END FOOTER -->
-		
+
 		<!-- POPUP CONTACT FORM -->
 		<%- include(`parts/blocks/popupContact`) %>
 		<!-- END POPUP CONTACT FORM -->
-		
+
 		<!-- CALLBACK WIDGET -->
 		<%- include(`parts/blocks/callbackWidget`) %>
 		<!-- END CALLBACK WIDGET -->
-		
+
 		<!-- SCRIPTS -->
 		<!-- jQuery & Bootstrap -->
 		<script src="/js/jquery.js"></script>
