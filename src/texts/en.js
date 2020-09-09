@@ -13,7 +13,7 @@ const EN = {
 	header: {
 		intro: 'Dniprogram',
 		heading: 'Development of websites, web applications, desktop applications, chatbots and so on!',
-		contact: 'Contact us',
+		contact: 'Order with the 10% discount',
 		more: 'Read more'
 	},
 	/*** SEPARATE PAGES ***/
@@ -1071,6 +1071,15 @@ const EN = {
 				singular: 'operator is busy',
 				plural: 'operators are busy'
 			}
+		}
+	},
+	promotion: {
+		heading: 'Website Promotion',
+		content1: {
+			text: 'Our company provides services for the diversified promotion of websites after their turnkey development, or ready-made web resources.'
+		},
+		content2: {
+			text: 'The success of sites depends on the method of promotion: SEO-promotion, contextual advertising Google Ads and Yandex Direct, SMM-promotion'
 		}
 	}
 }
