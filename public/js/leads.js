@@ -9,6 +9,8 @@ $('#popup-contact').submit(function (e) {
 		url: url,
 		data: form.serialize(),
 		success: function (data) {
+			closeForm();
+			closeCallForm();
 			openThanksModal();
 		}
 	});
