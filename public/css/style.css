@@ -1908,6 +1908,10 @@ footer .logo img {
     font-size: 14px;
 }
 
+.popup-content {
+    padding: 15px;
+}
+
 .popup-contact {
   padding: 25px;
   width: 100%;
