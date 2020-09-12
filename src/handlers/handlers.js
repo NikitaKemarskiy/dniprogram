@@ -199,7 +199,7 @@ async function mailHandler(ctx) {
 	// Mailing
 	mail(ctx.request.body);
 	// Redirect
-	ctx.redirect(ctx.request.body.redirectUrl || `/${contentLanguage}/home`); // Redirect to home page
+	// ctx.redirect(ctx.request.body.redirectUrl || `/${contentLanguage}/home`); // Redirect to home page
 }
 
 module.exports = {
