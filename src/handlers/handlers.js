@@ -197,7 +197,13 @@ async function mailHandler(ctx) {
 	// Get language
 	const contentLanguage = ctx.params.lang;
 	// Mailing
-	mail(ctx.request.body);
+	try {
+		await mail(ctx.request.body);
+		ctx.status = 200;
+	} catch (err) {
+		console.error(err);
+		ctx.status = 500;
+	}
 	// Redirect
 	// ctx.redirect(ctx.request.body.redirectUrl || `/${contentLanguage}/home`); // Redirect to home page
 }

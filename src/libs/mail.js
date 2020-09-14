@@ -23,43 +23,46 @@ const transporter = nodemailer.createTransport({
 });
 
 function mail(from) {
-	// Get params
-	const {
-		name,
-		email,
-		phone,
-		message,
-		service,
-		option
-	} = from;
+	return new Promise((resolve, reject) => {
+		// Get params
+		const {
+			name,
+			email,
+			phone,
+			message,
+			service,
+			option
+		} = from;
 
-	const html = (`<h3>Новое сообщение на разработку</h3><br>`) +
-				 (service ? `<p>Услуга: <b>${service}</b><br>` : '') + 
-				 (option ? `<p>Тариф: <b>${option}</b><br>` : '') + 
-				 (name ? `<p>Имя: <b>${name}</b><br>` : '') + 
-				 (email ? `<p>Почта: <b>${email}</b><br>` : '') + 
-				 (phone ? `<p>Номер: <b>${phone}</b><br>` : '') +
-				 (message ? `<p>Сообщение: ${message}` : '');
+		const html = (`<h3>Новое сообщение на разработку</h3><br>`) +
+					 (service ? `<p>Услуга: <b>${service}</b><br>` : '') + 
+					 (option ? `<p>Тариф: <b>${option}</b><br>` : '') + 
+					 (name ? `<p>Имя: <b>${name}</b><br>` : '') + 
+					 (email ? `<p>Почта: <b>${email}</b><br>` : '') + 
+					 (phone ? `<p>Номер: <b>${phone}</b><br>` : '') +
+					 (message ? `<p>Сообщение: ${message}` : '');
 
-	fs.appendFile(MAIL_LOG_FILE, html + '\n\n\n', { flag: 'a' }, (err) => {
-		if (err) {
-			console.error(err);
-		}
-	});
+		fs.appendFile(MAIL_LOG_FILE, html + '\n\n\n', { flag: 'a' }, (err) => {
+			if (err) {
+				console.error(err);
+			}
+		});
 
-	const options = {
-		from: 'Сайт "Dniprogram"',
-		to: config.mailing.user,
-		subject: 'Новое сообщение!',
-		html
-	};
+		const options = {
+			from: 'Сайт "Dniprogram"',
+			to: config.mailing.user,
+			subject: 'Новое сообщение!',
+			html
+		};
 
-	transporter.sendMail(options, (err, info) => {
-		if (err) {
-			console.error(err);
-		} else {
-			console.log('Email sent: ' + info.response);
-		}
+		transporter.sendMail(options, (err, info) => {
+			if (err) {
+				reject(err);
+			} else {
+				console.log('Email sent: ' + info.response);
+				resolve();
+			}
+		});
 	});
 }
 
