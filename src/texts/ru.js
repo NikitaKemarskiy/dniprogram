@@ -437,6 +437,12 @@ const RU = {
 						desc: 'Чат-бот для диспетчерской службы',
 					},
 					{
+						name: 'terraprof',
+						heading: 'Terraprof',
+						desc: 'Чат-бот для работы с персоналом строительной компании',
+						isAlternate: true
+					},
+					{
 						name: 'sapori-veri',
 						heading: 'Sapori Veri',
 						desc: 'Чат-бот для итальянского ресторана',
@@ -611,6 +617,49 @@ const RU = {
 							{ fileName: 'screen4.png', title: 'Аварийные отключения' },
 							{ fileName: 'screen5.png', title: 'Настройки' }
 						]
+					}
+				},
+				terraprof: {
+					case: {
+						desc: {
+							case: 'Чат-бот для работы с персоналом компании <b>Terraprof</b>',
+							customer: 'Львовская строительная компания <b>Terraprof</b>: <a href="http://terraprof.com.ua/category/obyekty/">веб-сайт</a>',
+							functional: [
+								'Регистрация работников',
+								'Работники должны ежедневно отмечаться и отчитываться о кол-ве отработанных часов',
+								'Ведение учёта командировок сотрудников',
+								'Проверка геолокации работников по команде администратора',
+								'Автоматический расчёт заработной платы сотрудников',
+								'Администраторы в админ панели могут изменять должность работника с перерасчётом ставки, а также любую информацию о сотруднике',
+								'Администраторы ведут базу прорабов, за которыми закреплены другие работники',
+								'Администраторы ведут базу регионов и объектов в этих регионах, на которых могут отмечаться сотрудники',
+								'Администраторам доступна масса отчётов: отчёты по каждой из проверок геолокации, отчёты по дням, по объектам, по прорабам и по работникам',
+							],
+							result: 'Ссылка на рабочий чат-бот: <a href="https://t.me/TerraTablBot">t.me/TerraTablBot</a> (регистрация доступна сотрудникам компании)'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Отметка сотрудником' },
+							{ fileName: 'screen2.png', title: 'Перс. информация' },
+							{ fileName: 'screen3.png', title: 'Отчёт для работника' }
+						],
+						screensFullScreen: [
+							{ fileName: 'screen4.png', title: 'Таблица работников' },
+							{ fileName: 'screen5.png', title: 'Таблица прорабов' },
+							{ fileName: 'screen6.png', title: 'Таблица должностей' },
+							{ fileName: 'screen7.png', title: 'Создание должности' },
+							{ fileName: 'screen8.png', title: 'Таблица категорий должностей' },
+							{ fileName: 'screen9.png', title: 'Таблица регионов' },
+							{ fileName: 'screen10.png', title: 'Создание региона' },
+							{ fileName: 'screen11.png', title: 'Таблица объектов' },
+							{ fileName: 'screen12.png', title: 'Создание объекта' },
+							{ fileName: 'screen13.png', title: 'Таблица проверок геолокации' },
+							{ fileName: 'screen14.png', title: 'Таблица регистрационных кодов' },
+							{ fileName: 'screen15.png', title: 'Отчёт по дням' },
+							{ fileName: 'screen16.png', title: 'Отчёт по объектам' },
+							{ fileName: 'screen17.png', title: 'Отчёт по прорабам' },
+							{ fileName: 'screen18.png', title: 'Отчёт по работникам' },
+						],
+						isWindows: true
 					}
 				},
 				'sapori-veri': {

@@ -437,6 +437,12 @@ const UK = {
 						desc: 'Чат-бот для диспетчерської служби',
 					},
 					{
+						name: 'terraprof',
+						heading: 'Terraprof',
+						desc: 'Чат-бот для роботи з персоналом будівельної компанії',
+						isAlternate: true
+					},
+					{
 						name: 'sapori-veri',
 						heading: 'Sapori Veri',
 						desc: 'Чат-бот для італьянського ресторану',
@@ -613,6 +619,49 @@ const UK = {
 							{ fileName: 'screen4.png', title: 'Аварійні відключення' },
 							{ fileName: 'screen5.png', title: 'Налаштування' },
 						]
+					}
+				},
+				terraprof: {
+					case: {
+						desc: {
+							case: 'Чат-бот для роботи з персоналом компанії <b> Terraprof </b>',
+							customer: 'Львівська будівельна компанія <b> Terraprof </b>: <a href="http://terraprof.com.ua/category/obyekty/">веб-сайт</a>',
+							functional: [
+								'Реєстрація працівників',
+								'Працівники повинні щодня відмічатися і звітувати про кол-ве відпрацьованих годин',
+								'Ведення обліку відряджень співробітників',
+								'Перевірка геолокації працівників по команді адміністратора',
+								'Автоматичний розрахунок заробітної плати співробітників',
+								'Адміністратори в адмін панелі можуть змінювати посаду працівника з перерахунком ставки, а також будь-яку інформацію про співробітника',
+								'Адміністратори ведуть базу виконробів, за якими закріплені інші працівники',
+								'Адміністратори ведуть базу регіонів і об\'єктів в цих регіонах, на яких можуть відмічатися співробітники',
+								'Адміністраторам доступна маса звітів: звіти по кожній з перевірок геолокації, звіти по днях, по об\'єктах, по виконробам та по працівниках',
+							],
+							result: 'Посилання на робочий чат-бот: <a href="https://t.me/TerraTablBot">t.me/TerraTablBot</a> (реєстрація доступна співробітникам компанії)'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Відмітка співробітником'},
+							{ fileName: 'screen2.png', title: 'Перс. інформація '},
+							{ fileName: 'screen3.png', title: 'Звіт для працівника'}
+						],
+						screensFullScreen: [
+							{ fileName: 'screen4.png', title: 'Таблиця працівників'},
+							{ fileName: 'screen5.png', title: 'Таблиця виконробів'},
+							{ fileName: 'screen6.png', title: 'Таблиця посад'},
+							{ fileName: 'screen7.png', title: 'Створення посади'},
+							{ fileName: 'screen8.png', title: 'Таблиця категорій посад'},
+							{ fileName: 'screen9.png', title: 'Таблиця регіонів'},
+							{ fileName: 'screen10.png', title: 'Створення регіону'},
+							{ fileName: 'screen11.png', title: 'Таблиця об\'єктів'},
+							{ fileName: 'screen12.png', title: 'Створення об\'єкту'},
+							{ fileName: 'screen13.png', title: 'Таблиця перевірок геолокації'},
+							{ fileName: 'screen14.png', title: 'Таблиця реєстраційних кодів'},
+							{ fileName: 'screen15.png', title: 'Звіт по днях'},
+							{ fileName: 'screen16.png', title: 'Звіт по об\'єктах'},
+							{ fileName: 'screen17.png', title: 'Звіт по виконробам'},
+							{ fileName: 'screen18.png', title: 'Звіт по працівникам'}
+						],
+						isWindows: true
 					}
 				},
 				'sapori-veri': {
