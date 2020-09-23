@@ -50,21 +50,21 @@ const UK = {
 		introHeading: 'Наша команда - професіоналізм і орієнтація на клієнта. Ми завжди працюємо на результат і якість проекту',
 		title: 'Dniprogram - Розробка веб-сайтів, веб-додатків, чат-ботів, desktop-додатків, серверних додатків',
 		service: 'Не указана',
-		description: 'Розробка веб-сайтів, чат-ботів, desktop-додатків, серверних додатків. Різні види сайтів: для продажів, лендінг, візитки, корпоративні, інтернет-магазини.',
+		description: 'Розробка веб-сайтів, чат-ботів, desktop-додатків, серверних додатків. Різні види сайтів: для продажів, лендінг, візитки, корпоративні, інтернет-магазини.'
 	},
 	services: {
 		intro: 'Наші послуги',
 		introHeading: 'Давайте разом розкриємо можливості вашого бізнесу! Від розробки до маркетингу: довіртеся професіоналам',
 		title: 'Dniprogram - Розробка веб-сайтів, веб-додатків, чат-ботів, desktop-додатків, серверних додатків',
 		service: 'Не указана',
-		description: 'Розробка веб-сайтів, чат-ботів, desktop-додатків, серверних додатків. Різні види сайтів: для продажів, лендінг, візитки, корпоративні, інтернет-магазини.',
+		description: 'Розробка веб-сайтів, чат-ботів, desktop-додатків, серверних додатків. Різні види сайтів: для продажів, лендінг, візитки, корпоративні, інтернет-магазини.'
 	},
 	portfolio: {
 		intro: 'Наше портфоліо',
 		introHeading: 'Ми розробляємо ефективні проекти, що приносять гроші. Досить витрачати гроші даремно!',
 		title: 'Dniprogram - Розробка веб-сайтів, веб-додатків, чат-ботів, desktop-додатків, серверних додатків',
 		service: 'Не указана',
-		description: 'Розробка веб-сайтів, чат-ботів, desktop-додатків, серверних додатків. Різні види сайтів: для продажів, лендінг, візитки, корпоративні, інтернет-магазини.',
+		description: 'Розробка веб-сайтів, чат-ботів, desktop-додатків, серверних додатків. Різні види сайтів: для продажів, лендінг, візитки, корпоративні, інтернет-магазини.'
 	},
 	website: {
 		intro: 'Розробка і просування ефективного сайту для Вашого бізнесу під ключ',
@@ -411,7 +411,7 @@ const UK = {
 					{
 						name: 'sanahunt-lounge',
 						heading: 'SANAHUNT',
-						desc: 'Чат-бот для ресторану класу "люкс"',
+						desc: 'Чат-бот для ресторану класу "люкс"'
 					},
 					{
 						name: 'cybercentre',
@@ -434,7 +434,13 @@ const UK = {
 					{
 						name: 'dnipro',
 						heading: 'Диспетчерська м. Дніпро',
-						desc: 'Чат-бот для диспетчерської служби',
+						desc: 'Чат-бот для диспетчерської служби'
+					},
+					{
+						name: 'spike',
+						heading: 'Spike Brokerage',
+						desc: 'Торговий майданчик у чат-боті для брокерської компанії',
+						isAlternate: true
 					},
 					{
 						name: 'terraprof',
@@ -457,7 +463,7 @@ const UK = {
 					{
 						name: 'inventory',
 						heading: 'Rocket Manufacture',
-						desc: 'Чат-бот для інвентаризації та ведення складського обліку',
+						desc: 'Чат-бот для інвентаризації та ведення складського обліку'
 					},
 					{
 						name: 'budprokat',
@@ -468,7 +474,7 @@ const UK = {
 					{
 						name: 'skyeng',
 						heading: 'SkyEng',
-						desc: 'Чат-бот для викладачів школи англійської мови',
+						desc: 'Чат-бот для викладачів школи англійської мови'
 					},
 					{
 						name: 'restabot',
@@ -479,8 +485,8 @@ const UK = {
 					{
 						name: 'esabot',
 						heading: 'EsaBot',
-						desc: 'Чат-бот для ведення відкритого реєстру контрагентів',
-					},
+						desc: 'Чат-бот для ведення відкритого реєстру контрагентів'
+					}
 					/*{
 						name: 'anglogram',
 						heading: 'Anglogram',
@@ -534,7 +540,7 @@ const UK = {
 							{ fileName: 'screen2.png', title: 'Перегляд розділу' },
 							{ fileName: 'screen3.png', title: 'Зміна розділу' },
 							{ fileName: 'screen4.png', title: 'Про проект' },
-							{ fileName: 'screen5.png', title: 'Зворотній зв\'язок' },
+							{ fileName: 'screen5.png', title: 'Зворотній зв\'язок' }
 						]
 					}
 				},
@@ -549,7 +555,7 @@ const UK = {
 								'Можливість замовити зворотний дзвінок',
 								'Можливість залишити відгук',
 								'Інформаційний блок з частими запитаннями',
-								'Адмін-панель для управління контентом, заявками на зворотний дзвінок і розсилкою, що налаштовєуться',
+								'Адмін-панель для управління контентом, заявками на зворотний дзвінок і розсилкою, що налаштовєуться'
 							],
 							result: 'Посилання на працюючі чат-боти: <a href="https://t.me/TK_Laser_Bot"> Telegram </a>; <a href="viber://pa?chatURI=tklaser_bot"> Viber </a>; <a href="https://www.facebook.com/diod.lazer.kiev/"> Facebook Messenger </a> '
 						},
@@ -558,7 +564,7 @@ const UK = {
 							{ fileName: 'screen2.png', title: 'FAQ (Facebook)' },
 							{ fileName: 'screen3.png', title: 'FAQ (Facebook)' },
 							{ fileName: 'screen4.png', title: 'Головне меню' },
-							{ fileName: 'screen5.png', title: 'FAQ (Telegram)' },
+							{ fileName: 'screen5.png', title: 'FAQ (Telegram)' }
 						],
 						screensFullScreen: [
 							{ fileName: 'screen6.png', title: 'Початок роботи' },
@@ -587,7 +593,7 @@ const UK = {
 						},
 						screens: [
 							{ fileName: 'screen1.png', title: 'Опитування' },
-							{ fileName: 'screen2.png', title: 'Вікторина' },
+							{ fileName: 'screen2.png', title: 'Вікторина' }
 						],
 						screensFullScreen: [
 							{ fileName: 'screen3.png', title: 'Управління текстами' },
@@ -617,7 +623,48 @@ const UK = {
 							{ fileName: 'screen2.png', title: 'Подати заявку' },
 							{ fileName: 'screen3.png', title: 'Зв\'язатися з диспетчером' },
 							{ fileName: 'screen4.png', title: 'Аварійні відключення' },
-							{ fileName: 'screen5.png', title: 'Налаштування' },
+							{ fileName: 'screen5.png', title: 'Налаштування' }
+						]
+					}
+				},
+				spike: {
+					case: {
+						desc: {
+							case: 'Торговий майданчик у чат-боті для брокерської компанії <b>Spike Brokerage</b>',
+							customer: 'Брокерська компанія Spike Brokerage: <a href="http://spike-trade.com/ru/">веб-сайт</a>',
+							functional: [
+								'Ціновий огляд ринку культур',
+								'Надсилання заявок на купівлю/продаж культур. Користувач вказує культуру, обсяг, спосіб доставки, порт/область, період доставки, вартість і валюту',
+								'Перегляд історії заявок',
+								'Можливість зв\'язатися з адміністрацією',
+								'Адміністратори в адмін панелі можуть переглядати всі запити, виставляти різні фільтри, вивантажувати відфільтровану таблицю в Excel-документ і переглядати найкращі пропозиції для заявок на продаж',
+								'Адміністраторам доступна можливість керувати доступними портами, створювати нові і активувати/деактивувати існуючі',
+								'Адміністратори ведуть базу культур і груп культур. Для кожної культури адміністратор може оновити ціновий огляд ринку по цій культурі',
+								'Перегляд бази користувачів в адмін панелі',
+								'Управління іншими адміністраторами суперкористувачем',
+								'Ведення бази партнерів компанії, які пропонують свої умови по покупці/збуту товарів (індикативи). Управління індикативами відбувається в зручній таблиці прямо всередині адмін панелі',
+								'Управління контактами для зв\'язку з адміністрацією'
+							],
+							result: 'Посилання на робочий чат-бот: <a href="https://t.me/SpikeBrokerageBot">t.me/SpikeBrokerageBot</a>'
+						},
+						screens: [
+							{ fileName: 'screen1.png', title: 'Стартовий екран' },
+							{ fileName: 'screen2.png', title: 'Ціновий огляд ринку' },
+							{ fileName: 'screen3.png', title: 'Створення заявки' },
+							{ fileName: 'screen4.png', title: 'Створення заявки' },
+							{ fileName: 'screen5.png', title: 'Історія заявок' },
+							{ fileName: 'screen6.png', title: 'Контакти адміністрації' }
+						],
+						screensFullScreen: [
+							{ fileName: 'screen7.png', title: 'Таблиця заявок' },
+							{ fileName: 'screen8.png', title: 'Таблиця портів' },
+							{ fileName: 'screen9.png', title: 'Таблиця культур' },
+							{ fileName: 'screen10.png', title: 'Таблиця груп культур' },
+							{ fileName: 'screen11.png', title: 'Таблиця користувачів' },
+							{ fileName: 'screen12.png', title: 'Таблиця партнерів' },
+							{ fileName: 'screen13.png', title: 'Робота з індикатива партнерів' },
+							{ fileName: 'screen14.png', title: 'Таблиця адміністраторів' },
+							{ fileName: 'screen15.png', title: 'Таблиця контактів' }
 						]
 					}
 				},
@@ -635,31 +682,31 @@ const UK = {
 								'Адміністратори в адмін панелі можуть змінювати посаду працівника з перерахунком ставки, а також будь-яку інформацію про співробітника',
 								'Адміністратори ведуть базу виконробів, за якими закріплені інші працівники',
 								'Адміністратори ведуть базу регіонів і об\'єктів в цих регіонах, на яких можуть відмічатися співробітники',
-								'Адміністраторам доступна маса звітів: звіти по кожній з перевірок геолокації, звіти по днях, по об\'єктах, по виконробам та по працівниках',
+								'Адміністраторам доступна маса звітів: звіти по кожній з перевірок геолокації, звіти по днях, по об\'єктах, по виконробам та по працівниках'
 							],
 							result: 'Посилання на робочий чат-бот: <a href="https://t.me/TerraTablBot">t.me/TerraTablBot</a> (реєстрація доступна співробітникам компанії)'
 						},
 						screens: [
-							{ fileName: 'screen1.png', title: 'Відмітка співробітником'},
-							{ fileName: 'screen2.png', title: 'Перс. інформація '},
-							{ fileName: 'screen3.png', title: 'Звіт для працівника'}
+							{ fileName: 'screen1.png', title: 'Відмітка співробітником' },
+							{ fileName: 'screen2.png', title: 'Перс. інформація ' },
+							{ fileName: 'screen3.png', title: 'Звіт для працівника' }
 						],
 						screensFullScreen: [
-							{ fileName: 'screen4.png', title: 'Таблиця працівників'},
-							{ fileName: 'screen5.png', title: 'Таблиця виконробів'},
-							{ fileName: 'screen6.png', title: 'Таблиця посад'},
-							{ fileName: 'screen7.png', title: 'Створення посади'},
-							{ fileName: 'screen8.png', title: 'Таблиця категорій посад'},
-							{ fileName: 'screen9.png', title: 'Таблиця регіонів'},
-							{ fileName: 'screen10.png', title: 'Створення регіону'},
-							{ fileName: 'screen11.png', title: 'Таблиця об\'єктів'},
-							{ fileName: 'screen12.png', title: 'Створення об\'єкту'},
-							{ fileName: 'screen13.png', title: 'Таблиця перевірок геолокації'},
-							{ fileName: 'screen14.png', title: 'Таблиця реєстраційних кодів'},
-							{ fileName: 'screen15.png', title: 'Звіт по днях'},
-							{ fileName: 'screen16.png', title: 'Звіт по об\'єктах'},
-							{ fileName: 'screen17.png', title: 'Звіт по виконробам'},
-							{ fileName: 'screen18.png', title: 'Звіт по працівникам'}
+							{ fileName: 'screen4.png', title: 'Таблиця працівників' },
+							{ fileName: 'screen5.png', title: 'Таблиця виконробів' },
+							{ fileName: 'screen6.png', title: 'Таблиця посад' },
+							{ fileName: 'screen7.png', title: 'Створення посади' },
+							{ fileName: 'screen8.png', title: 'Таблиця категорій посад' },
+							{ fileName: 'screen9.png', title: 'Таблиця регіонів' },
+							{ fileName: 'screen10.png', title: 'Створення регіону' },
+							{ fileName: 'screen11.png', title: 'Таблиця об\'єктів' },
+							{ fileName: 'screen12.png', title: 'Створення об\'єкту' },
+							{ fileName: 'screen13.png', title: 'Таблиця перевірок геолокації' },
+							{ fileName: 'screen14.png', title: 'Таблиця реєстраційних кодів' },
+							{ fileName: 'screen15.png', title: 'Звіт по днях' },
+							{ fileName: 'screen16.png', title: 'Звіт по об\'єктах' },
+							{ fileName: 'screen17.png', title: 'Звіт по виконробам' },
+							{ fileName: 'screen18.png', title: 'Звіт по працівникам' }
 						],
 						isWindows: true
 					}
@@ -683,7 +730,7 @@ const UK = {
 							{ fileName: 'screen2.png', title: 'Перегляд страв' },
 							{ fileName: 'screen3.png', title: 'Перегляд страви' },
 							{ fileName: 'screen4.png', title: 'Бронювання столика' },
-							{ fileName: 'screen5.png', title: 'Картка лояльності' },
+							{ fileName: 'screen5.png', title: 'Картка лояльності' }
 						],
 						isWindows: true
 					}
@@ -700,7 +747,7 @@ const UK = {
 								'Введення даних про доставку',
 								'Оплата в чат-боті і оформлення підписки'
 							],
-							result: 'Посилання на робочий чат-бот: <a href="https://t.me/coffeeloverua_bot">t.me/coffeeloverua_bot</a>',
+							result: 'Посилання на робочий чат-бот: <a href="https://t.me/coffeeloverua_bot">t.me/coffeeloverua_bot</a>'
 						},
 						screens: [
 							{ fileName: 'screen1.png', title: 'Початок роботи' },
@@ -777,14 +824,14 @@ const UK = {
 								'Можливість пошуку постачальника по ПІБ та номеру телефона',
 								'Можливість пошуку обладнання',
 								'Розсилка по базі підписників бота',
-								'Ведення і перегляд статистики адміном',
+								'Ведення і перегляд статистики адміном'
 							],
 							result: 'Посилання на робочий чат-бот: <a href="https://t.me/esabot_bot">t.me/esabot_bot</a>'
 						},
 						screens: [
 							{ fileName: 'screen1.png', title: 'Пошук даних' },
 							{ fileName: 'screen2.png', title: 'Додавання інформації' },
-							{ fileName: 'screen3.png', title: 'Пошук обладнання' },
+							{ fileName: 'screen3.png', title: 'Пошук обладнання' }
 						]
 					}
 				},
@@ -804,7 +851,7 @@ const UK = {
 						screens: [
 							{ fileName: 'screen1.png', title: 'Початок роботи' },
 							{ fileName: 'screen2.png', title: 'Перегляд журналів' },
-							{ fileName: 'screen3.png', title: 'Перегляд журналів' },
+							{ fileName: 'screen3.png', title: 'Перегляд журналів' }
 						]
 					}
 				},
@@ -848,10 +895,10 @@ const UK = {
 						},
 						screens: [
 							{ fileName: 'screen1.png', title: 'Запис на курс' },
-							{ fileName: 'screen2.png', title: 'Введення групи' },
+							{ fileName: 'screen2.png', title: 'Введення групи' }
 						]
 					}
-				},
+				}
 			},
 			landing: {
 				cases: [
@@ -1244,13 +1291,13 @@ const UK = {
 	pricing: {
 		heading: 'Тарифні плани',
 		content1: {
-			heading: 'Базовий',
+			heading: 'Базовий'
 		},
 		content2: {
-			heading: 'Просунутий',
+			heading: 'Просунутий'
 		},
 		content3: {
-			heading: 'Преміум',
+			heading: 'Преміум'
 		},
 		businessCard: {
 			content1: 'Адаптивне відображення',
@@ -1358,6 +1405,6 @@ const UK = {
 			text: 'Успіх сайтів залежить від методу просування: SEO-просування, контекстна реклама Google Ads та Яндекс Direct, SMM-просування'
 		}
 	}
-}
+};
 
 module.exports = UK;
