@@ -14,4 +14,4 @@ const config = {
 	}
 };
 
-module.exports = isProd ? config.prod : config.dev;
+module.exports = NODE_ENV === 'production' ? config.prod : config.dev;
