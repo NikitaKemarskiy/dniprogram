@@ -1,4 +1,9 @@
 $(window).load(function () {
+	const images = $('img.lazy').each((index, elem) => {
+		const dataSrc = $(elem).attr('data-src');
+		$(elem).attr('src', dataSrc);
+	});
+
 	const team = $('.team-member');
 	team.eq(0).prepend('<img src="/img/team/alexceo.jpg" alt="Team member 1" title="Team member 1">');
 	team.eq(1).prepend('<img src="/img/team/lilya.jpg" alt="Team member 2" title="Team member 2">');
