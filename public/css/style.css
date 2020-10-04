@@ -759,6 +759,15 @@ header .container {
         text-align: left;
     }
 
+    .phone-align-left {
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .phone-align-left a {
+        margin-left: 0;
+    }
+
     header .intro-text .header-buttons a {
         margin-left: 0;
     }
