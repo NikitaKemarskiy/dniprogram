@@ -15,4 +15,4 @@ const config = {
 	}
 };
 
-module.exports = NODE_ENV === 'production' ? config.prod : config.dev;
+module.exports = process.env.NODE_ENV === 'production' ? config.prod : config.dev;
