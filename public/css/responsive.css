@@ -443,3 +443,22 @@
         margin-bottom: 0;
     }
 }
+@media (max-width: 992px) {
+    #cases .case .desc {
+        padding: 0 15px;
+        bottom: 15px;
+    }
+
+    #cases .case .desc a {
+        color: white;
+        font-size: 12px;
+    }
+
+    #cases .case .desc h3 {
+        font-size: 18px;
+    }
+
+    #cases .case .desc h5 {
+        font-size: 12px;
+    }
+}
