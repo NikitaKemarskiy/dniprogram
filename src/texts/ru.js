@@ -392,6 +392,7 @@ const RU = {
 	cases: {
 		heading: 'Наши работы',
 		case: {
+			explore: 'Посмотреть проект →',
 			desc: {
 				heading: 'Описание проекта',
 				case: 'Кейс',
@@ -443,12 +444,6 @@ const RU = {
 						isAlternate: true
 					},
 					{
-						name: 'sapori-veri',
-						heading: 'Sapori Veri',
-						desc: 'Чат-бот для итальянского ресторана',
-						isAlternate: true
-					},
-					{
 						name: 'terraprof',
 						heading: 'Terraprof',
 						desc: 'Чат-бот для работы с персоналом строительной компании',
@@ -464,6 +459,12 @@ const RU = {
 						name: 'inventory',
 						heading: 'Rocket Manufacture',
 						desc: 'Чат-бот для инвентаризации и ведения складского учета',
+					},
+					{
+						name: 'sapori-veri',
+						heading: 'Sapori Veri',
+						desc: 'Чат-бот для итальянского ресторана',
+						isAlternate: true
 					},
 					{
 						name: 'budprokat',

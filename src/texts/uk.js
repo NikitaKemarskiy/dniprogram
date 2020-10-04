@@ -392,6 +392,7 @@ const UK = {
 	cases: {
 		heading: 'Наші роботи',
 		case: {
+			explore: 'Подивитися проект →',
 			desc: {
 				heading: 'Опис проекту',
 				case: 'Кейс',
@@ -443,12 +444,6 @@ const UK = {
 						isAlternate: true
 					},
 					{
-						name: 'sapori-veri',
-						heading: 'Sapori Veri',
-						desc: 'Чат-бот для італьянського ресторану',
-						isAlternate: true
-					},
-					{
 						name: 'terraprof',
 						heading: 'Terraprof',
 						desc: 'Чат-бот для роботи з персоналом будівельної компанії',
@@ -464,6 +459,12 @@ const UK = {
 						name: 'inventory',
 						heading: 'Rocket Manufacture',
 						desc: 'Чат-бот для інвентаризації та ведення складського обліку'
+					},
+					{
+						name: 'sapori-veri',
+						heading: 'Sapori Veri',
+						desc: 'Чат-бот для італьянського ресторану',
+						isAlternate: true
 					},
 					{
 						name: 'budprokat',

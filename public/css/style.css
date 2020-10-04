@@ -2161,6 +2161,10 @@ fieldset {
     margin: 0 !important;
 }
 
+#cases .case a {
+    text-transform: uppercase;
+}
+
 #cases .case:hover {
     transform: scale(1.05);
     z-index: 1;

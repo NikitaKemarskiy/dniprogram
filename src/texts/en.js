@@ -392,6 +392,7 @@ const EN = {
 	cases: {
 		heading: 'Portfolio',
 		case: {
+			explore: 'View project →',
 			desc: {
 				heading: 'Project description',
 				case: 'Case',

@@ -6,7 +6,7 @@
         <h3><%- singleCase.heading; %></h3>
         <h5><%- singleCase.desc; %></h5>
         <a href="<%= singleCase.link || `/${contentLanguage}/${service}/cases/${singleCase.name}`; %>" target="_blank">
-            Посмотреть проект →
+            <%= local.cases.case.explore %>
         </a>
     </div>
 </div>
