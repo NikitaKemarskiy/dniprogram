@@ -2179,10 +2179,11 @@ fieldset {
 }
 
 #cases .case .desc a {
-    color: #4797ba;
+    color: white;
+    font-size: 14px;
 }
 
-#cases .case .desc.alternate {
+#cases .case .desc.alternate, #cases .case .desc.alternate a {
     color: black;
 }
 
