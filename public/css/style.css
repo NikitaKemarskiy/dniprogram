@@ -237,6 +237,7 @@ body.modal-open {
     margin-bottom: 30px;
 }
 .primary-button {
+    cursor: pointer;
     min-width: 150px;
     padding: 0 20px;
     background-color: white;
@@ -2166,6 +2167,10 @@ fieldset {
     color: white;
     position: absolute;
     bottom: 24px;
+}
+
+#cases .case .desc a {
+    color: #4797ba;
 }
 
 #cases .case .desc.alternate {
